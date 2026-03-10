@@ -1,0 +1,58 @@
+~sim_gen_def[
+   \simulation_typ{PT} DBFR NM NMEN PT EEMC SEQ_PT SEQ_EEMC DBFR DBFREN
+   \minimize_tol{1.e-10}
+   \minimize_type{samc} cg bfgs samc
+   \minimize_report{2} 0  1  2
+   \energy_report{2}
+   \prop_type{tors} tors cart
+   \prop_tors_sig{.5e-6} 1.e-7 1.e-6
+   \prop_trans_sig{1.e-5} 0.5e-5 5.29177e-6 .5e-4 1.e-5 5.29177e-6
+   \prop_rot_sig{1.e-6} 0.5e-6 1.e-6 5.e-5
+   \prop_notors_sig_scale{100.0}
+   \prop_tors_type{full} full side_chain
+   \replica_number{0} 10            number > 1
+   \total_step_mc{100} 5000000 100            number > 1
+   \local_step_md{1} 10           number > 1
+   \time_step_md{0.4} 0.5            
+   \statistics_freq{10} 5000
+   \write_energy_unit{kcal} kcal  Ha: atomic unit, kcal: kcal/mol
+   \prob_eemc_jump{0.15}   0.15   number in 0,1
+   \energy_gap{1.1} 1.1 E_i = a + b*(energy_gap)^i, (a,b) scaling
+   \temperature{300} 300
+   \eemc_disk_size{20} 1000
+   \rinter_switch_length{1.0} 1.0 real inter switching length in A
+   \inter_list{lnk_list} none lnk_list
+   \burn_in_B{10} 2 
+   \burn_in_N{10} 2
+   \cancel_res_inter{off} local, neighbor (includes local)
+   \extend_inter{off} 3bond_conn, 4bond_conn, off:default
+   \EEMC_Emin{-1.0} -0.04 in Ha
+   \EEMC_Emax{0.0}  0.0 in Ha
+   \random_seed{-7143580450}
+]
+
+~sim_mol_def[
+  \system_def{residue} primitive
+  \implicit_solvent{off} scp, off
+  \ddd{DD0S} DD0S ce
+  \ddd_D{80.0}
+  \ddd_D0{4.0}
+  \ddd_S{0.4}
+  \ddd_c{2.5}
+  \ddd_e{2.0}
+  \neutralize{nucl} nucl, prot, all, off
+  \mol_parm_file{../top_database/amber/99-bs0/top_all99-bs0_prot_rna_chidef.rtf}
+  \bond_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.bond} 
+  \bend_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.bend} 
+  \tors_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.tors_and_impr} 
+  \onfo_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.onfo} 
+  inter_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.vdw_nocoul} 
+  \inter_database_file{../pot_database/amber/99-bs0/mosaics_amber99-bs0.vdw} 
+  \region_database_file{region.data}
+  \pos_init_file{2cky_A.pdb}
+  \pos_out_file{2cky_A.pos_out}
+  \atom_pos_file{2cky_A.pos}
+  \tors_pos_file{2cky_A.tors_pos}
+  \epot_file{2cky_A.pot_energy}
+  \einter_file{2cky_A.inter_energy}
+]

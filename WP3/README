@@ -1,0 +1,106 @@
+(0) In this exercise we will gain experience with optimization algorithms that
+    one can used to explore the conformational space along generalized or 
+    natural degrees of freedom, therefore we will use the same two systems 
+    introduced in WP2, however we provide new copies of the same systems
+    with some of the optimization parameters are set to an initial value, 
+    which we ask you to modify during this exercise. To start with, please
+    set up your links to "mosaics.x" and pot_database top_database libraries
+    so that your WP3/examples library has this structure
+
+    drwxr-xr-x  2x3b_dna_sastmc
+    drwxr-xr-x  6b_rna_stsamc
+    lrwxr-xr-x  mosaics.x -> ../../MOSAICS/version.3.9.1_bgq/examples/mosaics.x
+    lrwxr-xr-x  pot_database -> ../../TOPPOT/pot_database/
+    lrwxr-xr-x  top_database -> ../../TOPPOT/top_database/
+
+    where the paths to the executable may vary whether you have installed 
+    mosaics own your own or used an executable already available in your
+    desktop.
+
+(1) The major objective of optimization is to find a favorable set 
+    of conditions (often expressed in the form of independent variables)
+    that maximize (or equivalently minimize) an object function of these 
+    independent variables. This is a very large area of study both in terms 
+    of applications (e.g. the independent variables can be stock prices, 
+    proportion of stocks in a portfolio or the location of atoms in a 
+    biomolecuar assembly) and the methods used (e.g. global enumeration, local 
+    gradient based optimization, stochastic optimization). In this exercise 
+    we will mainly use a MCMC sampling based optimization technique as we 
+    already applied MCMC to reproduce canonical distributions in WP1. 
+ 
+    Instead of running a MCMC at a fixed temperature, some stochastic 
+    optimization techniques alter the temperature to find favorable states
+    that minimize an object function. For example, by gradually cooling 
+    the temperature in an MCMC trajectory one can constrain the system
+    to look for more favorable states with lower energy. This is the idea
+    behind the well known simulated annealing algorithm. 
+
+    Rather than just cooling the temperature we may as well use a predefined 
+    (analytical) temperature function so that we maximize our chances of 
+    finding low energy conformational states. Let us define a temperature 
+    function of the following form:
+
+    T(k) = A + A*sin(2 Pi k / Omega) + T_shift                        (1)
+
+    where k is the MCMC step counter, Omega is the number of steps for one
+    period, A is the temperature amplitude and T_shift is used to center 
+    this modulation around a particular target temperature. 
+
+    MOSAICS has options to run MCMC with such temperature profile once we 
+    turn on minimization with stsamc type. To do this use
+    
+    \simulation_typ{MIN}
+    \minimize_type{stsamc} 
+
+    Once you set these options you can provide the following parameters
+    in Eq. 1.
+
+    \stsamc_type{trigonom}   This will turn on trigonometric variation 
+    \stsamc_period{50000}    Omega   in Eq. 1 
+    \stsamc_ampl{800}        A       in Eq. 1
+    \stsamc_shift{0}         T_shift in Eq. 1
+
+    The value of these parameters have to be considered when you set 
+    the total number of steps and the output frequency. E.g. a reasonable 
+    choice for the above parameters is
+
+    \total_step_mc{200000}   
+    \statistics_freq{2000}
+
+    We set these initial parameters for both of your examples so that 
+    you may generate a trajectory using both fix temperature MCMC (\simulation_type{PT})
+    or the above temperature profile (\simulation_type{MIN}). Some 
+    output for these trajectories are provided in 2x3b_dna_stsamc/results and 
+    6b_rna_stsamc/results trajectories. Please try to generate and analyze your
+    trajectories before looking at these results.
+
+(3) Please make numerical experiments to demonstrate the effect(s) of changing the 
+    amplitude and the period of the modulation. You may plot the potential energies 
+    as a function of the MC step counter for all the trajectories, you produce while 
+    you try to explore the parameter space. 
+
+(4) The Final Exercise: Critical Assessment of Optimization Protocols
+
+    While looking for low energy conformations the ranking of the results is very 
+    straightforward and based on a variational principle: among many conformations the
+    one with the lowest energy is the best result.  Keep this principle in mind for 
+    the last exercise of this practical.
+
+    Please use you knowledge about choosing degrees of freedom and designing optimization
+    protocols to find the lowest energy conformational state you are able to obtain. Next
+    please extract this structure and send it to us along with its potential energy 
+    value you find (*). Finally we are going to collect these structures, verify the 
+    energies and will announce the best submission.
+  
+    (*) Note that the lowest energy structure you find is based on the present force
+        field, which is amber99-bs0 with a simple implicit solvent description. This 
+        force-field has been mainly chosen so that we can run these test simulations 
+        within a few minutes. Therefore the lowest energy structures you find may not 
+        have a biological interpretation but it still proves that you designed
+        the best optimization protocol.  
+
+
+
+
+     
+

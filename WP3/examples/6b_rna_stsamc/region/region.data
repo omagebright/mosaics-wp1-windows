@@ -1,0 +1,19 @@
+__________________________region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{6}
+        \residues{A:1,A:2,A:3,A:4,A:5,A:6}
+
+        \ncenter{1}
+        \centers{A:6}
+
+        \nrespair{0}
+
+        \prop_trans_sig{0.0}
+        \prop_rot_sig{0.0}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]

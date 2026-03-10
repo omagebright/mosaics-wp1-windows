@@ -1,0 +1,142 @@
+(0) This exercises will require running a full version of the MOSAICS software
+    and its potential and topology libraries. If the required software installed
+    in your computer, just make 3 local soft links to the executable, potential
+    and topology libraries into the WP2/examples library. To do this 
+ 
+    $ cd WP2/examples
+    $ ln -s $(YOUR-PATH-TO-MOSAICS-EXECUTABLE)/mosaics.x mosaics.x
+    $ ln -s $(YOUR-PATH-TO-MOSAICS-TOPOLOGY--DATABASE)/top_database top_database 
+    $ ln -s $(YOUR-PATH-TO-MOSAICS-POTENTIAL-DATABASE)/pot_database pot_database 
+
+    ----------------------------------------------------------------------------
+    If you don't have either the code or the libraries already installed in your 
+    computer, we provide it on the Computational Biology Practical Website following 
+    the <Tutorial> link at www.cs.ox.ac.uk/mosaics. By clicking the links <MOSAICS> 
+    and <TOPPOT> you can download MOSAICS.tar.gz and TOPPOT.tar.gz files. Next 
+    extract these files in the same directory you extracted your files for the 
+    work packages (WPs). Then      
+    
+    $ tar -zxvf TOPPOT.tar.gz
+    $ tar -zxvf MOSAICS.tar.gz   
+
+    # compile MOSAICS following the <Installation> 
+    # instructions at www.cs.ox.ac.uk/mosaics 
+
+    $ cd WP2/examples
+    $ ln -s ../../MOSAICS/version.3.9.1_bgq/examples/mosaics.x mosaics.x
+    $ ln -s ../../TOPPOT/top_database/ top_database
+    $ ln -s ../../TOPPOT/pot_database/ pot_database
+    ---------------------------------------------------------------------------
+
+    In the following I assume that you have three local links in WP2/examples,
+    e.g if you installed your own version your local library has this structure
+
+    drwxr-xr-x  2x3b_dna
+    drwxr-xr-x  6b_rna
+    lrwxr-xr-x  mosaics.x -> ../../MOSAICS/version.3.9.1_bgq/examples/mosaics.x
+    lrwxr-xr-x  pot_database -> ../../TOPPOT/pot_database/
+    lrwxr-xr-x  top_database -> ../../TOPPOT/top_database/
+
+(1) In WP2/examples there are two systems an rna and a dna fragment (.pdb files)
+    each containing 6 nucleotides. The systems has the same size, yet they have 
+    a very different topology; the rna is a 6 base unstructured loop whereas the 
+    dna is composed of three base pairs. You can visualize the .pdb files using 
+    Pymol or VMD software packages available in your computer. 
+    Next, we suggest you try running mosaics.x using the following 
+    syntax:
+
+    $ cd 6b_rna
+    $ ../mosaics.x mcmc.input > output
+
+    where mcmc.input is your input file, in which you can set the simulation
+    parameters. Some of the parameters carry function related names but you
+    can read the description of each simulation parameter in the online manual
+    following the <Documentation> link on the MOSAICS website www.cs.ox.ac.uk
+    Every time you run your examples, you are going to generate the following 
+    files:
+
+    output        : contains detailed information about your system and simulation
+                    results such as acceptance rate
+    .pos.pdb      : contains your trajectory in .pdb format
+    .pos_out.pdb  : your last conformation in your trajectory in .pdb format
+    .pot_energy   : potential energy as a function of steps
+    .inter_energy : intermolecular energy vs MC iteration
+    .tors_pos     : the trajectory in torsion angle space
+    sim_param.out : contains all the simulation parameters you used for this run
+                    the file also lists all simulation parameters you could change
+                    for this MOSAICS version but they will take their indicated 
+                    default values unless you set them separately
+
+     Before you attempt a new run, you may want to delete all output files with 
+     the script provided
+
+     $ ./clean
+     $ ../mosaics.x mcmc.input > output
+
+     or using the one line version
+
+     $ ./clean; ../mosaics.x mcmc.input > output     
+
+(2) In this exercise we ask you to generate a short, only 10,000 mc step length
+    MCMC trajectory in both cartesian space and dihedral (torsional) space for 
+    both systems. For this you only have to change the \prop_type{} option in the
+    mcmc.input file.
+
+    \prop_type{cart} using Cartesian degrees of freedom
+    \prop_type{tors} using torsional degrees of freedom
+
+    Please run and save these short trajectories for both systems and compare 
+    the results focusing on the trajectory files (.pos.pdb), which you can visualize 
+    using either Pymol or VMD Software packages available in your desktop. Compare 
+    the overall acceptance rates, which are printed at the end of your output files.
+    After you generate these 4 trajectories you may answer the following questions:
+
+    How do the trajectories and the overall acceptance rates compare? 
+    Can you qualitatively rank the efficiency of conformational exploration? e.g.
+         #1 system X using \prop_type{Z} option
+         #2 system Y using \prop_type{Z} option
+          ..
+
+    (*) To give you a hint one of your systems with torsional propagation will produce the 
+    worst acceptance rate
+ 
+(3) Run and save a further trajectory with the system that produced the worst acceptance
+    rate with torsional propagation using chain break and closure (JCB, Minary et al. 2010)
+    based torsional propagation. This option can be turned on if you change the first line 
+    in your initial .pdb file from "# CBLC > ..." to "CBLC > ...". 
+    This option (Constant Bond Length Closure) lets you changing the conformation of 
+    each nucleotide independently that may result in breaking bonds along the atomic 
+    chain connecting adjacent nucleotides. Next, all these chain breaks are restored 
+    using a linear complexity chain closure algorithm (JCB, 2010). 
+
+    Has the acceptance rate improved?
+
+(4) Given that now we can model systems as a collection of independent nucleotides
+    we are able to generate correlated motions by moving groups of nucleotides together
+    in addition to more refined moves that are responsible for the relative orientation 
+    and position of each individual nucleotide within the group. For example, one typical 
+    choice for the dna system would be to move a basepair collectively. 
+    After turning on the option learned in (3) for both dna and rna systems, please activate 
+    the "region" option in you mcmc.input file by changing
+
+    region_database_file{region/region.data}      
+
+    to
+
+    \region_database_file{region/region.data}
+
+    The region.data file lets you specify how the individual elements of your region
+    are grouped and the relative magnitude of collective and non collective motions. 
+    In addition, it lets you control rotational and translation type of motions
+    separately therefore gives you a great deal of flexibility that you can explore in 
+    this exercise. Before you do so, please browse the content of "2x3b_dna/region/README" 
+    file that explains you the meaning of each line used in region.data 
+   
+    !!!! Note that the regional or "natural" moves are superimposed on top of the 
+    individual moves of nucleotides we had in (3). Therefore I suggest to turn off non
+    regional moves so that the control over degrees of freedom is completely handled
+    in the region file.  Please set the following parameters in your mcmc.input file: 
+
+    \prop_tors_sig{0.0}
+    \prop_trans_sig{0.0}
+    \prop_rot_sig{0.0} 

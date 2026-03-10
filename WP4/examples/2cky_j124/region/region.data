@@ -1,0 +1,88 @@
+__________________________P1 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{9}
+        \residues{A:3,A:4,A:5,A:6,C:77,C:76,C:75,C:74,C:73}
+
+        \ncenter{1}
+        \centers{A:6}
+
+        \nrespair{4}
+        \residue_pair{A:3,C:77}
+        \residue_pair{A:4,C:76}
+        \residue_pair{A:5,C:75}
+        \residue_pair{A:6,C:73}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P2 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{A:7,A:8,A:9,A:10,B:36,B:37,B:38,B:39}
+
+        \ncenter{1}
+        \centers{A:7}
+
+        \nrespair{4}
+        \residue_pair{A:7,B:39}
+        \residue_pair{A:8,B:38}
+        \residue_pair{A:9,B:37}
+        \residue_pair{A:10,B:36}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P4 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{B:45,B:46,B:47,B:48,C:67,C:68,C:69,C:70}
+
+        \ncenter{1}
+        \centers{B:46}
+
+        \nrespair{4}
+        \residue_pair{B:45,C:70}
+        \residue_pair{B:46,C:69}
+        \residue_pair{B:47,C:68}
+        \residue_pair{B:48,C:67}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L2 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{7}
+        \residues{B:40,B:41,B:42,B:43,B:44,C:71,C:72}
+
+        \ncenter{1}
+        \centers{B:42}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]

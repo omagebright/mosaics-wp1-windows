@@ -1,0 +1,210 @@
+__________________________P1 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{13}
+        \residues{A:1,A:2,A:3,A:4,A:5,A:6,A:77,A:76,A:75,A:74,A:73,A:71,A:72}
+
+        \ncenter{1}
+        \centers{A:6}
+
+        \nrespair{4}
+        \residue_pair{A:3,A:77}
+        \residue_pair{A:4,A:76}
+        \residue_pair{A:5,A:75}
+        \residue_pair{A:6,A:73}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P2 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{A:7,A:8,A:9,A:10,A:36,A:37,A:38,A:39}
+
+        \ncenter{1}
+        \centers{A:7}
+
+        \nrespair{4}
+        \residue_pair{A:7,A:39}
+        \residue_pair{A:8,A:38}
+        \residue_pair{A:9,A:37}
+        \residue_pair{A:10,A:36}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P3 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{A:14,A:15,A:16,A:17,A:22,A:23,A:24,A:25}
+
+        \ncenter{1}
+        \centers{A:14}
+
+        \nrespair{4}
+        \residue_pair{A:14,A:25}
+        \residue_pair{A:15,A:24}
+        \residue_pair{A:16,A:23}
+        \residue_pair{A:17,A:22}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P4 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{A:45,A:46,A:47,A:48,A:67,A:68,A:69,A:70}
+
+        \ncenter{1}
+        \centers{A:46}
+
+        \nrespair{4}
+        \residue_pair{A:45,A:70}
+        \residue_pair{A:46,A:69}
+        \residue_pair{A:47,A:68}
+        \residue_pair{A:48,A:67}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________P5 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{8}
+        \residues{A:61,A:62,A:63,A:64,A:51,A:52,A:53,A:54}
+
+        \ncenter{1}
+        \centers{A:64}
+
+        \nrespair{4}
+        \residue_pair{A:61,A:54}
+        \residue_pair{A:62,A:53}
+        \residue_pair{A:63,A:52}
+        \residue_pair{A:64,A:51}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L1 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{13}
+        \residues{A:26,A:27,A:28,A:29,A:30,A:31,A:32,A:33,A:34,A:35,A:11,A:12,A:13}
+
+        \ncenter{1}
+        \centers{A:12}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L2 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{5}
+        \residues{A:40,A:41,A:42,A:43,A:44}
+
+        \ncenter{1}
+        \centers{A:42}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L3 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{4}
+        \residues{A:18,A:19,A:20,A:21}
+
+        \ncenter{1}
+        \centers{A:19}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L4 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{4}
+        \residues{A:49,A:50,A:65,A:66}
+
+        \ncenter{1}
+        \centers{A:49}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]
+__________________________L5 region____________________________
+~region[\element_top_type{residue}
+        \dependency_type{independent}
+
+        \nres{6}
+        \residues{A:55,A:56,A:57,A:58,A:59,A:60}
+
+        \ncenter{1}
+        \centers{A:58}
+
+        \nrespair{0}
+
+        \prop_trans_sig{.5e-5}
+        \prop_rot_sig{.5e-6}
+        \prop_trans_sig_freeres{.5e-5}
+        \prop_rot_sig_freeres{.5e-6}
+        \prop_trans_sig_respair{.5e-5}
+        \prop_rot_sig_respair{.5e-6}
+]

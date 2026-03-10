@@ -1,0 +1,7 @@
+rm $1*.pos
+rm $1*.pos_out
+rm $1*.hessian
+rm $1*.eighess
+rm $1*.tors_pos
+rm $1*_energy
+rm out_ 

@@ -1,0 +1,56 @@
+Tools you may find useful for the last practical exercise WP4. 
+
+(0) How to get the RMSD between each conformation of a trajectory and 
+    a reference conformation?
+
+    The program VMD installed in your computer has built in analysis
+    tools that can compute the RMSD of a trajectory using the first 
+    structure as a reference state. 
+
+    To do this Bernhard Knapp, who will join us for the day provided these "HowTo" instructions:
+
+    To be able to visualize any created trajectory of atom configuration one can use the 
+    program VMD [1]. This software should already be installed on your computer.
+
+    To visualize for example the trajectory of a riboswitch fragment studied in WP4 use 
+    the following procedure:
+       - vmd 2cky_j124.pos.pdb or open this file in VMD "File"->"New Molecule"->"Browse"
+       - By using the slider in the main window of VMD you can inspect all single 
+         frames of the trajectory.
+       - We can use the RMSD (root mean square deviation) trajectory tool to investigate 
+         how severe the structural changes during our simulation were.
+       - Click on "Extensions" -> "Analysis" -> "RMSD Trajectory Tool"
+       - In the text field in the upper left corner replace the word "protein" by "all"
+       - Make sure that the checkbox with "Plot" is activated.
+       - Press the "RMSD" button
+       - VMD opens a new window where you can see how the single configurations 
+         differ from the first configuration by means of their mean distance in 
+         euclidean space.
+       - For further analysis of the RMSD values you can save the numeric values 
+         by activating the checkbox "Save". A *.dat file will be written which contains 
+         the single RMSD values for further evaluations.
+
+    [1] Link http://www.ks.uiuc.edu/Research/vmd/     
+
+(1) How to get the RMSD distribution for a trajectory?
+
+    The RMSD distribution is simply visualizes the most favorable states visited 
+    in your simulation by peaks at the corresponding RMSD positions. 
+
+    Assuming that you have saved your RMSD trajectory, you could calculate an RMSD 
+    distribution by running the script "dist.pl" provided in this directory.
+
+(2) How to get an ENERGY vs. RMSD plot. Simply plot the energies of visited states 
+    as a function of their RMSD distance from the initial structure. This plot is 
+    very indicative about the nature of the energy function that is provided for 
+    the simulation. Note, that the ENERGY vs. RMSD plot is not indicative of the 
+    correctness of our sampling or optimization algorithms. We could do perfectly 
+    rigorous optimization/simulation on any energy function but the interpretation of the 
+    results and their relevance to real physical phenomena depends on the energy
+    function. That the reason why structural modelling software has various energy
+    function options.  
+
+(3) Renumbering residues. By default MOSAICS renumbers the residues in the initial pdb
+    file. When using "region" based natural moves and one would like to start the simulation
+    from the last output file, we have to renumber residues the same way it was provided
+    in the pdb. To do this you can use the script: renumber_residues.pl in this directory. 

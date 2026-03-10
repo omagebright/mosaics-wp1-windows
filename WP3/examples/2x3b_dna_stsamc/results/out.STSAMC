@@ -1,0 +1,3269 @@
+###################################################################################
+#   Copyright (c) 2007 Peter Minary.        ~---------------------------------~   #
+#   All Rights Reserved.                    |     |              /    /    / ~|   #
+#      __           ~-           __         |    \|/     _      /         / ~ |   #
+#     /^^\     M   -  ~   M     /^^\        |   \_|_/  ((|))   /  M /  _ / ~ ~|   #
+#    /^^^^\   O   -    ~   O   /^^^^\       |  \__|__/ ((|))  /      ((|))~ ~ |   #
+#     |  |     S   -  ~   S     |  |        |     |      |   /  O /  ((|)) ~ ~|   #
+#     |  |      A   ~-   A      |  |        |  _     _   |  /         /|~ ~ ~ |   #
+#     |  |     I   ~  -   I     |  |        | {|}  ((|)) | /  S /  _ /~| ~_~ ~|   #
+#    _|__|_   C   ~    -   C   _|__|_       |{{|}} ((|))  /      ((|)) |~{|}~ |   #
+#              S   ~  -   S                 |  |     |   /  A /  ((|))~ {{|}}~|   #
+#   --------------- -~ ----------------     |    _   |  /         /| ~ ~ ~| ~ |   #
+#    Methodologies for Optimization and     |  ((|)) | /  I /  _ / |~ ~ ~| ~ ~|   #
+#    SAmpling In Computational Studies      |  ((|))  /      ((|)) | ~  \|/ ~ |   #
+#   -----------------------------------     |    |   /  C /  ((|))~ ~  \_|_/ ~|   #
+#                                           |    |  /         /| ~ ~  \__|__/~|   #
+#          >>  version.3.9.1  <<            |    | /  S /    /~|~ ~ ~ ~ ~| ~ ~|   #
+#                                           |     /         /~ | ~ ~ ~ ~ ~ ~ ~|   #
+#                                           ~---------------------------------~   #
+###################################################################################
+
+
+===================================================================================
+Reading simulation input file mcmc.input
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Completed reading file mcmc.input
+===================================================================================
+
+
+===================================================================================
+Reading potential database files 
+-----------------------------------------------------------------------------------
+----------------------------------------------
+Reading in database from file ../pot_database/amber/99-bs0/mosaics_amber99-bs0.bond
+...
+Database reading done, total 120 entries read.
+----------------------------------------------
+----------------------------------------------
+Reading in database from file ../pot_database/amber/99-bs0/mosaics_amber99-bs0.bend
+...
+Database reading done, total 292 entries read.
+----------------------------------------------
+----------------------------------------------
+Reading in database from file ../pot_database/amber/99-bs0/mosaics_amber99-bs0.tors_and_impr
+...
+Database reading done, total 170 entries read.
+----------------------------------------------
+----------------------------------------------
+Reading in database from file ../pot_database/amber/99-bs0/mosaics_amber99-bs0.onfo
+...
+Database reading done, total 1953 entries read.
+----------------------------------------------
+----------------------------------------------
+Reading in database from file ../pot_database/amber/99-bs0/mosaics_amber99-bs0.vdw
+...
+Database reading done, total 1953 entries read.
+----------------------------------------------
+----------------------------------------------
+Reading in database from file region/region.data
+...
+Database reading done, total 1 entries read.
+----------------------------------------------
+-----------------------------------------------------------------------------------
+Completed reading potential database files 
+===================================================================================
+
+
+===================================================================================
+Creating atom maps
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Creating atom maps done
+===================================================================================
+
+
+===================================================================================
+Reading file dna.pdb
+-----------------------------------------------------------------------------------
+----------------------------------------------
+Reading file dna.pdb
+...
+File reading done, total 192 lines read.
+----------------------------------------------
+-----------------------------------------------------------------------------------
+Completed reading file dna.pdb
+===================================================================================
+
+
+===================================================================================
+Reading residue topology file ../top_database/amber/99-bs0/top_all99-bs0_prot_na_chidef.rtf
+-----------------------------------------------------------------------------------
+----------------------------------------------
+Reading file ../top_database/amber/99-bs0/top_all99-bs0_prot_na_chidef.rtf
+...
+File reading done, total 4233 lines read.
+----------------------------------------------
+-----------------------------------------------------------------------------------
+Completed reading file ../top_database/amber/99-bs0/top_all99-bs0_prot_na_chidef.rtf
+===================================================================================
+
+
+===================================================================================
+Setting up residue topology
+-----------------------------------------------------------------------------------
+----------------------------------------------
+Sampling atom velocities
+...
+Atom velocities sampling done.
+----------------------------------------------
+-----------------------------------------------------------------------------------
+Residue topology setup done
+===================================================================================
+
+
+===================================================================================
+Setting up torsional transformations
+-----------------------------------------------------------------------------------
+Constant Bond Length Double Closure (CBLC) for DNA
+Constant Bond Length Double Closure (CBLC) for DNA
+-----------------------------------------------------------------------------------
+Torsional transformations setup done
+===================================================================================
+
+
+===================================================================================
+Setting up region topology
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+Region topology setup done
+===================================================================================
+
+
+===================================================================================
+Setting up connectivity
+-----------------------------------------------------------------------------------
+----------------------------------------------
+Setting up bonds
+...
+Bonds setting up done.
+----------------------------------------------
+----------------------------------------------
+Setting up bends
+...
+Bends setting up done.
+----------------------------------------------
+----------------------------------------------
+Setting up tors
+...
+Tors setting up done.
+----------------------------------------------
+----------------------------------------------
+Setting up onefour
+...
+Onefour setting up done.
+----------------------------------------------
+----------------------------------------------
+Setting up inter-molecular interactions
+...
+Inter-mol setting up done.
+----------------------------------------------
+-----------------------------------------------------------------------------------
+Connectivity setup done
+===================================================================================
+
+
+===================================================================================
+System setup 
+-----------------------------------------------------------------------------------
+Total number of molecules: 2
+
+Number of biopolymer molecules: 2
+Itemizing...
+
+1. molecule 
+molecule type ~~~>DNA<~~~
+molecule chain id ~~~>B<~~~
+ 1. residue is 1  ADE  natom 32, charge  0
+ 2. residue is 2  ADE  natom 32, charge  0
+ 3. residue is 3  ADE  natom 32, charge  0
+molecular charge 0
+
+2. molecule 
+molecule type ~~~>DNA<~~~
+molecule chain id ~~~>C<~~~
+ 1. residue is 4  THY  natom 32, charge  0
+ 2. residue is 5  THY  natom 32, charge  0
+ 3. residue is 6  THY  natom 32, charge  0
+molecular charge 0
+
+Number of water molecules: 0
+Number of atoms/ions: 0 
+Number of dummy atoms: 0
+Number of other molecules: 0 
+Total system charge: 0
+-----------------------------------------------------------------------------------
+System setup done
+===================================================================================
+
+
+===================================================================================
+Initial energies in kcal/mol
+-----------------------------------------------------------------------------------
+Initial Bond energy 31.39841387137809
+Initial Bend energy 61.58661195114242
+Initial Torsion energy 384.4102252073487
+Initial Onefour energy 49.19940871153258
+Initial Inter energy -71.42340850925923
+Initial Constraint energy 0
+Initial Total energy 455.1712512321425
+-----------------------------------------------------------------------------------
+Initial energies
+===================================================================================
+
+
+===================================================================================
+>>Report energies at step 2000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387135348
+	-Bend energy                 64.51799085936572
+	   Bond-Bend energy          0
+	   Bend-Bend energy          64.51799085936572
+	-Torsion energy              382.4155779392623
+	   Tors-Tors energy          382.4155779392623
+	   Tors-Improper energy      0
+	-Onefour energy              44.50413200115833
+	   Onfo-Coulomb energy       -12.74630396026171
+	   Onfo-Lennard-Jones energy 57.25043596141997
+	-Inter energy                -75.9700253273203
+	   Lennard-Jones energy      -44.01084236911817
+	   Coulomb energy            -31.95918295820173
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  13.23959359230181
+	-Total Coulomb energy        -44.70548691846344
+	-Constraint energy           0
+	-Total energy                446.8660893438195
+	-Temperature                 998.9519097318838
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 4000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387131875
+	-Bend energy                 54.00654225125647
+	   Bond-Bend energy          0
+	   Bend-Bend energy          54.00654225125647
+	-Torsion energy              387.5282490578542
+	   Tors-Tors energy          387.5282490578542
+	   Tors-Improper energy      0
+	-Onefour energy              43.07478195090107
+	   Onfo-Coulomb energy       -14.21960582772701
+	   Onfo-Lennard-Jones energy 57.29438777862807
+	-Inter energy                -88.45791026702628
+	   Lennard-Jones energy      -55.4193160525955
+	   Coulomb energy            -33.03859421443062
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  1.875071726032572
+	-Total Coulomb energy        -47.25820004215763
+	-Constraint energy           0
+	-Total energy                427.5500768643042
+	-Temperature                 1185.402939281372
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 6000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387128281
+	-Bend energy                 56.88973462997716
+	   Bond-Bend energy          0
+	   Bend-Bend energy          56.88973462997716
+	-Torsion energy              384.2354480400514
+	   Tors-Tors energy          384.2354480400514
+	   Tors-Improper energy      0
+	-Onefour energy              52.77674644660032
+	   Onfo-Coulomb energy       -12.3292368851465
+	   Onfo-Lennard-Jones energy 65.10598333174684
+	-Inter energy                -79.23803452992813
+	   Lennard-Jones energy      -46.55401208070295
+	   Coulomb energy            -32.68402244922551
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  18.5519712510439
+	-Total Coulomb energy        -45.01325933437201
+	-Constraint energy           0
+	-Total energy                446.0623084579835
+	-Temperature                 1347.637684742951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 8000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387124707
+	-Bend energy                 50.68894666050418
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.68894666050418
+	-Torsion energy              381.6974624139512
+	   Tors-Tors energy          381.6974624139512
+	   Tors-Improper energy      0
+	-Onefour energy              44.69431395732872
+	   Onfo-Coulomb energy       -12.8709599189422
+	   Onfo-Lennard-Jones energy 57.56527387627089
+	-Inter energy                -82.85720966059621
+	   Lennard-Jones energy      -50.90366059894328
+	   Coulomb energy            -31.95354906165309
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.661613277327604
+	-Total Coulomb energy        -44.82450898059529
+	-Constraint energy           0
+	-Total energy                425.621927242435
+	-Temperature                 1475.462340401612
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 10000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387121083
+	-Bend energy                 69.95112980275221
+	   Bond-Bend energy          0
+	   Bend-Bend energy          69.95112980275221
+	-Torsion energy              390.1798270043041
+	   Tors-Tors energy          390.1798270043041
+	   Tors-Improper energy      0
+	-Onefour energy              43.90386919571042
+	   Onfo-Coulomb energy       -12.99058965856328
+	   Onfo-Lennard-Jones energy 56.89445885427369
+	-Inter energy                -87.2864498794534
+	   Lennard-Jones energy      -55.71600350111935
+	   Coulomb energy            -31.57044637833332
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  1.178455353154348
+	-Total Coulomb energy        -44.56103603689661
+	-Constraint energy           0
+	-Total energy                448.1467899945242
+	-Temperature                 1560.845213036123
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 12000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387117312
+	-Bend energy                 62.29623763357768
+	   Bond-Bend energy          0
+	   Bend-Bend energy          62.29623763357768
+	-Torsion energy              385.860580316008
+	   Tors-Tors energy          385.860580316008
+	   Tors-Improper energy      0
+	-Onefour energy              45.90330895028239
+	   Onfo-Coulomb energy       -13.0293337900835
+	   Onfo-Lennard-Jones energy 58.93264274036589
+	-Inter energy                -71.32538946602222
+	   Lennard-Jones energy      -41.69790610226323
+	   Coulomb energy            -29.62748336375902
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  17.23473663810267
+	-Total Coulomb energy        -42.65681715384252
+	-Constraint energy           0
+	-Total energy                454.133151305019
+	-Temperature                 1598.421382742617
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 14000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138711331
+	-Bend energy                 69.55782691818612
+	   Bond-Bend energy          0
+	   Bend-Bend energy          69.55782691818612
+	-Torsion energy              385.8680406064045
+	   Tors-Tors energy          385.8680406064045
+	   Tors-Improper energy      0
+	-Onefour energy              44.54360669627624
+	   Onfo-Coulomb energy       -12.71468454218976
+	   Onfo-Lennard-Jones energy 57.25829123846612
+	-Inter energy                -89.97002811008673
+	   Lennard-Jones energy      -56.5140763543608
+	   Coulomb energy            -33.45595175572625
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  0.7442148841053206
+	-Total Coulomb energy        -46.170636297916
+	-Constraint energy           0
+	-Total energy                441.3978599819133
+	-Temperature                 1585.829800582951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 16000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387113518
+	-Bend energy                 61.74814985416707
+	   Bond-Bend energy          0
+	   Bend-Bend energy          61.74814985416707
+	-Torsion energy              388.5339527810032
+	   Tors-Tors energy          388.5339527810032
+	   Tors-Improper energy      0
+	-Onefour energy              45.85308874850965
+	   Onfo-Coulomb energy       -12.55984704573604
+	   Onfo-Lennard-Jones energy 58.41293579424562
+	-Inter energy                -81.97571990742395
+	   Lennard-Jones energy      -46.94580581684264
+	   Coulomb energy            -35.02991409058133
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  11.46712997740299
+	-Total Coulomb energy        -47.58976113631737
+	-Constraint energy           0
+	-Total energy                445.5578853473912
+	-Temperature                 1523.861641972816
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 18000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387110069
+	-Bend energy                 57.21011290366209
+	   Bond-Bend energy          0
+	   Bend-Bend energy          57.21011290366209
+	-Torsion energy              395.3536391078815
+	   Tors-Tors energy          395.3536391078815
+	   Tors-Improper energy      0
+	-Onefour energy              46.67641520040155
+	   Onfo-Coulomb energy       -11.35744198279867
+	   Onfo-Lennard-Jones energy 58.03385718320023
+	-Inter energy                -79.79151740252902
+	   Lennard-Jones energy      -46.43978950680383
+	   Coulomb energy            -33.35172789572537
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  11.5940676763964
+	-Total Coulomb energy        -44.70916987852404
+	-Constraint energy           0
+	-Total energy                450.8470636805168
+	-Temperature                 1416.410594220631
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 20000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138710696
+	-Bend energy                 64.33512464112137
+	   Bond-Bend energy          0
+	   Bend-Bend energy          64.33512464112137
+	-Torsion energy              391.4688727874884
+	   Tors-Tors energy          391.4688727874884
+	   Tors-Improper energy      0
+	-Onefour energy              47.22807375755915
+	   Onfo-Coulomb energy       -11.90321211246183
+	   Onfo-Lennard-Jones energy 59.1312858700209
+	-Inter energy                -86.66610906927112
+	   Lennard-Jones energy      -52.52312740389565
+	   Coulomb energy            -34.14298166537528
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.608158466125246
+	-Total Coulomb energy        -46.04619377783711
+	-Constraint energy           0
+	-Total energy                447.7643759879674
+	-Temperature                 1270.228201833979
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 22000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387105097
+	-Bend energy                 54.2052945853933
+	   Bond-Bend energy          0
+	   Bend-Bend energy          54.2052945853933
+	-Torsion energy              383.5206135880948
+	   Tors-Tors energy          383.5206135880948
+	   Tors-Improper energy      0
+	-Onefour energy              50.50815111483209
+	   Onfo-Coulomb energy       -10.54015520709117
+	   Onfo-Lennard-Jones energy 61.04830632192329
+	-Inter energy                -86.39871026053497
+	   Lennard-Jones energy      -46.95940048568728
+	   Coulomb energy            -39.43930977484785
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  14.08890583623601
+	-Total Coulomb energy        -49.97946498193902
+	-Constraint energy           0
+	-Total energy                433.2337628988362
+	-Temperature                 1094.499642147742
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 24000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387102634
+	-Bend energy                 55.93360129414572
+	   Bond-Bend energy          0
+	   Bend-Bend energy          55.93360129414572
+	-Torsion energy              381.7595278461281
+	   Tors-Tors energy          381.7595278461281
+	   Tors-Improper energy      0
+	-Onefour energy              43.27625193628604
+	   Onfo-Coulomb energy       -12.51373263774467
+	   Onfo-Lennard-Jones energy 55.78998457403073
+	-Inter energy                -96.83062779075448
+	   Lennard-Jones energy      -61.47417592852479
+	   Coulomb energy            -35.35645186222972
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -5.684191354494064
+	-Total Coulomb energy        -47.87018449997439
+	-Constraint energy           0
+	-Total energy                415.5371671568317
+	-Temperature                 900.2665868514435
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 26000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387099586
+	-Bend energy                 48.20090444379331
+	   Bond-Bend energy          0
+	   Bend-Bend energy          48.20090444379331
+	-Torsion energy              384.5552181567244
+	   Tors-Tors energy          384.5552181567244
+	   Tors-Improper energy      0
+	-Onefour energy              45.29912306865754
+	   Onfo-Coulomb energy       -12.1205363933776
+	   Onfo-Lennard-Jones energy 57.41965946203517
+	-Inter energy                -93.84858379420609
+	   Lennard-Jones energy      -59.73000489139031
+	   Coulomb energy            -34.11857890281574
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.310345429355142
+	-Total Coulomb energy        -46.23911529619335
+	-Constraint energy           0
+	-Total energy                415.605075745965
+	-Temperature                 699.7334131485566
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 28000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387099386
+	-Bend energy                 50.92263424748488
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.92263424748488
+	-Torsion energy              382.0153116911382
+	   Tors-Tors energy          382.0153116911382
+	   Tors-Improper energy      0
+	-Onefour energy              45.61586182762323
+	   Onfo-Coulomb energy       -12.25937247113874
+	   Onfo-Lennard-Jones energy 57.87523429876197
+	-Inter energy                -91.24615751967976
+	   Lennard-Jones energy      -55.46456584618442
+	   Coulomb energy            -35.7815916734948
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  2.410668452577545
+	-Total Coulomb energy        -48.04096414463355
+	-Constraint energy           0
+	-Total energy                418.7060641175604
+	-Temperature                 505.500357852258
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 30000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138709798
+	-Bend energy                 52.15147768414811
+	   Bond-Bend energy          0
+	   Bend-Bend energy          52.15147768414811
+	-Torsion energy              377.2331701828013
+	   Tors-Tors energy          377.2331701828013
+	   Tors-Improper energy      0
+	-Onefour energy              43.66389612416589
+	   Onfo-Coulomb energy       -12.96818627042357
+	   Onfo-Lennard-Jones energy 56.63208239458943
+	-Inter energy                -97.10606250902242
+	   Lennard-Jones energy      -62.90933394549344
+	   Coulomb energy            -34.19672856352846
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.277251550904
+	-Total Coulomb energy        -47.16491483395203
+	-Constraint energy           0
+	-Total energy                407.3408953530727
+	-Temperature                 329.7717981660216
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 32000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387097408
+	-Bend energy                 46.0428815822065
+	   Bond-Bend energy          0
+	   Bend-Bend energy          46.0428815822065
+	-Torsion energy              379.7573026632838
+	   Tors-Tors energy          379.7573026632838
+	   Tors-Improper energy      0
+	-Onefour energy              43.00487305282994
+	   Onfo-Coulomb energy       -13.48117085719193
+	   Onfo-Lennard-Jones energy 56.48604391002191
+	-Inter energy                -100.5941490941418
+	   Lennard-Jones energy      -66.04105343411709
+	   Coulomb energy            -34.55309566002494
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.55500952409518
+	-Total Coulomb energy        -48.03426651721688
+	-Constraint energy           0
+	-Total energy                399.6093220751525
+	-Temperature                 183.5894057793689
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 34000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387096877
+	-Bend energy                 43.67895595729239
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.67895595729239
+	-Torsion energy              378.069057364646
+	   Tors-Tors energy          378.069057364646
+	   Tors-Improper energy      0
+	-Onefour energy              43.056497212926
+	   Onfo-Coulomb energy       -13.26156907336879
+	   Onfo-Lennard-Jones energy 56.31806628629481
+	-Inter energy                -98.43848595553156
+	   Lennard-Jones energy      -63.91326731832764
+	   Coulomb energy            -34.52521863720396
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -7.595201032032827
+	-Total Coulomb energy        -47.78678771057274
+	-Constraint energy           0
+	-Total energy                397.7644384503016
+	-Temperature                 76.13835802718449
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 36000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387096841
+	-Bend energy                 43.63943806481863
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.63943806481863
+	-Torsion energy              378.1754278272446
+	   Tors-Tors energy          378.1754278272446
+	   Tors-Improper energy      0
+	-Onefour energy              42.29584791592622
+	   Onfo-Coulomb energy       -13.38813671868885
+	   Onfo-Lennard-Jones energy 55.68398463461497
+	-Inter energy                -98.94701843982583
+	   Lennard-Jones energy      -64.81808548934295
+	   Coulomb energy            -34.12893295048297
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.13410085472797
+	-Total Coulomb energy        -47.51706966917181
+	-Constraint energy           0
+	-Total energy                396.562109239132
+	-Temperature                 14.17019941704904
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 38000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387096834
+	-Bend energy                 44.31940626372893
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.31940626372893
+	-Torsion energy              378.1690998342126
+	   Tors-Tors energy          378.1690998342126
+	   Tors-Improper energy      0
+	-Onefour energy              41.98239149586325
+	   Onfo-Coulomb energy       -13.46921131725097
+	   Onfo-Lennard-Jones energy 55.45160281311419
+	-Inter energy                -99.82319068129924
+	   Lennard-Jones energy      -65.36665621574342
+	   Coulomb energy            -34.45653446555549
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.915053402629232
+	-Total Coulomb energy        -47.92574578280644
+	-Constraint energy           0
+	-Total energy                396.046120783474
+	-Temperature                 1.578617257382803
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 40000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387096815
+	-Bend energy                 43.79047776355005
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.79047776355005
+	-Torsion energy              377.9559565195517
+	   Tors-Tors energy          377.9559565195517
+	   Tors-Improper energy      0
+	-Onefour energy              42.33794784103947
+	   Onfo-Coulomb energy       -13.3886673965876
+	   Onfo-Lennard-Jones energy 55.72661523762702
+	-Inter energy                -99.23753504027955
+	   Lennard-Jones energy      -64.40358233913966
+	   Coulomb energy            -34.8339527011406
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.676967101512631
+	-Total Coulomb energy        -48.2226200977282
+	-Constraint energy           0
+	-Total energy                396.2452609548299
+	-Temperature                 39.15478696387709
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 42000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387096171
+	-Bend energy                 45.01664418364231
+	   Bond-Bend energy          0
+	   Bend-Bend energy          45.01664418364231
+	-Torsion energy              378.3861554317355
+	   Tors-Tors energy          378.3861554317355
+	   Tors-Improper energy      0
+	-Onefour energy              42.16528689824494
+	   Onfo-Coulomb energy       -13.49798712443708
+	   Onfo-Lennard-Jones energy 55.66327402268206
+	-Inter energy                -99.31587389956317
+	   Lennard-Jones energy      -64.99206744076088
+	   Coulomb energy            -34.32380645880281
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.328793418078815
+	-Total Coulomb energy        -47.82179358323989
+	-Constraint energy           0
+	-Total energy                397.6506264850212
+	-Temperature                 124.5376595983876
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 44000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387095403
+	-Bend energy                 44.61993492521391
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.61993492521391
+	-Torsion energy              378.4023523691306
+	   Tors-Tors energy          378.4023523691306
+	   Tors-Improper energy      0
+	-Onefour energy              42.22644131356671
+	   Onfo-Coulomb energy       -13.69733141466942
+	   Onfo-Lennard-Jones energy 55.92377272823613
+	-Inter energy                -97.55841620873234
+	   Lennard-Jones energy      -64.22785903879587
+	   Coulomb energy            -33.33055716993665
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.30408631055974
+	-Total Coulomb energy        -47.02788858460607
+	-Constraint energy           0
+	-Total energy                399.088726270133
+	-Temperature                 252.3623152570489
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 46000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387094487
+	-Bend energy                 52.81216239272317
+	   Bond-Bend energy          0
+	   Bend-Bend energy          52.81216239272317
+	-Torsion energy              381.2886151419553
+	   Tors-Tors energy          381.2886151419553
+	   Tors-Improper energy      0
+	-Onefour energy              41.94190891521897
+	   Onfo-Coulomb energy       -13.42041669533843
+	   Onfo-Lennard-Jones energy 55.36232561055743
+	-Inter energy                -91.43515387616776
+	   Lennard-Jones energy      -60.33606108184121
+	   Coulomb energy            -31.09909279432662
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -4.973735471283775
+	-Total Coulomb energy        -44.51950948966505
+	-Constraint energy           0
+	-Total energy                416.0059464446745
+	-Temperature                 414.5970607186277
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 48000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387091555
+	-Bend energy                 46.20959381126156
+	   Bond-Bend energy          0
+	   Bend-Bend energy          46.20959381126156
+	-Torsion energy              381.0488331446611
+	   Tors-Tors energy          381.0488331446611
+	   Tors-Improper energy      0
+	-Onefour energy              44.39289730816188
+	   Onfo-Coulomb energy       -12.82633295225529
+	   Onfo-Lennard-Jones energy 57.2192302604173
+	-Inter energy                -90.79804830177009
+	   Lennard-Jones energy      -59.39553873106195
+	   Coulomb energy            -31.40250957070804
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.176308470644648
+	-Total Coulomb energy        -44.22884252296333
+	-Constraint energy           0
+	-Total energy                412.25168983323
+	-Temperature                 601.0480902681157
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 50000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387090015
+	-Bend energy                 48.44042282665945
+	   Bond-Bend energy          0
+	   Bend-Bend energy          48.44042282665945
+	-Torsion energy              385.1207747109142
+	   Tors-Tors energy          385.1207747109142
+	   Tors-Improper energy      0
+	-Onefour energy              49.30543769521318
+	   Onfo-Coulomb energy       -12.50271832256638
+	   Onfo-Lennard-Jones energy 61.80815601777957
+	-Inter energy                -88.37726431754361
+	   Lennard-Jones energy      -57.2404977518058
+	   Coulomb energy            -31.13676656573831
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.567658265973768
+	-Total Coulomb energy        -43.63948488830469
+	-Constraint energy           0
+	-Total energy                425.8877847861435
+	-Temperature                 799.9999999999999
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 52000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387087307
+	-Bend energy                 56.8448877337315
+	   Bond-Bend energy          0
+	   Bend-Bend energy          56.8448877337315
+	-Torsion energy              384.2043545728145
+	   Tors-Tors energy          384.2043545728145
+	   Tors-Improper energy      0
+	-Onefour energy              44.65948066825568
+	   Onfo-Coulomb energy       -13.08174184172739
+	   Onfo-Lennard-Jones energy 57.74122250998307
+	-Inter energy                -91.79864899569513
+	   Lennard-Jones energy      -60.4615514080115
+	   Coulomb energy            -31.33709758768373
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.720328898028426
+	-Total Coulomb energy        -44.41883942941112
+	-Constraint energy           0
+	-Total energy                425.3084878499797
+	-Temperature                 998.9519097318839
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 54000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138708573
+	-Bend energy                 55.85815123363546
+	   Bond-Bend energy          0
+	   Bend-Bend energy          55.85815123363546
+	-Torsion energy              383.8609389039246
+	   Tors-Tors energy          383.8609389039246
+	   Tors-Improper energy      0
+	-Onefour energy              46.14259768400696
+	   Onfo-Coulomb energy       -12.57127376364265
+	   Onfo-Lennard-Jones energy 58.71387144764964
+	-Inter energy                -79.66236091389509
+	   Lennard-Jones energy      -45.5392862062273
+	   Coulomb energy            -34.12307470766793
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  13.17458524142234
+	-Total Coulomb energy        -46.69434847131058
+	-Constraint energy           0
+	-Total energy                437.5977407785292
+	-Temperature                 1185.402939281372
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 56000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387085362
+	-Bend energy                 54.93861855367668
+	   Bond-Bend energy          0
+	   Bend-Bend energy          54.93861855367668
+	-Torsion energy              381.4480147345272
+	   Tors-Tors energy          381.4480147345272
+	   Tors-Improper energy      0
+	-Onefour energy              43.71383298546736
+	   Onfo-Coulomb energy       -13.14219326950518
+	   Onfo-Lennard-Jones energy 56.85602625497258
+	-Inter energy                -86.91370577476792
+	   Lennard-Jones energy      -54.68887967581414
+	   Coulomb energy            -32.22482609895379
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  2.167146579158437
+	-Total Coulomb energy        -45.36701936845897
+	-Constraint energy           0
+	-Total energy                424.5851743697571
+	-Temperature                 1347.637684742951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 58000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387082657
+	-Bend energy                 59.57505018791618
+	   Bond-Bend energy          0
+	   Bend-Bend energy          59.57505018791618
+	-Torsion energy              381.8610669170479
+	   Tors-Tors energy          381.8610669170479
+	   Tors-Improper energy      0
+	-Onefour energy              44.27498107721003
+	   Onfo-Coulomb energy       -12.65907385717195
+	   Onfo-Lennard-Jones energy 56.93405493438195
+	-Inter energy                -91.0761917888008
+	   Lennard-Jones energy      -59.26547172939029
+	   Coulomb energy            -31.81072005941082
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.331416795008346
+	-Total Coulomb energy        -44.46979391658277
+	-Constraint energy           0
+	-Total energy                426.0333202641999
+	-Temperature                 1475.462340401612
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 60000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387080899
+	-Bend energy                 50.55851236933636
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.55851236933636
+	-Torsion energy              388.4036364889948
+	   Tors-Tors energy          388.4036364889948
+	   Tors-Improper energy      0
+	-Onefour energy              48.4088476859933
+	   Onfo-Coulomb energy       -12.27495775911001
+	   Onfo-Lennard-Jones energy 60.68380544510329
+	-Inter energy                -74.66065276338598
+	   Lennard-Jones energy      -43.80575379920615
+	   Coulomb energy            -30.85489896417993
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  16.87805164589714
+	-Total Coulomb energy        -43.12985672328994
+	-Constraint energy           0
+	-Total energy                444.1087576517475
+	-Temperature                 1560.845213036123
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 62000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387079826
+	-Bend energy                 62.38923444900702
+	   Bond-Bend energy          0
+	   Bend-Bend energy          62.38923444900702
+	-Torsion energy              391.8968587086593
+	   Tors-Tors energy          391.8968587086593
+	   Tors-Improper energy      0
+	-Onefour energy              51.10446589626417
+	   Onfo-Coulomb energy       -11.63375354511796
+	   Onfo-Lennard-Jones energy 62.73821944138214
+	-Inter energy                -74.04292018531736
+	   Lennard-Jones energy      -46.0384632373836
+	   Coulomb energy            -28.00445694793416
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  16.69975620399854
+	-Total Coulomb energy        -39.63821049305212
+	-Constraint energy           0
+	-Total energy                462.7460527394114
+	-Temperature                 1598.421382742617
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 64000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387078739
+	-Bend energy                 65.62523462989942
+	   Bond-Bend energy          0
+	   Bend-Bend energy          65.62523462989942
+	-Torsion energy              385.9747112107912
+	   Tors-Tors energy          385.9747112107912
+	   Tors-Improper energy      0
+	-Onefour energy              46.10889079397256
+	   Onfo-Coulomb energy       -13.69898428082338
+	   Onfo-Lennard-Jones energy 59.807875074796
+	-Inter energy                -89.18790880444503
+	   Lennard-Jones energy      -57.85413057839349
+	   Coulomb energy            -31.33377822605146
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  1.953744496402505
+	-Total Coulomb energy        -45.03276250687484
+	-Constraint energy           0
+	-Total energy                439.9193417010055
+	-Temperature                 1585.829800582951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 66000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387077283
+	-Bend energy                 57.37952806512708
+	   Bond-Bend energy          0
+	   Bend-Bend energy          57.37952806512708
+	-Torsion energy              388.1059913768038
+	   Tors-Tors energy          388.1059913768038
+	   Tors-Improper energy      0
+	-Onefour energy              47.94265985281923
+	   Onfo-Coulomb energy       -12.46259078928568
+	   Onfo-Lennard-Jones energy 60.40525064210485
+	-Inter energy                -74.94983136196602
+	   Lennard-Jones energy      -42.68183279889727
+	   Coulomb energy            -32.26799856306902
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  17.72341784320759
+	-Total Coulomb energy        -44.73058935235471
+	-Constraint energy           0
+	-Total energy                449.8767618035569
+	-Temperature                 1523.861641972816
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 68000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387075991
+	-Bend energy                 76.76670187858132
+	   Bond-Bend energy          0
+	   Bend-Bend energy          76.76670187858132
+	-Torsion energy              387.9172270124039
+	   Tors-Tors energy          387.9172270124039
+	   Tors-Improper energy      0
+	-Onefour energy              43.78410453054265
+	   Onfo-Coulomb energy       -13.30222486713509
+	   Onfo-Lennard-Jones energy 57.08632939767775
+	-Inter energy                -82.38982663939687
+	   Lennard-Jones energy      -52.41603670743937
+	   Coulomb energy            -29.9737899319574
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.670292690238386
+	-Total Coulomb energy        -43.27601479909249
+	-Constraint energy           0
+	-Total energy                457.4766206528909
+	-Temperature                 1416.410594220632
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 70000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387075961
+	-Bend energy                 64.84525940121864
+	   Bond-Bend energy          0
+	   Bend-Bend energy          64.84525940121864
+	-Torsion energy              388.2543411457846
+	   Tors-Tors energy          388.2543411457846
+	   Tors-Improper energy      0
+	-Onefour energy              44.5531360066654
+	   Onfo-Coulomb energy       -12.47986794192396
+	   Onfo-Lennard-Jones energy 57.0330039485893
+	-Inter energy                -77.60062474685428
+	   Lennard-Jones energy      -50.34699712839778
+	   Coulomb energy            -27.25362761845646
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.686006820191528
+	-Total Coulomb energy        -39.73349556038041
+	-Constraint energy           0
+	-Total energy                451.450525677574
+	-Temperature                 1270.228201833979
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 72000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387075169
+	-Bend energy                 59.74432799341839
+	   Bond-Bend energy          0
+	   Bend-Bend energy          59.74432799341839
+	-Torsion energy              382.6637913959249
+	   Tors-Tors energy          382.6637913959249
+	   Tors-Improper energy      0
+	-Onefour energy              45.37139723909134
+	   Onfo-Coulomb energy       -13.12553869240735
+	   Onfo-Lennard-Jones energy 58.49693593149864
+	-Inter energy                -81.12896178198423
+	   Lennard-Jones energy      -54.66350012777729
+	   Coulomb energy            -26.46546165420709
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  3.833435803721351
+	-Total Coulomb energy        -39.59100034661444
+	-Constraint energy           0
+	-Total energy                438.0489687172021
+	-Temperature                 1094.499642147742
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 74000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387073565
+	-Bend energy                 58.55305346889723
+	   Bond-Bend energy          0
+	   Bend-Bend energy          58.55305346889723
+	-Torsion energy              384.5046173408069
+	   Tors-Tors energy          384.5046173408069
+	   Tors-Improper energy      0
+	-Onefour energy              44.3316483343616
+	   Onfo-Coulomb energy       -12.94883420062423
+	   Onfo-Lennard-Jones energy 57.28048253498579
+	-Inter energy                -81.56746038736483
+	   Lennard-Jones energy      -53.22482331070471
+	   Coulomb energy            -28.34263707666
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.055659224281086
+	-Total Coulomb energy        -41.29147127728424
+	-Constraint energy           0
+	-Total energy                437.2202726274366
+	-Temperature                 900.2665868514432
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 76000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387072732
+	-Bend energy                 50.21577489326846
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.21577489326846
+	-Torsion energy              383.2527623188104
+	   Tors-Tors energy          383.2527623188104
+	   Tors-Improper energy      0
+	-Onefour energy              46.0064102777506
+	   Onfo-Coulomb energy       -11.9222800826868
+	   Onfo-Lennard-Jones energy 57.9286903604374
+	-Inter energy                -84.60590638616732
+	   Lennard-Jones energy      -56.33047925556335
+	   Coulomb energy            -28.27542713060389
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  1.598211104874045
+	-Total Coulomb energy        -40.1977072132907
+	-Constraint energy           0
+	-Total energy                426.2674549743895
+	-Temperature                 699.7334131485575
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 78000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387072102
+	-Bend energy                 59.365593713578
+	   Bond-Bend energy          0
+	   Bend-Bend energy          59.365593713578
+	-Torsion energy              382.6659831180668
+	   Tors-Tors energy          382.6659831180668
+	   Tors-Improper energy      0
+	-Onefour energy              43.40166135144766
+	   Onfo-Coulomb energy       -12.84421714733648
+	   Onfo-Lennard-Jones energy 56.24587849878416
+	-Inter energy                -97.14291562851359
+	   Lennard-Jones energy      -63.17507294799284
+	   Coulomb energy            -33.967842680521
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.929194449208682
+	-Total Coulomb energy        -46.81205982785748
+	-Constraint energy           0
+	-Total energy                419.6887364252999
+	-Temperature                 505.5003578522569
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 80000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138707086
+	-Bend energy                 46.16820734388134
+	   Bond-Bend energy          0
+	   Bend-Bend energy          46.16820734388134
+	-Torsion energy              380.0526949991639
+	   Tors-Tors energy          380.0526949991639
+	   Tors-Improper energy      0
+	-Onefour energy              44.91035489870988
+	   Onfo-Coulomb energy       -11.99588538672405
+	   Onfo-Lennard-Jones energy 56.90624028543395
+	-Inter energy                -97.73866497999468
+	   Lennard-Jones energy      -64.88665216603789
+	   Coulomb energy            -32.85201281395681
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -7.980411880603948
+	-Total Coulomb energy        -44.84789820068086
+	-Constraint energy           0
+	-Total energy                404.791006132469
+	-Temperature                 329.7717981660218
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 82000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387069299
+	-Bend energy                 43.22098050527063
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.22098050527063
+	-Torsion energy              380.1413779190212
+	   Tors-Tors energy          380.1413779190212
+	   Tors-Improper energy      0
+	-Onefour energy              44.49449490986577
+	   Onfo-Coulomb energy       -11.68573374577699
+	   Onfo-Lennard-Jones energy 56.18022865564274
+	-Inter energy                -100.5832276884811
+	   Lennard-Jones energy      -66.21161538246865
+	   Coulomb energy            -34.37161230601223
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.0313867268259
+	-Total Coulomb energy        -46.05734605178922
+	-Constraint energy           0
+	-Total energy                398.6720395163695
+	-Temperature                 183.5894057793687
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 84000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387068906
+	-Bend energy                 43.45485945036895
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.45485945036895
+	-Torsion energy              378.2406883796237
+	   Tors-Tors energy          378.2406883796237
+	   Tors-Improper energy      0
+	-Onefour energy              43.01183780916775
+	   Onfo-Coulomb energy       -12.47950539551367
+	   Onfo-Lennard-Jones energy 55.49134320468148
+	-Inter energy                -100.9223230692439
+	   Lennard-Jones energy      -67.39688250935244
+	   Coulomb energy            -33.5254405598921
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -11.90553930467096
+	-Total Coulomb energy        -46.00494595540577
+	-Constraint energy           0
+	-Total energy                395.1834764406055
+	-Temperature                 76.13835802718491
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 86000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387068849
+	-Bend energy                 42.42640551922555
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.42640551922555
+	-Torsion energy              377.9986733183409
+	   Tors-Tors energy          377.9986733183409
+	   Tors-Improper energy      0
+	-Onefour energy              42.98487523960094
+	   Onfo-Coulomb energy       -12.35387900180258
+	   Onfo-Lennard-Jones energy 55.33875424140346
+	-Inter energy                -101.8447631927963
+	   Lennard-Jones energy      -67.63027978371514
+	   Coulomb energy            -34.21448340908142
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -12.29152554231167
+	-Total Coulomb energy        -46.568362410884
+	-Constraint energy           0
+	-Total energy                392.9636047550596
+	-Temperature                 14.17019941704918
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 88000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138706886
+	-Bend energy                 42.27251039620423
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.27251039620423
+	-Torsion energy              377.9052606645774
+	   Tors-Tors energy          377.9052606645774
+	   Tors-Improper energy      0
+	-Onefour energy              42.7278490910753
+	   Onfo-Coulomb energy       -12.39803708475526
+	   Onfo-Lennard-Jones energy 55.12588617583054
+	-Inter energy                -102.022727752694
+	   Lennard-Jones energy      -67.52921924027528
+	   Coulomb energy            -34.49350851241901
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -12.40333306444474
+	-Total Coulomb energy        -46.89154559717427
+	-Constraint energy           0
+	-Total energy                392.2813062698516
+	-Temperature                 1.578617257382803
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 90000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387068823
+	-Bend energy                 42.23128140898288
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.23128140898288
+	-Torsion energy              377.8556047166841
+	   Tors-Tors energy          377.8556047166841
+	   Tors-Improper energy      0
+	-Onefour energy              42.77846642500057
+	   Onfo-Coulomb energy       -12.38739999034029
+	   Onfo-Lennard-Jones energy 55.16586641534085
+	-Inter energy                -101.8560215218082
+	   Lennard-Jones energy      -67.42626457008993
+	   Coulomb energy            -34.42975695171879
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -12.26039815474907
+	-Total Coulomb energy        -46.81715694205908
+	-Constraint energy           0
+	-Total energy                392.4077448995475
+	-Temperature                 39.15478696387695
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 92000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138706899
+	-Bend energy                 42.42265917166648
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.42265917166648
+	-Torsion energy              377.9346174699907
+	   Tors-Tors energy          377.9346174699907
+	   Tors-Improper energy      0
+	-Onefour energy              43.58695453064463
+	   Onfo-Coulomb energy       -12.35762570427567
+	   Onfo-Lennard-Jones energy 55.9445802349203
+	-Inter energy                -100.7961121460822
+	   Lennard-Jones energy      -66.08727164247773
+	   Coulomb energy            -34.70884050360446
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.14269140755743
+	-Total Coulomb energy        -47.06646620788014
+	-Constraint energy           0
+	-Total energy                394.5465328969095
+	-Temperature                 124.5376595983879
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 94000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387068294
+	-Bend energy                 46.3235828074429
+	   Bond-Bend energy          0
+	   Bend-Bend energy          46.3235828074429
+	-Torsion energy              379.1962581141072
+	   Tors-Tors energy          379.1962581141072
+	   Tors-Improper energy      0
+	-Onefour energy              43.18854585530572
+	   Onfo-Coulomb energy       -12.07450775828716
+	   Onfo-Lennard-Jones energy 55.26305361359282
+	-Inter energy                -101.4350849846638
+	   Lennard-Jones energy      -66.5165924949582
+	   Coulomb energy            -34.91849248970579
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -11.25353888136539
+	-Total Coulomb energy        -46.99300024799295
+	-Constraint energy           0
+	-Total energy                398.6717156628749
+	-Temperature                 252.3623152570492
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 96000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387066451
+	-Bend energy                 48.22458467154081
+	   Bond-Bend energy          0
+	   Bend-Bend energy          48.22458467154081
+	-Torsion energy              379.7521614687172
+	   Tors-Tors energy          379.7521614687172
+	   Tors-Improper energy      0
+	-Onefour energy              45.32101127509983
+	   Onfo-Coulomb energy       -11.6697963690946
+	   Onfo-Lennard-Jones energy 56.99080764419439
+	-Inter energy                -94.93384251496214
+	   Lennard-Jones energy      -59.59724731684081
+	   Coulomb energy            -35.33659519812157
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.606439672646425
+	-Total Coulomb energy        -47.00639156721617
+	-Constraint energy           0
+	-Total energy                409.7623287710603
+	-Temperature                 414.597060718627
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 98000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387064968
+	-Bend energy                 44.97233362703928
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.97233362703928
+	-Torsion energy              381.3801298053226
+	   Tors-Tors energy          381.3801298053226
+	   Tors-Improper energy      0
+	-Onefour energy              44.70494304312911
+	   Onfo-Coulomb energy       -12.79873709792995
+	   Onfo-Lennard-Jones energy 57.50368014105895
+	-Inter energy                -91.4499336467543
+	   Lennard-Jones energy      -58.39831928341918
+	   Coulomb energy            -33.05161436333514
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -0.8946391423602349
+	-Total Coulomb energy        -45.85035146126509
+	-Constraint energy           0
+	-Total energy                411.0058866993864
+	-Temperature                 601.0480902681156
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 100000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387063645
+	-Bend energy                 49.80656540103258
+	   Bond-Bend energy          0
+	   Bend-Bend energy          49.80656540103258
+	-Torsion energy              382.4077718824477
+	   Tors-Tors energy          382.4077718824477
+	   Tors-Improper energy      0
+	-Onefour energy              46.25832981225208
+	   Onfo-Coulomb energy       -12.24107134413177
+	   Onfo-Lennard-Jones energy 58.49940115638375
+	-Inter energy                -88.05947145097852
+	   Lennard-Jones energy      -52.51672827082392
+	   Coulomb energy            -35.54274318015403
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  5.982672885559833
+	-Total Coulomb energy        -47.78381452428579
+	-Constraint energy           0
+	-Total energy                421.8116095153903
+	-Temperature                 799.9999999999995
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 102000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387061238
+	-Bend energy                 61.59453008567351
+	   Bond-Bend energy          0
+	   Bend-Bend energy          61.59453008567351
+	-Torsion energy              383.325608639617
+	   Tors-Tors energy          383.325608639617
+	   Tors-Improper energy      0
+	-Onefour energy              43.30657215001289
+	   Onfo-Coulomb energy       -12.64016387349857
+	   Onfo-Lennard-Jones energy 55.94673602351148
+	-Inter energy                -92.85210906536997
+	   Lennard-Jones energy      -58.75190334021661
+	   Coulomb energy            -34.10020572515306
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.805167316705127
+	-Total Coulomb energy        -46.74036959865163
+	-Constraint energy           0
+	-Total energy                426.7730156805459
+	-Temperature                 998.9519097318838
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 104000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387058343
+	-Bend energy                 53.15096549909644
+	   Bond-Bend energy          0
+	   Bend-Bend energy          53.15096549909644
+	-Torsion energy              385.2776413519682
+	   Tors-Tors energy          385.2776413519682
+	   Tors-Improper energy      0
+	-Onefour energy              44.32056782955556
+	   Onfo-Coulomb energy       -12.75395684663206
+	   Onfo-Lennard-Jones energy 57.07452467618758
+	-Inter energy                -88.07314550454245
+	   Lennard-Jones energy      -56.56370409012512
+	   Coulomb energy            -31.50944141441761
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  0.5108205860624588
+	-Total Coulomb energy        -44.26339826104967
+	-Constraint energy           0
+	-Total energy                426.0744430466612
+	-Temperature                 1185.402939281372
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 106000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138705607
+	-Bend energy                 67.56975733708595
+	   Bond-Bend energy          0
+	   Bend-Bend energy          67.56975733708595
+	-Torsion energy              386.6078741735505
+	   Tors-Tors energy          386.6078741735505
+	   Tors-Improper energy      0
+	-Onefour energy              44.09941975061314
+	   Onfo-Coulomb energy       -12.04567874093476
+	   Onfo-Lennard-Jones energy 56.14509849154783
+	-Inter energy                -83.38527188476613
+	   Lennard-Jones energy      -56.61276684398913
+	   Coulomb energy            -26.7725050407769
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -0.4676683524412935
+	-Total Coulomb energy        -38.81818378171166
+	-Constraint energy           0
+	-Total energy                446.2901932470442
+	-Temperature                 1347.637684742951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 108000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138705428
+	-Bend energy                 62.95673088750372
+	   Bond-Bend energy          0
+	   Bend-Bend energy          62.95673088750372
+	-Torsion energy              387.662723881296
+	   Tors-Tors energy          387.662723881296
+	   Tors-Improper energy      0
+	-Onefour energy              43.27474467564952
+	   Onfo-Coulomb energy       -12.7315903215285
+	   Onfo-Lennard-Jones energy 56.00633499717798
+	-Inter energy                -87.50399435659607
+	   Lennard-Jones energy      -55.47880026852718
+	   Coulomb energy            -32.02519408806906
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  0.5275347286507953
+	-Total Coulomb energy        -44.75678440959756
+	-Constraint energy           0
+	-Total energy                437.7886189583959
+	-Temperature                 1475.462340401612
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 110000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387053972
+	-Bend energy                 67.35048440849098
+	   Bond-Bend energy          0
+	   Bend-Bend energy          67.35048440849098
+	-Torsion energy              383.6379540888503
+	   Tors-Tors energy          383.6379540888503
+	   Tors-Improper energy      0
+	-Onefour energy              43.84879437605481
+	   Onfo-Coulomb energy       -12.547229982639
+	   Onfo-Lennard-Jones energy 56.39602435869379
+	-Inter energy                -82.02893415900107
+	   Lennard-Jones energy      -52.14987461593106
+	   Coulomb energy            -29.87905954307017
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.246149742762724
+	-Total Coulomb energy        -42.42628952570917
+	-Constraint energy           0
+	-Total energy                444.2067125849348
+	-Temperature                 1560.845213036123
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 112000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387052918
+	-Bend energy                 50.33997107024778
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.33997107024778
+	-Torsion energy              384.3229784620774
+	   Tors-Tors energy          384.3229784620774
+	   Tors-Improper energy      0
+	-Onefour energy              45.6658984515937
+	   Onfo-Coulomb energy       -12.44698922395575
+	   Onfo-Lennard-Jones energy 58.11288767554944
+	-Inter energy                -81.89302480551173
+	   Lennard-Jones energy      -50.52535953771483
+	   Coulomb energy            -31.36766526779687
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  7.587528137834603
+	-Total Coulomb energy        -43.81465449175262
+	-Constraint energy           0
+	-Total energy                429.8342370489362
+	-Temperature                 1598.421382742617
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 114000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387051462
+	-Bend energy                 49.54703878519653
+	   Bond-Bend energy          0
+	   Bend-Bend energy          49.54703878519653
+	-Torsion energy              394.3214828374214
+	   Tors-Tors energy          394.3214828374214
+	   Tors-Improper energy      0
+	-Onefour energy              46.25708501212736
+	   Onfo-Coulomb energy       -12.43624793029195
+	   Onfo-Lennard-Jones energy 58.69333294241925
+	-Inter energy                -81.39295512081169
+	   Lennard-Jones energy      -51.8246597807778
+	   Coulomb energy            -29.56829534003385
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.868673161641446
+	-Total Coulomb energy        -42.0045432703258
+	-Constraint energy           0
+	-Total energy                440.1310653844482
+	-Temperature                 1585.829800582951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 116000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387049629
+	-Bend energy                 59.98386580740019
+	   Bond-Bend energy          0
+	   Bend-Bend energy          59.98386580740019
+	-Torsion energy              388.3913905388945
+	   Tors-Tors energy          388.3913905388945
+	   Tors-Improper energy      0
+	-Onefour energy              46.61908166605142
+	   Onfo-Coulomb energy       -12.7466575275568
+	   Onfo-Lennard-Jones energy 59.36573919360818
+	-Inter energy                -85.48898085420635
+	   Lennard-Jones energy      -55.23128931388083
+	   Coulomb energy            -30.25769154032633
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.134449879727348
+	-Total Coulomb energy        -43.00434906788313
+	-Constraint energy           0
+	-Total energy                440.9037710286361
+	-Temperature                 1523.861641972816
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 118000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387049009
+	-Bend energy                 50.93219751967128
+	   Bond-Bend energy          0
+	   Bend-Bend energy          50.93219751967128
+	-Torsion energy              387.7359529045039
+	   Tors-Tors energy          387.7359529045039
+	   Tors-Improper energy      0
+	-Onefour energy              47.81299882854699
+	   Onfo-Coulomb energy       -12.17902164476726
+	   Onfo-Lennard-Jones energy 59.99202047331421
+	-Inter energy                -79.46467137651914
+	   Lennard-Jones energy      -49.41153905851767
+	   Coulomb energy            -30.05313231800107
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  10.58048141479654
+	-Total Coulomb energy        -42.23215396276832
+	-Constraint energy           0
+	-Total energy                438.4148917466931
+	-Temperature                 1416.410594220631
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 120000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138704807
+	-Bend energy                 59.73162493914828
+	   Bond-Bend energy          0
+	   Bend-Bend energy          59.73162493914828
+	-Torsion energy              386.1767247508391
+	   Tors-Tors energy          386.1767247508391
+	   Tors-Improper energy      0
+	-Onefour energy              43.3114945427283
+	   Onfo-Coulomb energy       -13.42617164287511
+	   Onfo-Lennard-Jones energy 56.73766618560347
+	-Inter energy                -80.89913346774328
+	   Lennard-Jones energy      -50.53841718007979
+	   Coulomb energy            -30.36071628766416
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.199249005523682
+	-Total Coulomb energy        -43.78688793053928
+	-Constraint energy           0
+	-Total energy                439.7191246354531
+	-Temperature                 1270.228201833979
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 122000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387047099
+	-Bend energy                 60.30624994682705
+	   Bond-Bend energy          0
+	   Bend-Bend energy          60.30624994682705
+	-Torsion energy              383.5031198002222
+	   Tors-Tors energy          383.5031198002222
+	   Tors-Improper energy      0
+	-Onefour energy              44.44293057103209
+	   Onfo-Coulomb energy       -13.37378016377704
+	   Onfo-Lennard-Jones energy 57.81671073480916
+	-Inter energy                -88.26905297681125
+	   Lennard-Jones energy      -56.97177142976066
+	   Coulomb energy            -31.29728154705068
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  0.8449393050484907
+	-Total Coulomb energy        -44.67106171082773
+	-Constraint energy           0
+	-Total energy                431.3816612117411
+	-Temperature                 1094.499642147743
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 124000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387044878
+	-Bend energy                 63.68801084213501
+	   Bond-Bend energy          0
+	   Bend-Bend energy          63.68801084213501
+	-Torsion energy              383.1481866453938
+	   Tors-Tors energy          383.1481866453938
+	   Tors-Improper energy      0
+	-Onefour energy              42.23363415852896
+	   Onfo-Coulomb energy       -14.34566374092867
+	   Onfo-Lennard-Jones energy 56.57929789945759
+	-Inter energy                -94.70411012213155
+	   Lennard-Jones energy      -62.4635458339849
+	   Coulomb energy            -32.24056428814702
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -5.884247934527311
+	-Total Coulomb energy        -46.58622802907569
+	-Constraint energy           0
+	-Total energy                425.764135394375
+	-Temperature                 900.2665868514447
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 126000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387043381
+	-Bend energy                 52.57368217174565
+	   Bond-Bend energy          0
+	   Bend-Bend energy          52.57368217174565
+	-Torsion energy              383.6186290682425
+	   Tors-Tors energy          383.6186290682425
+	   Tors-Improper energy      0
+	-Onefour energy              40.97760560979606
+	   Onfo-Coulomb energy       -14.0268768867764
+	   Onfo-Lennard-Jones energy 55.00448249657249
+	-Inter energy                -91.4094726592658
+	   Lennard-Jones energy      -57.83634570103484
+	   Coulomb energy            -33.57312695823102
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.831863204462356
+	-Total Coulomb energy        -47.60000384500741
+	-Constraint energy           0
+	-Total energy                417.1588580609522
+	-Temperature                 699.7334131485577
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 128000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387040368
+	-Bend energy                 48.94106275208912
+	   Bond-Bend energy          0
+	   Bend-Bend energy          48.94106275208912
+	-Torsion energy              383.2134116233256
+	   Tors-Tors energy          383.2134116233256
+	   Tors-Improper energy      0
+	-Onefour energy              44.51123012261423
+	   Onfo-Coulomb energy       -12.60439231166102
+	   Onfo-Lennard-Jones energy 57.11562243427515
+	-Inter energy                -99.31777969134615
+	   Lennard-Jones energy      -66.92537393350588
+	   Coulomb energy            -32.39240575784008
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.809751499230725
+	-Total Coulomb energy        -44.9967980695011
+	-Constraint energy           0
+	-Total energy                408.7463386770864
+	-Temperature                 505.5003578522597
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 130000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387039004
+	-Bend energy                 46.55516296682513
+	   Bond-Bend energy          0
+	   Bend-Bend energy          46.55516296682513
+	-Torsion energy              380.9068030748012
+	   Tors-Tors energy          380.9068030748012
+	   Tors-Improper energy      0
+	-Onefour energy              42.74868869945136
+	   Onfo-Coulomb energy       -13.24745398916476
+	   Onfo-Lennard-Jones energy 55.9961426886162
+	-Inter energy                -97.91512573130976
+	   Lennard-Jones energy      -64.71307654360176
+	   Coulomb energy            -33.20204918770803
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.716933854985564
+	-Total Coulomb energy        -46.4495031768728
+	-Constraint energy           0
+	-Total energy                403.6939428801579
+	-Temperature                 329.7717981660219
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 132000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387036621
+	-Bend energy                 43.348026286527
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.348026286527
+	-Torsion energy              380.2170449596705
+	   Tors-Tors energy          380.2170449596705
+	   Tors-Improper energy      0
+	-Onefour energy              43.23569756428091
+	   Onfo-Coulomb energy       -13.23240795111854
+	   Onfo-Lennard-Jones energy 56.46810551539949
+	-Inter energy                -99.09901281274549
+	   Lennard-Jones energy      -65.35947804016236
+	   Coulomb energy            -33.73953477258304
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.891372524762874
+	-Total Coulomb energy        -46.97194272370159
+	-Constraint energy           0
+	-Total energy                399.1001698680992
+	-Temperature                 183.5894057793679
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 134000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387035753
+	-Bend energy                 44.98926066282576
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.98926066282576
+	-Torsion energy              379.4324958219028
+	   Tors-Tors energy          379.4324958219028
+	   Tors-Improper energy      0
+	-Onefour energy              42.69237734993206
+	   Onfo-Coulomb energy       -13.13613153332297
+	   Onfo-Lennard-Jones energy 55.82850888325505
+	-Inter energy                -100.8360850990777
+	   Lennard-Jones energy      -67.02678737893403
+	   Coulomb energy            -33.80929772014409
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -11.19827849567898
+	-Total Coulomb energy        -46.94542925346706
+	-Constraint energy           0
+	-Total energy                397.6764626059405
+	-Temperature                 76.13835802718435
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 136000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387035605
+	-Bend energy                 41.79229116122978
+	   Bond-Bend energy          0
+	   Bend-Bend energy          41.79229116122978
+	-Torsion energy              379.2405434251931
+	   Tors-Tors energy          379.2405434251931
+	   Tors-Improper energy      0
+	-Onefour energy              42.46935908092082
+	   Onfo-Coulomb energy       -13.30165188573405
+	   Onfo-Lennard-Jones energy 55.77101096665491
+	-Inter energy                -101.3387609329755
+	   Lennard-Jones energy      -67.70934891720502
+	   Coulomb energy            -33.62941201577053
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -11.93833795055012
+	-Total Coulomb energy        -46.93106390150458
+	-Constraint energy           0
+	-Total energy                393.5618466047242
+	-Temperature                 14.17019941704931
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 138000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387035464
+	-Bend energy                 41.65403601516712
+	   Bond-Bend energy          0
+	   Bend-Bend energy          41.65403601516712
+	-Torsion energy              378.8263620443188
+	   Tors-Tors energy          378.8263620443188
+	   Tors-Improper energy      0
+	-Onefour energy              42.51737657477742
+	   Onfo-Coulomb energy       -13.15932121746358
+	   Onfo-Lennard-Jones energy 55.67669779224101
+	-Inter energy                -101.8157388960776
+	   Lennard-Jones energy      -67.82415397507886
+	   Coulomb energy            -33.9915849209985
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -12.14745618283786
+	-Total Coulomb energy        -47.15090613846208
+	-Constraint energy           0
+	-Total energy                392.5804496085404
+	-Temperature                 1.578617257382529
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 140000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387035408
+	-Bend energy                 42.47005135083662
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.47005135083662
+	-Torsion energy              379.0080622012553
+	   Tors-Tors energy          379.0080622012553
+	   Tors-Improper energy      0
+	-Onefour energy              42.17246378355072
+	   Onfo-Coulomb energy       -13.4043893268044
+	   Onfo-Lennard-Jones energy 55.57685311035515
+	-Inter energy                -102.4295282675632
+	   Lennard-Jones energy      -68.52021164487653
+	   Coulomb energy            -33.90931662268654
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -12.94335853452137
+	-Total Coulomb energy        -47.31370594949095
+	-Constraint energy           0
+	-Total energy                392.6194629384335
+	-Temperature                 39.15478696387695
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 142000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387035099
+	-Bend energy                 43.59550613059161
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.59550613059161
+	-Torsion energy              379.4858996241655
+	   Tors-Tors energy          379.4858996241655
+	   Tors-Improper energy      0
+	-Onefour energy              42.64612939566786
+	   Onfo-Coulomb energy       -13.49664511160353
+	   Onfo-Lennard-Jones energy 56.14277450727138
+	-Inter energy                -101.5092826230476
+	   Lennard-Jones energy      -68.0694928874325
+	   Coulomb energy            -33.43978973561455
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -11.92671838016112
+	-Total Coulomb energy        -46.93643484721808
+	-Constraint energy           0
+	-Total energy                395.6166663977284
+	-Temperature                 124.537659598387
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 144000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387034788
+	-Bend energy                 42.92918750080983
+	   Bond-Bend energy          0
+	   Bend-Bend energy          42.92918750080983
+	-Torsion energy              379.6991954929233
+	   Tors-Tors energy          379.6991954929233
+	   Tors-Improper energy      0
+	-Onefour energy              43.06712476675888
+	   Onfo-Coulomb energy       -13.12183161233019
+	   Onfo-Lennard-Jones energy 56.18895637908906
+	-Inter energy                -100.3336054419137
+	   Lennard-Jones energy      -65.34223103180466
+	   Coulomb energy            -34.99137441010934
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.153274652715599
+	-Total Coulomb energy        -48.11320602243953
+	-Constraint energy           0
+	-Total energy                396.7603161889262
+	-Temperature                 252.362315257049
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 146000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387034341
+	-Bend energy                 47.21521903853055
+	   Bond-Bend energy          0
+	   Bend-Bend energy          47.21521903853055
+	-Torsion energy              381.5986473799961
+	   Tors-Tors energy          381.5986473799961
+	   Tors-Improper energy      0
+	-Onefour energy              42.91209331475662
+	   Onfo-Coulomb energy       -13.17497197821901
+	   Onfo-Lennard-Jones energy 56.08706529297555
+	-Inter energy                -98.20570874298537
+	   Lennard-Jones energy      -65.122293250952
+	   Coulomb energy            -33.0834154920331
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.03522795797644
+	-Total Coulomb energy        -46.25838747025211
+	-Constraint energy           0
+	-Total energy                404.9186648606413
+	-Temperature                 414.5970607186268
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 148000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387032452
+	-Bend energy                 45.56235616158623
+	   Bond-Bend energy          0
+	   Bend-Bend energy          45.56235616158623
+	-Torsion energy              384.5176891161824
+	   Tors-Tors energy          384.5176891161824
+	   Tors-Improper energy      0
+	-Onefour energy              44.51438911549428
+	   Onfo-Coulomb energy       -13.29128404395121
+	   Onfo-Lennard-Jones energy 57.80567315944551
+	-Inter energy                -93.58443907989424
+	   Lennard-Jones energy      -60.85095929548802
+	   Coulomb energy            -32.73347978440641
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -3.045286136042516
+	-Total Coulomb energy        -46.02476382835762
+	-Constraint energy           0
+	-Total energy                412.4084091836932
+	-Temperature                 601.0480902681168
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 150000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387029733
+	-Bend energy                 44.81243678387919
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.81243678387919
+	-Torsion energy              382.5078568102796
+	   Tors-Tors energy          382.5078568102796
+	   Tors-Improper energy      0
+	-Onefour energy              44.92477460615095
+	   Onfo-Coulomb energy       -13.19664795698493
+	   Onfo-Lennard-Jones energy 58.12142256313591
+	-Inter energy                -94.76755084345537
+	   Lennard-Jones energy      -61.0533346355225
+	   Coulomb energy            -33.71421620793333
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -2.931912072386589
+	-Total Coulomb energy        -46.91086416491825
+	-Constraint energy           0
+	-Total energy                408.8759312271517
+	-Temperature                 799.9999999999994
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 152000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387026415
+	-Bend energy                 60.57532425182803
+	   Bond-Bend energy          0
+	   Bend-Bend energy          60.57532425182803
+	-Torsion energy              382.506781713201
+	   Tors-Tors energy          382.506781713201
+	   Tors-Improper energy      0
+	-Onefour energy              42.86464100934986
+	   Onfo-Coulomb energy       -13.10971967564199
+	   Onfo-Lennard-Jones energy 55.97436068499182
+	-Inter energy                -96.28787458662546
+	   Lennard-Jones energy      -62.56243567770507
+	   Coulomb energy            -33.72543890892013
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.588074992713255
+	-Total Coulomb energy        -46.83515858456212
+	-Constraint energy           0
+	-Total energy                421.0572862580175
+	-Temperature                 998.9519097318821
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 154000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387023395
+	-Bend energy                 57.91655784826452
+	   Bond-Bend energy          0
+	   Bend-Bend energy          57.91655784826452
+	-Torsion energy              385.9199012725853
+	   Tors-Tors energy          385.9199012725853
+	   Tors-Improper energy      0
+	-Onefour energy              41.92250812670417
+	   Onfo-Coulomb energy       -13.3966767541245
+	   Onfo-Lennard-Jones energy 55.31918488082864
+	-Inter energy                -90.61011762484259
+	   Lennard-Jones energy      -58.92525242629733
+	   Coulomb energy            -31.68486519854533
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -3.606067545468682
+	-Total Coulomb energy        -45.08154195266983
+	-Constraint energy           0
+	-Total energy                426.5472634929453
+	-Temperature                 1185.402939281372
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 156000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387023161
+	-Bend energy                 58.44902456008202
+	   Bond-Bend energy          0
+	   Bend-Bend energy          58.44902456008202
+	-Torsion energy              387.4195549258822
+	   Tors-Tors energy          387.4195549258822
+	   Tors-Improper energy      0
+	-Onefour energy              43.43256175184575
+	   Onfo-Coulomb energy       -12.65528079336855
+	   Onfo-Lennard-Jones energy 56.08784254521432
+	-Inter energy                -95.54443611469459
+	   Lennard-Jones energy      -62.38134540013813
+	   Coulomb energy            -33.16309071455564
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.293502854923813
+	-Total Coulomb energy        -45.8183715079242
+	-Constraint energy           0
+	-Total energy                425.1551189933469
+	-Temperature                 1347.637684742952
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 158000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387021557
+	-Bend energy                 60.40166133618257
+	   Bond-Bend energy          0
+	   Bend-Bend energy          60.40166133618257
+	-Torsion energy              384.2421274728499
+	   Tors-Tors energy          384.2421274728499
+	   Tors-Improper energy      0
+	-Onefour energy              43.10396121794975
+	   Onfo-Coulomb energy       -14.25834638161086
+	   Onfo-Lennard-Jones energy 57.36230759956061
+	-Inter energy                -93.3759273107418
+	   Lennard-Jones energy      -60.68504326239376
+	   Coulomb energy            -32.69088404834783
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -3.322735662833145
+	-Total Coulomb energy        -46.94923042995869
+	-Constraint energy           0
+	-Total energy                425.7702365864559
+	-Temperature                 1475.462340401612
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 160000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387020916
+	-Bend energy                 66.09059727932897
+	   Bond-Bend energy          0
+	   Bend-Bend energy          66.09059727932897
+	-Torsion energy              381.1908647884687
+	   Tors-Tors energy          381.1908647884687
+	   Tors-Improper energy      0
+	-Onefour energy              44.5290257689878
+	   Onfo-Coulomb energy       -14.62951269528091
+	   Onfo-Lennard-Jones energy 59.15853846426866
+	-Inter energy                -83.14750066802297
+	   Lennard-Jones energy      -52.28467363158653
+	   Coulomb energy            -30.86282703643679
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.873864832682127
+	-Total Coulomb energy        -45.49233973171771
+	-Constraint energy           0
+	-Total energy                440.0614010389717
+	-Temperature                 1560.845213036122
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 162000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387018314
+	-Bend energy                 52.80267221770885
+	   Bond-Bend energy          0
+	   Bend-Bend energy          52.80267221770885
+	-Torsion energy              383.1249547555677
+	   Tors-Tors energy          383.1249547555677
+	   Tors-Improper energy      0
+	-Onefour energy              43.69704533460488
+	   Onfo-Coulomb energy       -13.20504542792951
+	   Onfo-Lennard-Jones energy 56.9020907625344
+	-Inter energy                -83.12559651557092
+	   Lennard-Jones energy      -50.14291628656618
+	   Coulomb energy            -32.98268022900513
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  6.759174475968217
+	-Total Coulomb energy        -46.18772565693464
+	-Constraint energy           0
+	-Total energy                427.8974896624936
+	-Temperature                 1598.421382742617
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 164000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138701583
+	-Bend energy                 60.02699883189219
+	   Bond-Bend energy          0
+	   Bend-Bend energy          60.02699883189219
+	-Torsion energy              383.5090866194099
+	   Tors-Tors energy          383.5090866194099
+	   Tors-Improper energy      0
+	-Onefour energy              42.31125110441222
+	   Onfo-Coulomb energy       -13.08885057581448
+	   Onfo-Lennard-Jones energy 55.40010168022668
+	-Inter energy                -92.93205872600785
+	   Lennard-Jones energy      -60.74371335939084
+	   Coulomb energy            -32.18834536661759
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -5.343611679164161
+	-Total Coulomb energy        -45.27719594243207
+	-Constraint energy           0
+	-Total energy                424.3136916998647
+	-Temperature                 1585.829800582951
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 166000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387012703
+	-Bend energy                 85.25677414017079
+	   Bond-Bend energy          0
+	   Bend-Bend energy          85.25677414017079
+	-Torsion energy              386.7468003297226
+	   Tors-Tors energy          386.7468003297226
+	   Tors-Improper energy      0
+	-Onefour energy              45.94026694499087
+	   Onfo-Coulomb energy       -12.14781496085603
+	   Onfo-Lennard-Jones energy 58.0880819058469
+	-Inter energy                -88.88599959060258
+	   Lennard-Jones energy      -58.16633201604761
+	   Coulomb energy            -30.71966757455533
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -0.07825011020070929
+	-Total Coulomb energy        -42.86748253541136
+	-Constraint energy           0
+	-Total energy                460.4562556944087
+	-Temperature                 1523.861641972816
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 168000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387009547
+	-Bend energy                 62.67003859151388
+	   Bond-Bend energy          0
+	   Bend-Bend energy          62.67003859151388
+	-Torsion energy              383.4685897265358
+	   Tors-Tors energy          383.4685897265358
+	   Tors-Improper energy      0
+	-Onefour energy              43.04583110196653
+	   Onfo-Coulomb energy       -13.71833585415095
+	   Onfo-Lennard-Jones energy 56.76416695611741
+	-Inter energy                -86.21944867913237
+	   Lennard-Jones energy      -54.42020402899583
+	   Coulomb energy            -31.79924465013621
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  2.34396292712158
+	-Total Coulomb energy        -45.51758050428715
+	-Constraint energy           0
+	-Total energy                434.3634246109793
+	-Temperature                 1416.410594220633
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 170000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387006321
+	-Bend energy                 54.96818207150605
+	   Bond-Bend energy          0
+	   Bend-Bend energy          54.96818207150605
+	-Torsion energy              382.1166468045993
+	   Tors-Tors energy          382.1166468045993
+	   Tors-Improper energy      0
+	-Onefour energy              45.44942397375564
+	   Onfo-Coulomb energy       -11.4565280965691
+	   Onfo-Lennard-Jones energy 56.90595207032481
+	-Inter energy                -80.29884033698833
+	   Lennard-Jones energy      -43.75642669162734
+	   Coulomb energy            -36.54241364536141
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  13.14952537869747
+	-Total Coulomb energy        -47.9989417419305
+	-Constraint energy           0
+	-Total energy                433.6338263829359
+	-Temperature                 1270.228201833979
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 172000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387003963
+	-Bend energy                 61.39946892167842
+	   Bond-Bend energy          0
+	   Bend-Bend energy          61.39946892167842
+	-Torsion energy              380.8746413507729
+	   Tors-Tors energy          380.8746413507729
+	   Tors-Improper energy      0
+	-Onefour energy              44.40966521258784
+	   Onfo-Coulomb energy       -11.69952383808296
+	   Onfo-Lennard-Jones energy 56.10918905067077
+	-Inter energy                -94.76353749345154
+	   Lennard-Jones energy      -62.67724182163208
+	   Coulomb energy            -32.08629567181936
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.568052770961312
+	-Total Coulomb energy        -43.78581950990232
+	-Constraint energy           0
+	-Total energy                423.3186518616272
+	-Temperature                 1094.499642147744
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 174000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841387003016
+	-Bend energy                 53.77725752301464
+	   Bond-Bend energy          0
+	   Bend-Bend energy          53.77725752301464
+	-Torsion energy              381.3808174150876
+	   Tors-Tors energy          381.3808174150876
+	   Tors-Improper energy      0
+	-Onefour energy              43.83505229508518
+	   Onfo-Coulomb energy       -12.50030037548578
+	   Onfo-Lennard-Jones energy 56.33535267057098
+	-Inter energy                -90.17321375144589
+	   Lennard-Jones energy      -56.71553428180376
+	   Coulomb energy            -33.45767946964175
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -0.3801816112327822
+	-Total Coulomb energy        -45.95797984512753
+	-Constraint energy           0
+	-Total energy                420.2183273517717
+	-Temperature                 900.2665868514463
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 176000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386999931
+	-Bend energy                 52.43936968283978
+	   Bond-Bend energy          0
+	   Bend-Bend energy          52.43936968283978
+	-Torsion energy              379.571392139286
+	   Tors-Tors energy          379.571392139286
+	   Tors-Improper energy      0
+	-Onefour energy              43.24294414360731
+	   Onfo-Coulomb energy       -13.60705679158712
+	   Onfo-Lennard-Jones energy 56.85000093519442
+	-Inter energy                -83.74148125193415
+	   Lennard-Jones energy      -53.07596950214484
+	   Coulomb energy            -30.66551174978907
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  3.774031433049585
+	-Total Coulomb energy        -44.2725685413762
+	-Constraint energy           0
+	-Total energy                422.9106385837982
+	-Temperature                 699.7334131485578
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 178000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386997703
+	-Bend energy                 51.70743217079949
+	   Bond-Bend energy          0
+	   Bend-Bend energy          51.70743217079949
+	-Torsion energy              378.7602916695211
+	   Tors-Tors energy          378.7602916695211
+	   Tors-Improper energy      0
+	-Onefour energy              44.12226468455156
+	   Onfo-Coulomb energy       -13.16870277565479
+	   Onfo-Lennard-Jones energy 57.2909674602063
+	-Inter energy                -87.03339200726002
+	   Lennard-Jones energy      -55.86311387676471
+	   Coulomb energy            -31.17027813049486
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  1.427853583441595
+	-Total Coulomb energy        -44.33898090614965
+	-Constraint energy           0
+	-Total energy                418.9550103875891
+	-Temperature                 505.5003578522572
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 180000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386996213
+	-Bend energy                 47.09536324409461
+	   Bond-Bend energy          0
+	   Bend-Bend energy          47.09536324409461
+	-Torsion energy              381.6496769787969
+	   Tors-Tors energy          381.6496769787969
+	   Tors-Improper energy      0
+	-Onefour energy              43.19512482551568
+	   Onfo-Coulomb energy       -12.82780129753156
+	   Onfo-Lennard-Jones energy 56.0229261230472
+	-Inter energy                -95.33073322278003
+	   Lennard-Jones energy      -62.10186678847658
+	   Coulomb energy            -33.22886643430363
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.078940665429387
+	-Total Coulomb energy        -46.05666773183519
+	-Constraint energy           0
+	-Total energy                408.0078456955893
+	-Temperature                 329.7717981660221
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 182000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138699598
+	-Bend energy                 47.13002831852091
+	   Bond-Bend energy          0
+	   Bend-Bend energy          47.13002831852091
+	-Torsion energy              381.1114214038894
+	   Tors-Tors energy          381.1114214038894
+	   Tors-Improper energy      0
+	-Onefour energy              43.05670106693513
+	   Onfo-Coulomb energy       -12.7651843850773
+	   Onfo-Lennard-Jones energy 55.82188545201242
+	-Inter energy                -100.7173288929978
+	   Lennard-Jones energy      -66.78596560637287
+	   Coulomb energy            -33.93136328662423
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.96408015436045
+	-Total Coulomb energy        -46.69654767170152
+	-Constraint energy           0
+	-Total energy                401.9792357663074
+	-Temperature                 183.589405779368
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 184000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.3984138699579
+	-Bend energy                 44.55471853557395
+	   Bond-Bend energy          0
+	   Bend-Bend energy          44.55471853557395
+	-Torsion energy              379.9543957483209
+	   Tors-Tors energy          379.9543957483209
+	   Tors-Improper energy      0
+	-Onefour energy              42.45747419142545
+	   Onfo-Coulomb energy       -13.02163640164027
+	   Onfo-Lennard-Jones energy 55.47911059306569
+	-Inter energy                -99.17714348195507
+	   Lennard-Jones energy      -66.24235817312523
+	   Coulomb energy            -32.93478530883009
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.76324758005953
+	-Total Coulomb energy        -45.95642171047037
+	-Constraint energy           0
+	-Total energy                399.1878588633231
+	-Temperature                 76.13835802718449
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 186000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386995627
+	-Bend energy                 43.01695836154857
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.01695836154857
+	-Torsion energy              377.9660431939556
+	   Tors-Tors energy          377.9660431939556
+	   Tors-Improper energy      0
+	-Onefour energy              43.24569851039584
+	   Onfo-Coulomb energy       -12.82484930158292
+	   Onfo-Lennard-Jones energy 56.07054781197877
+	-Inter energy                -98.75468510613371
+	   Lennard-Jones energy      -65.54009008778614
+	   Coulomb energy            -33.2145950183476
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -9.469542275807365
+	-Total Coulomb energy        -46.03944431993052
+	-Constraint energy           0
+	-Total energy                396.8724288297226
+	-Temperature                 14.17019941704931
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 188000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386995534
+	-Bend energy                 43.64515074100701
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.64515074100701
+	-Torsion energy              377.977140677795
+	   Tors-Tors energy          377.977140677795
+	   Tors-Improper energy      0
+	-Onefour energy              42.80471845321059
+	   Onfo-Coulomb energy       -12.80866296332887
+	   Onfo-Lennard-Jones energy 55.61338141653941
+	-Inter energy                -99.82005181009944
+	   Lennard-Jones energy      -66.28455831089848
+	   Coulomb energy            -33.53549349920105
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.67117689435907
+	-Total Coulomb energy        -46.34415646252991
+	-Constraint energy           0
+	-Total energy                396.0053719318685
+	-Temperature                 1.578617257382803
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 190000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386995587
+	-Bend energy                 43.59373725785586
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.59373725785586
+	-Torsion energy              378.0049909931921
+	   Tors-Tors energy          378.0049909931921
+	   Tors-Improper energy      0
+	-Onefour energy              42.83872301449448
+	   Onfo-Coulomb energy       -12.76297893819916
+	   Onfo-Lennard-Jones energy 55.60170195269357
+	-Inter energy                -99.78818144639409
+	   Lennard-Jones energy      -66.36245024547834
+	   Coulomb energy            -33.4257312009156
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -10.76074829278477
+	-Total Coulomb energy        -46.18871013911477
+	-Constraint energy           0
+	-Total energy                396.0476836891042
+	-Temperature                 39.15478696387695
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 192000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386995683
+	-Bend energy                 43.5961833118575
+	   Bond-Bend energy          0
+	   Bend-Bend energy          43.5961833118575
+	-Torsion energy              377.6211204501321
+	   Tors-Tors energy          377.6211204501321
+	   Tors-Improper energy      0
+	-Onefour energy              43.29271867969376
+	   Onfo-Coulomb energy       -12.72999298102249
+	   Onfo-Lennard-Jones energy 56.02271166071624
+	-Inter energy                -98.78938188746032
+	   Lennard-Jones energy      -64.91187894001074
+	   Coulomb energy            -33.87750294744928
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.889167279294503
+	-Total Coulomb energy        -46.60749592847177
+	-Constraint energy           0
+	-Total energy                397.1190544241799
+	-Temperature                 124.5376595983869
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 194000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386994703
+	-Bend energy                 45.66189667297103
+	   Bond-Bend energy          0
+	   Bend-Bend energy          45.66189667297103
+	-Torsion energy              378.1127006287629
+	   Tors-Tors energy          378.1127006287629
+	   Tors-Improper energy      0
+	-Onefour energy              44.48360970777284
+	   Onfo-Coulomb energy       -12.55685666444544
+	   Onfo-Lennard-Jones energy 57.04046637221826
+	-Inter energy                -97.65831150874806
+	   Lennard-Jones energy      -65.16252544357587
+	   Coulomb energy            -32.49578606517183
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -8.122059071357617
+	-Total Coulomb energy        -45.05264272961727
+	-Constraint energy           0
+	-Total energy                401.9983093707057
+	-Temperature                 252.3623152570489
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 196000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386993257
+	-Bend energy                 48.13946181345026
+	   Bond-Bend energy          0
+	   Bend-Bend energy          48.13946181345026
+	-Torsion energy              376.9060320487275
+	   Tors-Tors energy          376.9060320487275
+	   Tors-Improper energy      0
+	-Onefour energy              42.59871484689948
+	   Onfo-Coulomb energy       -13.25688073238761
+	   Onfo-Lennard-Jones energy 55.85559557928713
+	-Inter energy                -94.86681067658976
+	   Lennard-Jones energy      -62.52742045533655
+	   Coulomb energy            -32.3393902212527
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -6.671824876049419
+	-Total Coulomb energy        -45.59627095364031
+	-Constraint energy           0
+	-Total energy                404.1758119024201
+	-Temperature                 414.5970607186266
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 198000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.39841386991884
+	-Bend energy                 49.62208902545136
+	   Bond-Bend energy          0
+	   Bend-Bend energy          49.62208902545136
+	-Torsion energy              379.9096580614245
+	   Tors-Tors energy          379.9096580614245
+	   Tors-Improper energy      0
+	-Onefour energy              42.42544935633128
+	   Onfo-Coulomb energy       -12.57296319293235
+	   Onfo-Lennard-Jones energy 54.99841254926361
+	-Inter energy                -93.61283094554196
+	   Lennard-Jones energy      -59.79018787267042
+	   Coulomb energy            -33.82264307287151
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  -4.791775323406799
+	-Total Coulomb energy        -46.39560626580386
+	-Constraint energy           0
+	-Total energy                409.742779367584
+	-Temperature                 601.0480902681138
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 200000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.398413869882
+	-Bend energy                 53.72891808562611
+	   Bond-Bend energy          0
+	   Bend-Bend energy          53.72891808562611
+	-Torsion energy              379.2876914049361
+	   Tors-Tors energy          379.2876914049361
+	   Tors-Improper energy      0
+	-Onefour energy              44.48488000035957
+	   Onfo-Coulomb energy       -13.25867392288883
+	   Onfo-Lennard-Jones energy 57.74355392324842
+	-Inter energy                -89.32420464925548
+	   Lennard-Jones energy      -53.6238427954484
+	   Coulomb energy            -35.70036185380692
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.119711127800018
+	-Total Coulomb energy        -48.95903577669574
+	-Constraint energy           0
+	-Total energy                419.5756987115483
+	-Temperature                 799.9999999999992
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+>>Report energies at step 200000<<
+-----------------------------------------------------------------------------------
+
+	Energies in kcal/mol
+
+	-Bond energy                 31.398413869882
+	-Bend energy                 53.72891808562611
+	   Bond-Bend energy          0
+	   Bend-Bend energy          53.72891808562611
+	-Torsion energy              379.2876914049361
+	   Tors-Tors energy          379.2876914049361
+	   Tors-Improper energy      0
+	-Onefour energy              44.48488000035957
+	   Onfo-Coulomb energy       -13.25867392288883
+	   Onfo-Lennard-Jones energy 57.74355392324842
+	-Inter energy                -89.32420464925548
+	   Lennard-Jones energy      -53.6238427954484
+	   Coulomb energy            -35.70036185380692
+	   SCP energy                0
+	   Knowledge based energy    0
+	-Total Lennard-Jones energy  4.119711127800018
+	-Total Coulomb energy        -48.95903577669574
+	-Constraint energy           0
+	-Total energy                419.5756987115483
+	-Temperature                 799.9999999999992
+
+-----------------------------------------------------------------------------------
+===================================================================================
+
+===================================================================================
+ Acceptance ratio for MH Chains 
+-----------------------------------------------------------------------------------
+       # of accepted   ||  # of total   || acceptance ratio
+ Chain 0     70308	     200000	     0.35154
+
+
+ Acceptance ratio for PT jumps 
+
+       # of accepted   ||  # of total   || acceptance ratio
+-----------------------------------------------------------------------------------
+ Acceptance ratio for MH Chains 
+===================================================================================
+
+
+###################################################################################
+##===============================================================================##
+##                M.O.S.A.I.C.S    Successfully Completed                        ##
+##===============================================================================##
+###################################################################################
+ Current Date Tue Apr  2 09:38:18 PDT 2013
+ ===================================================================================
+
+

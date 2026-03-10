@@ -1,0 +1,6 @@
+rm $1*.pos.pdb
+rm $1*.pos_out.pdb
+rm $1*.tors_pos
+rm $1*_energy
+rm output
+rm sim_param.out 

@@ -1,0 +1,16 @@
+.DS_Store
+._.DS_Store
+*.o
+*.exe~
+output*
+esurf
+adist
+ndist
+energy
+convd
+*.pos.pdb
+*.pos_out.pdb
+*.pot_energy
+*.inter_energy
+*.tors_pos
+sim_param.out

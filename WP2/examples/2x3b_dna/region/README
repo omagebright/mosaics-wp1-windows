@@ -1,0 +1,45 @@
+__________________________region____________________________
+
+~region[...]:  defines a region, in this case we put the whole system
+               into one single region 
+
+  \element_top_type{residue} : defines the topology type of the elements
+                               e.g. our region is a collection of 6 residues
+  
+  \nres{.}                   : number of residues within a region 
+
+  \residues{. , ., ...}      : specify the residues by chain:number
+                               you could look at the .pdb to get this
+                               information
+
+  \ncenter{.}                : the number of rotational center(s) for the 
+                               whole region (this is more relevant if you
+                               have multiple regions )
+  
+  \centers{., ., ...}        : specify the rotation center(s) by chain:number
+
+  \nrespair{.}               : number of residue pairs (e.g. a base pair)
+  
+  \residue_pair{ . , . }     : defines a residue pair by chain:number
+
+  \prop_trans_sig{ }         : the magnitude of the overall translational 
+                               move for the whole region in Angstrom
+                               (relevant if we have multiple regions)
+ 
+  \prop_rot_sig{ }           : the magnitude of the overall rotational 
+                               move for the whole region in radian
+                               (relevant if we have multiple regions)
+ 
+  \prop_trans_sig_freeres{}  : the magnitude of translational move of
+                               an individual "free" residue contained 
+                               in the region. "free" refers to residues 
+                               not in any base pair
+
+  \prop_rot_sig_freeres{}   :  the magnitude of rotational move of
+                               an individual "free" residue contained 
+                               in the region. "free" refers to residues 
+                               not in any base pair
+
+  \prop_trans_sig_respair{} : analog move sizes for base pairs 
+  \prop_rot_sig_respair{}     base pair
+______________________________________________________________________

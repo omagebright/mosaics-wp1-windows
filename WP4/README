@@ -1,0 +1,113 @@
+(0) In this exercise you will harvest the experience you gained on 
+    natural degrees of freedom in WP2 and on optimization algorithms in WP3 to
+    to optimize the conformation of fragments in 2cky (pdb code) riboswitch. 
+    Riboswitches are non coding segments (or untranslated regions
+    UTRs) of an mRNA and they are responsible for directly binding to and 
+    sensing the presence of small metabolites resulting in change of gene
+    expression encoded by the mRNA. More information can be found in the 
+    article that describes the structure determination of the 2cky riboswitch.  
+    
+    S.Thore et al. (2006). Structure of the eukaryotic thiamine 
+    pyrophosphate riboswitch with its regulatory ligand. 
+    Science, 312, 1208-1211
+
+    To start with, please open the figure (image file WP4/figure.jpg). 
+    Figure (a) shows the secondary structure of 2cky chain A. In this chain 
+    there are 5 helical (containing base pairs) (P1 - P5) and 5 loop (no base 
+    pairing of nucleotides) (L1 - L5) regions. Figure (b) describes  
+    the region definition for P1. A regional decomposition for the whole chain 
+    is also provided: WP4/examples/2cky_A/region.data. For this exercise
+    we chose two chain fragments (2cky_j23 and 2cky_j124), whose secondary
+    structure is shown in figure (c).
+
+(1) As usual, please set up your links to "mosaics.x", pot_database, 
+    top_database libraries so that your WP4/examples library has this structure
+
+    drwxr-xr-x  2cky_A
+    drwxr-xr-x  2cky_j124
+    drwxr-xr-x  2cky_j124_opt
+    drwxr-xr-x  2cky_j23_opt_L1
+    drwxr-xr-x  2cky_j23_opt_P2_P3
+    lrwxr-xr-x  mosaics.x -> ../../MOSAICS/version.3.9.1_bgq/examples/mosaics.x
+    lrwxr-xr-x  pot_database -> ../../TOPPOT/pot_database/
+    lrwxr-xr-x  top_database -> ../../TOPPOT/top_database/
+
+    where the paths to the executable may vary whether you have installed 
+    mosaics own your own or used an executable already available in your
+    desktop.
+
+(2) Based on techniques you learned in WP2 and WP3, please design a 
+    protocol to find the optimal (lowest energy) conformation of loop L1
+    shown in figure (c). 
+
+    Please work in directory 2cky_j23_opt_L1, where we already set up 
+    an example optimization protocol for you to start with but we ask 
+    you to build the region file
+    
+     2cky_j23_opt_L1/region/region.opt_L1.data
+   
+    for this type of optimization. If you open this file you could see
+    that we gave you the overall structure but we ask you fill in the 
+    missing lines. 
+    Hint: You could copy and paste quite a few lines from 
+          2cky_A/region.data.
+ 
+    Once you have the file you can run a few optimization trajectories 
+    each can be represented by a plot of the potential energy vs the 
+    number of MC iterations. 
+
+    Please make one overall plot with the best (you found the lowest energy 
+    value) three optimization trajectories you obtained. 
+
+(3) Repeat the same exercise, but optimize the whole structure of 2cky_j23
+    fragment and please work in directory 2cky_j23_opt_P2_P3. As a first 
+    step you have to complete the region file: 
+
+    2cky_j23_opt_P2_P3/region/region.opt_P2_P3.data
+
+    As you could see in the structure we provide we recommend that you 
+    join regions P3 and L3.
+
+    As before, please make a summary plot with your top three optimization 
+    trajectories (energy vs. number of steps).
+
+(4) Run high temperature "entropic sampling" of the conformational space of
+    fragment 2cky_j124. In this final exercise, we provide all the files you 
+    need including the initial setup in directory 2cky_j124. 
+    
+    Visualize your trajectories using Pymol or VMD software packages.
+    Plot the RMSD (Root-Mean-Square Deviation) of your visited conformational 
+    states from the initial structure. We recommend you to download the ANALYSE
+    tools provided for this work package.
+
+(5) Please switch to directory 2cky_j124_opt 
+    Run long optimization trajectories (same \simulation_typ and \minimize_type 
+    you used for (2) and (3)) for the 2cky_j124 fragment. Use stsamc period so
+    that you have at least 5 full period temperature fluctuations. Depending on
+    the speed of your desktop, perform N (5, 10, 20) x 100,0000 production steps. 
+    I would suggest running some preliminary shorter N x 10,000 trajectories to
+    to find the best amplitude (\stsamc_ampl) so that you get trajectories 
+    visiting the lowest energy conformations. This may be a good set of initial
+    parameters to start with 
+
+    \simulation_typ{MIN}    
+    \stsamc_type{trigonom}
+    \stsamc_period{50000}
+    \stsamc_ampl{1200}
+    \stsamc_shift{0}
+    \total_step_mc{250000}  2000 100            number > 1
+    \statistics_freq{2000} 10
+  
+    Please analyse your production run and generate the following figures:
+    (You may find the provided ANALYSE tools useful)
+
+    (a) Plot the RMSD from initial structure
+    (b) Plot the RMSD distribution
+    (c) Plot the ENERGY vs RMSD  
+    (d) Overlay your figure (b) over your figure (c) 
+  
+        
+
+
+
+  
