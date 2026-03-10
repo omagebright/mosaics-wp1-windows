@@ -1,0 +1,31 @@
+*  AMBER parm99 force field conversion
+*  See: J Comp. Chem. (2000) 21, 1049-1074.  
+*
+
+!
+!  This is a hand-conversion of the parm99 force field
+!  parm99.dat file.  All the atom type names are the same except where
+!  otherwise noted.
+!
+!  note: types N* remaned to NS
+!              C* renamed to CS
+!
+!  note: the HO and HW nonbonded parameters, although zero in 
+!  Cornell et al. should not have a 0.0 vdw radius in CHARMM 
+!  to avoid difficulties with the 0.0/0.0 in the FAST OFF 
+!  van der Waal code...
+!
+!  note: the default nonbonded options chosen here are to match AMBER.
+!  It is not recommended that users actually run with GROUP based 
+!  truncation and a switch unless really trying to match AMBER.  
+!  Better would be ATOM based FSHIFT VSHIFT, however note that this
+!  does modify the energies (and effectively the parameters).
+!
+!  Also note that long-range interactions are handeled differently between
+!  AMBER and CHARMM.  To avoid differences when comparing energies and
+!  forces the the cuttoffs were set to be large in the individule
+!  comparison input files, i.e. 80 Angs.
+!
+!  created by Jeffery Klauda (jbklauda@umd.edu)
+!
+

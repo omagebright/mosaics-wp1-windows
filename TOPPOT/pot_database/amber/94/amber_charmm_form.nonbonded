@@ -1,0 +1,94 @@
+*  AMBER Cornell et al. (parm94) force field conversion
+*  See: JACS (1995) 117, 5179-5197.  
+*  nucleic acid part converted by tec3, march 1997
+*  protein part converted by tec3, feb 1999
+*
+
+!
+!  This is a hand-conversion of the Cornell et. al. force field
+!  parm94.dat file (except for the torsion which were converted via
+!  a perl script).  All the atom type names are the same except where
+!  otherwise noted.
+!
+!  Any problems?  Let me know...
+!  cheatham@helix.nih.gov, cheatham@cgl.ucsf.edu
+!
+!  note: types N* remaned to NS
+!              C* renamed to CS
+!
+!  note: the HO and HW nonbonded parameters, although zero in 
+!  Cornell et al. should not have a 0.0 vdw radius in CHARMM 
+!  to avoid difficulties with the 0.0/0.0 in the FAST OFF 
+!  van der Waal code...
+!
+!  note: the default nonbonded options chosen here are to match AMBER.
+!  It is not recommended that users actually run with GROUP based 
+!  truncation and a switch unless really trying to match AMBER.  
+!  Better would be ATOM based FSHIFT VSHIFT, however note that this
+!  does modify the energies (and effectively the parameters).
+!
+
+
+!  Note: the HO and HW parameters, although zero in Cornell et al.
+!  should not have a 0.0 vdw radius in CHARMM to avoid difficulties
+!  with the 0.0/0.0 in the FAST OFF van der Waal code...
+!
+!  NOTE: the defaults chosen here are to match AMBER.  It is not
+!  recommended that users actually run with GROUP based truncation
+!  and a switch.  Better would be ATOM based FSHIFT VSHIFT
+NONBONDED  NBXMOD 5  GROUP SWITCH CDIEL -
+!     CUTNB 14.0  CTOFNB 12.0  CTONNB 10.0  EPS 1.0  E14FAC 0.83333333  WMIN 1.4
+!          Emin       Rmin/2         Emin/2      Rmin  (for 1-4's)
+!       (kcal/mol)     (A)
+H   0.0  -0.0157     0.6000    0.0  -0.00785    0.6000  ! Ferguson base pair geom.
+HO  0.0  -0.0000     0.6000    0.0  -0.0000     0.6000  ! OPLS, JACS,110,(1988),1657
+HS  0.0  -0.0157     0.6000    0.0  -0.00785    0.6000  ! W. Cornell CH3SH --> CH3OH FEP
+HC  0.0  -0.0157     1.4870    0.0  -0.00785    1.4870  ! OPLS
+H1  0.0  -0.0157     1.3870    0.0  -0.00785    1.3870  ! Veenstra JCC,8,(1992),963 
+H2  0.0  -0.0157     1.2870    0.0  -0.00785    1.2870  ! Veenstra JCC,8,(1992),963 
+H3  0.0  -0.0157     1.1870    0.0  -0.00785    1.1870  ! Veenstra JCC,8,(1992),963 
+HP  0.0  -0.0157     1.1000    0.0  -0.00785    1.1000  ! Veenstra JCC,8,(1992),963
+HA  0.0  -0.0150     1.4590    0.0  -0.0075     1.4590  ! Spellmeyer 
+H4  0.0  -0.0150     1.4090    0.0  -0.0075     1.4090  ! Spellmeyer, 1 e- withdr. nghbr
+H5  0.0  -0.0150     1.3590    0.0  -0.0075     1.3590  ! Spellmeyer, 2 e- withdr. nghbr
+HW  0.0  -0.0000     0.6000    0.0  -0.0000     0.6000  ! TIP3P water model
+O   0.0  -0.2100     1.6612    0.0  -0.1050     1.6612  ! OPLS
+O2  0.0  -0.2100     1.6612    0.0  -0.1050     1.6612  ! OPLS
+OW  0.0  -0.1520     1.7683    0.0  -0.0760     1.7683  ! TIP3P water model
+OH  0.0  -0.2104     1.7210    0.0  -0.1052     1.7210  ! OPLS 
+OS  0.0  -0.1700     1.6837    0.0  -0.0850     1.6837  ! OPLS ether
+CT  0.0  -0.1094     1.9080    0.0  -0.0547     1.9080  ! Spellmeyer
+CA  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! Spellmeyer
+C   0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CM  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! Spellmeyer
+CS  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CB  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CC  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CN  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CK  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CQ  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CW  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CV  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CR  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CX  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CY  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+CD  0.0  -0.0860     1.9080    0.0  -0.0430     1.9080  ! OPLS
+N   0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+NA  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+NB  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+NC  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+N2  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+N3  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+NS  0.0  -0.1700     1.8240    0.0  -0.0850     1.8240  ! OPLS
+S   0.0  -0.2500     2.0000    0.0  -0.1250     2.0000  ! Cornell CH3SH & CH3SCH3 FEP's
+SH  0.0  -0.2500     2.0000    0.0  -0.1250     2.0000  ! Cornell CH3SH & CH3SCH3 FEP's
+P   0.0  -0.2000     2.1000    0.0  -0.1000     2.1000  ! JCC,7,(1986),230; 
+IM  0.0  -0.1        2.47      0.0  -0.05       2.47    ! Cl- Smith, JCP 1994,100:5,3757
+Li  0.0  -0.0183     1.1370    0.0  -0.00915    1.1370  ! Li+ Aqvist JPC 1990,94,8021. (adapted)
+IP  0.0  -0.00277    1.8680    0.0  -0.001385   1.8680  ! Na+ Aqvist JPC 1990,94,8021. (adapted)
+K   0.0  -0.000328   2.6580    0.0  -0.000164   2.6580  ! K+  Aqvist JPC 1990,94,8021. (adapted)
+Rb  0.0  -0.00017    2.9560    0.0  -0.000085   2.9560  ! Rb+ Aqvist JPC 1990,94,8021. (adapted)
+I   0.0  -0.40       2.35      0.0  -0.20       2.35    ! JCC,7,(1986),230;  
+F   0.0  -0.061      1.75      0.0  -0.0305     1.75    ! Gough JCC 13,(1992),963.
+IB  0.0  -0.1        5.0       0.0  -0.05       5.0     ! solvated ion, vacuum apprx
+

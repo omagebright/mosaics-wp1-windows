@@ -1,0 +1,117 @@
+!
+!  deoxyribose patch for adenine
+!
+PRES DOA    -1.0
+DELETE ATOM O2'
+ATOM  P     P     1.1659 
+ATOM  O1P   O2   -0.7761 
+ATOM  O2P   O2   -0.7761 
+ATOM  O5'   OS   -0.4954 
+ATOM  C5'   CT   -0.0069 
+ATOM  H5'   H1    0.0754     ! note: type is H5'1  --> this should be checked
+ATOM  H5''  H1    0.0754     ! note: type is H5'2
+ATOM  C4'   CT    0.1629 
+ATOM  H4'   H1    0.1176 
+ATOM  O4'   OS   -0.3691 
+ATOM  C1'   CT    0.0431 
+ATOM  H1'   H2    0.1838 
+ATOM  N9    NS   -0.0268     ! note: type is N*
+ATOM  C8    CK    0.1607 
+ATOM  H8    H5    0.1877 
+ATOM  N7    NB   -0.6175 
+ATOM  C5    CB    0.0725 
+ATOM  C6    CA    0.6897 
+ATOM  N6    N2   -0.9123 
+ATOM  H61   H     0.4167 
+ATOM  H62   H     0.4167 
+ATOM  N1    NC   -0.7624 
+ATOM  C2    CQ    0.5716 
+ATOM  H2    H5    0.0598 
+ATOM  N3    NC   -0.7417 
+ATOM  C4    CB    0.3800 
+ATOM  C3'   CT    0.0713 
+ATOM  H3'   H1    0.0985 
+ATOM  C2'   CT   -0.0854 
+ATOM  H2'   HC    0.0718     ! note: this is H2'1
+ATOM  H2''  HC    0.0718     ! note: this is H2'2 
+ATOM  O3'   OS   -0.5232  
+
+
+
+ 
+!
+!  deoxyribose patch for cytosine
+!
+PRES DOC    -1.00
+DELETE ATOM O2'
+ATOM  P     P     1.1659
+ATOM  O1P   O2   -0.7761
+ATOM  O2P   O2   -0.7761
+ATOM  O5'   OS   -0.4954
+ATOM  C5'   CT   -0.0069
+ATOM  H5'   H1    0.0754    ! this is H5'1
+ATOM  H5''  H1    0.0754    ! this is H5'2
+ATOM  C4'   CT    0.1629
+ATOM  H4'   H1    0.1176
+ATOM  O4'   OS   -0.3691
+ATOM  C1'   CT   -0.0116
+ATOM  H1'   H2    0.1963
+ATOM  N1    NS   -0.0339    ! this is type N*
+ATOM  C6    CM   -0.0183
+ATOM  H6    H4    0.2293
+ATOM  C5    CM   -0.5222
+ATOM  H5    HA    0.1863
+ATOM  C4    CA    0.8439
+ATOM  N4    N2   -0.9773
+ATOM  H41   H     0.4314
+ATOM  H42   H     0.4314
+ATOM  N3    NC   -0.7748
+ATOM  C2    C     0.7959
+ATOM  O2    O    -0.6548
+ATOM  C3'   CT    0.0713
+ATOM  H3'   H1    0.0985
+ATOM  C2'   CT   -0.0854
+ATOM  H2''  HC    0.0718    ! this is H2'2
+ATOM  H2'   HC    0.0718    ! this is H2'1
+ATOM  O3'   OS   -0.5232
+
+
+
+!
+!  deoxyribose patch for guanine
+!
+PRES DOG         -1.00
+DELETE ATOM O2'
+ATOM  P     P     1.1659
+ATOM  O1P   O2   -0.7761
+ATOM  O2P   O2   -0.7761
+ATOM  O5'   OS   -0.4954
+ATOM  C5'   CT   -0.0069
+ATOM  H5'   H1    0.0754    ! this is H5'1
+ATOM  H5''  H1    0.0754    ! this is H5'2
+ATOM  C4'   CT    0.1629
+ATOM  H4'   H1    0.1176
+ATOM  O4'   OS   -0.3691
+ATOM  C1'   CT    0.0358
+ATOM  H1'   H2    0.1746
+ATOM  N9    NS    0.0577    ! this is type N*
+ATOM  C8    CK    0.0736
+ATOM  H8    H5    0.1997
+ATOM  N7    NB   -0.5725
+ATOM  C5    CB    0.1991
+ATOM  C6    C     0.4918
+ATOM  O6    O    -0.5699
+ATOM  N1    NA   -0.5053
+ATOM  H1    H     0.3520
+ATOM  C2    CA    0.7432
+ATOM  N2    N2   -0.9230
+ATOM  H21   H     0.4235
+ATOM  H22   H     0.4235
+ATOM  N3    NC   -0.6636
+ATOM  C4    CB    0.1814
+ATOM  C3'   CT    0.0713
+ATOM  H3'   H1    0.0985
+ATOM  C2'   CT   -0.0854
+ATOM  H2''  HC    0.0718    ! this is H2'2
+ATOM  H2'   HC    0.0718    ! this is H2'1
+ATOM  O3'   OS   -0.5232

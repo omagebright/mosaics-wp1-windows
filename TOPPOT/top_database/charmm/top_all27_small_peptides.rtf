@@ -1,0 +1,391 @@
+*>>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<<
+*>>>>>>>>>>>>>>>>>>>> and Nucleic Acids <<<<<<<<<<<<<<<<<<<<<<<<<
+*>>>>> Includes phi, psi cross term map (CMAP) correction <<<<<<<
+*>>>>>>>>>>>>>>>>>>>>>>   July, 2004    <<<<<<<<<<<<<<<<<<<<<<<<<<
+* All comments to ADM jr. via the CHARMM web site: www.charmm.org
+*               parameter set discussion forum
+*
+31  1
+
+! references
+!
+!PROTEINS
+!
+!MacKerell, A.D., Jr,. Feig, M., Brooks, C.L., III, Extending the
+!treatment of backbone energetics in protein force fields: limitations
+!of gas-phase quantum mechanics in reproducing protein conformational
+!distributions in molecular dynamics simulations, Journal of
+!Computational Chemistry, 25: 1400-1415, 2004.
+!
+!MacKerell, Jr., A. D.; Bashford, D.; Bellott, M.; Dunbrack Jr., R.L.;
+!Evanseck, J.D.; Field, M.J.; Fischer, S.; Gao, J.; Guo, H.; Ha, S.;
+!Joseph-McCarthy, D.; Kuchnir, L.; Kuczera, K.; Lau, F.T.K.; Mattos,
+!C.; Michnick, S.; Ngo, T.; Nguyen, D.T.; Prodhom, B.; Reiher, III,
+!W.E.; Roux, B.; Schlenkrich, M.; Smith, J.C.; Stote, R.; Straub, J.;
+!Watanabe, M.; Wiorkiewicz-Kuczera, J.; Yin, D.; Karplus, M.  All-atom
+!empirical potential for molecular modeling and dynamics Studies of
+!proteins.  Journal of Physical Chemistry B, 1998, 102, 3586-3616.
+!
+!IONS (see lipid and nucleic acid topology and parameter files for
+!additional ions
+!
+!ZINC
+!
+!Roland H. Stote and Martin Karplus, Zinc Binding in Proteins and
+!Solution: A Simple but Accurate Nonbonded Representation, PROTEINS:
+!Structure, Function, and Genetics 23:12-31 (1995)
+!
+!NUCLEIC ACIDS
+!
+!Foloppe, N. and MacKerell, Jr., A.D. "All-Atom Empirical Force Field for
+!Nucleic Acids: 2) Parameter Optimization Based on Small Molecule and
+!Condensed Phase Macromolecular Target Data. 2000, 21: 86-104.
+!
+!and
+!
+!MacKerell, Jr., A.D. and Banavali, N. "All-Atom Empirical Force Field for
+!Nucleic Acids: 2) Application to Molecular Dynamics Simulations of DNA
+!and RNA in Solution. 2000, 21: 105-120.
+!
+
+MASS     1 H      1.00800 H ! polar H
+MASS     2 HC     1.00800 H ! N-ter H
+MASS     3 HA     1.00800 H ! nonpolar H
+MASS     4 HT     1.00800 H ! TIPS3P WATER HYDROGEN
+MASS     5 HP     1.00800 H ! aromatic H
+MASS     6 HB     1.00800 H ! backbone H
+MASS     7 HR1    1.00800 H ! his he1, (+) his HG,HD2
+MASS     8 HR2    1.00800 H ! (+) his HE1
+MASS     9 HR3    1.00800 H ! neutral his HG, HD2
+MASS    10 HS     1.00800 H ! thiol hydrogen
+MASS    11 HE1    1.00800 H ! for alkene; RHC=CR
+MASS    12 HE2    1.00800 H ! for alkene; H2C=CR
+MASS    13 HA1    1.00800 H ! alkane, CH, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    14 HA2    1.00800 H ! alkane, CH2, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    15 HA3    1.00800 H ! alkane, CH3, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    16 HF1    1.00800 H ! Aliphatic H on fluorinated C (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    17 HF2    1.00800 H ! Aliphatic H on fluorinated C (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    20 C     12.01100 C ! carbonyl C, peptide backbone
+MASS    21 CA    12.01100 C ! aromatic C
+MASS    22 CT1   12.01100 C ! aliphatic sp3 C for CH
+MASS    23 CT2   12.01100 C ! aliphatic sp3 C for CH2
+MASS    24 CT3   12.01100 C ! aliphatic sp3 C for CH3
+MASS    25 CPH1  12.01100 C ! his CG and CD2 carbons
+MASS    26 CPH2  12.01100 C ! his CE1 carbon
+MASS    27 CPT   12.01100 C ! trp C between rings
+MASS    28 CY    12.01100 C ! TRP C in pyrrole ring
+MASS    29 CP1   12.01100 C ! tetrahedral C (proline CA)
+MASS    30 CP2   12.01100 C ! tetrahedral C (proline CB/CG)
+MASS    31 CP3   12.01100 C ! tetrahedral C (proline CD)
+MASS    32 CC    12.01100 C ! carbonyl C, asn,asp,gln,glu,cter,ct2
+MASS    33 CD    12.01100 C ! carbonyl C, pres aspp,glup,ct1
+MASS    34 CPA   12.01100 C ! heme alpha-C
+MASS    35 CPB   12.01100 C ! heme beta-C
+MASS    36 CPM   12.01100 C ! heme meso-C
+MASS    37 CM    12.01100 C ! heme CO carbon
+MASS    38 CS    12.01100 C ! thiolate carbon
+MASS    39 CE1   12.01100 C ! for alkene; RHC=CR
+MASS    40 CE2   12.01100 C ! for alkene; H2C=CR
+MASS    41 CST   12.01100 C ! CO2 carbon 
+MASS    42 CT    12.01100 C ! aliphatic sp3 C, new LJ params, no hydrogens (see toppar_all22_prot_aliphatic_c27.str)
+MASS    43 CT1x  12.01100 C ! aliphatic sp3 C for CH, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    44 CT2x  12.01100 C ! aliphatic sp3 C for CH2, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    45 CT3x  12.01100 C ! aliphatic sp3 C for CH3, new LJ params (see toppar_all22_prot_aliphatic_c27.str)
+MASS    46 CN    12.01100 C ! C for cyano group (see toppar_all22_prot_pyridines.str)
+MASS    47 CAP   12.01100 C ! aromatic C for pyrimidines (see toppar_all22_prot_pyridines.str)
+MASS    48 COA   12.01100 C ! carbonyl C for pyrimidines (see toppar_all22_prot_pyridines.str)
+MASS    49 C3    12.01100 C ! cyclopropyl carbon
+MASS    50 N     14.00700 N ! proline N
+MASS    51 NR1   14.00700 N ! neutral his protonated ring nitrogen
+MASS    52 NR2   14.00700 N ! neutral his unprotonated ring nitrogen
+MASS    53 NR3   14.00700 N ! charged his ring nitrogen
+MASS    54 NH1   14.00700 N ! peptide nitrogen
+MASS    55 NH2   14.00700 N ! amide nitrogen
+MASS    56 NH3   14.00700 N ! ammonium nitrogen
+MASS    57 NC2   14.00700 N ! guanidinium nitroogen
+MASS    58 NY    14.00700 N ! TRP N in pyrrole ring
+MASS    59 NP    14.00700 N ! Proline ring NH2+ (N-terminal)
+MASS    60 NPH   14.00700 N ! heme pyrrole N
+MASS    61 NC    14.00700 N ! N for cyano group (see toppar_all22_prot_pyridines.str)
+MASS    70 O     15.99900 O ! carbonyl oxygen
+MASS    71 OB    15.99900 O ! carbonyl oxygen in acetic acid
+MASS    72 OC    15.99900 O ! carboxylate oxygen
+MASS    73 OH1   15.99900 O ! hydroxyl oxygen
+MASS    74 OS    15.99940 O ! ester oxygen
+MASS    75 OT    15.99940 O ! TIPS3P WATER OXYGEN
+MASS    76 OM    15.99900 O ! heme CO/O2 oxygen
+MASS    77 OST   15.99900 O ! CO2 oxygen
+MASS    78 OCA   15.99900 O ! carbonyl O for pyrimidines (see toppar_all22_prot_pyridines.str)
+MASS    81 S     32.06000 S ! sulphur
+MASS    82 SM    32.06000 S ! sulfur C-S-S-C type
+MASS    83 SS    32.06000 S ! thiolate sulfur
+MASS    85 HE     4.00260 HE ! helium
+MASS    86 NE    20.17970 NE ! neon
+MASS    87 CF1   12.01100 C ! monofluoromethyl (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    88 CF2   12.01100 C ! difluoromethyl (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    89 CF3   12.01100 C ! trifluoromethyl (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    90 FE    55.84700 Fe ! heme iron 56
+MASS    91 CLAL  35.45300 CL ! Chlorine Atom (see toppar_all22_prot_aldehydes.str)
+MASS    92 FA    18.99800 F ! aromatic flourine (see toppar_all22_prot_pyridines.str)
+MASS    93 F1    18.99800 F ! Fluorine, monofluoro (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    94 F2    18.99800 F ! Fluorine, difluoro (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    95 F3    18.99800 F ! Fluorine, trifluoro (see toppar_all22_prot_fluoro_alkanes.str)
+MASS    99 DUM    0.00000 H ! dummy atom
+!see NA section
+!MASS   100 SOD  22.989770 NA ! Sodium Ion
+!MASS   101 MG   24.305000 MG ! Magnesium Ion
+!MASS   102 POT  39.102000 K  ! Potassium Ion! check masses
+!MASS   103 CES 132.900000 CS ! Cesium Ion
+!MASS   104 CAL  40.080000 CA ! Calcium Ion
+!MASS   105 CLA  35.450000 CL ! Chloride Ion
+!MASS   106 ZN   65.370000 ZN ! zinc (II) cation
+!NA section
+!MASS 101    HT    1.008000 H ! TIPS3P WATER HYDROGEN
+MASS 102    HN1   1.008000 H ! Nucleic acid amine proton
+MASS 103    HN2   1.008000 H ! Nucleic acid ring nitrogen proton
+MASS 104    HN3   1.008000 H ! Nucleic acid aromatic carbon proton
+MASS 105    HN3B  1.008000 H ! NAD+ aromatic hydrogen
+MASS 106    HN3C  1.008000 H ! Standard aromatic hydrogen (as in benzene)
+MASS 107    HNP   1.008000 H ! pure aromatic H
+MASS 108    HN4   1.008000 H ! Nucleic acid phosphate hydroxyl proton
+MASS 109    HN5   1.008000 H ! Nucleic acid ribose hydroxyl proton
+MASS 110    HN6   1.008000 H ! Nucleic acid ribose aliphatic proton
+MASS 111    HN7   1.008000 H ! Nucleic acid proton (equivalent to protein HA)
+MASS 112    HN8   1.008000 H ! Bound to CN8 in nucleic acids/model compounds
+MASS 113    HN9   1.008000 H ! Bound to CN9 in nucleic acids/model compounds
+MASS 114    HNE1  1.008000 H ! for alkene; RHC=CR (modified thy patch Sasha)
+MASS 115    HNE2  1.008000 H ! for alkene; H2C=CR (modified thy patch Sasha)
+MASS 120    CN1  12.011000 C ! Nucleic acid carbonyl carbon
+MASS 121    CN1A 12.011000 C ! NAD+/NADH amide carbonyl carbon
+MASS 122    CN1T 12.011000 C ! Nucleic acid carbonyl carbon (T/U C2)
+MASS 123    CN2  12.011000 C ! Nucleic acid aromatic carbon to amide
+MASS 124    CN3  12.011000 C ! Nucleic acid aromatic carbon 
+MASS 125    CN3A 12.011000 C ! NAD+ aromatic carbon
+MASS 126    CN3B 12.011000 C ! NAD+ aromatic carbon
+MASS 127    CN3C 12.011000 C ! NADH aromatic carbon
+MASS 128    CN3D 12.011000 C ! Nucleic acid aromatic carbon for 5MC
+MASS 129    CN3T 12.011000 C ! Nucleic acid aromatic carbon, Thy C5
+MASS 130    CN4  12.011000 C ! Nucleic acid purine C8 and ADE C2  
+MASS 131    CN5  12.011000 C ! Nucleic acid purine C4 and C5
+MASS 132    CN5G 12.011000 C ! Nucleic acid guanine C5
+MASS 133    CN7  12.011000 C ! Nucleic acid carbon (equivalent to protein CT1)
+MASS 134    CN7B 12.011000 C ! Nucleic acid aliphatic carbon for C1'
+MASS 135    CN7C 12.011000 C ! C2' in arabinose 
+MASS 136    CN7D 12.011000 C ! C2' in nucleic acids fluorine derivatives 
+MASS 137    CN8  12.011000 C ! Nucleic acid carbon (equivalent to protein CT2)
+MASS 138    CN8B 12.011000 C ! Nucleic acid carbon (equivalent to protein CT2)
+MASS 139    CN9  12.011000 C ! Nucleic acid carbon (equivalent to protein CT3)
+MASS 140    CNE1 12.011000 C ! for alkene; RHC=CR (modified thy patch Sasha)
+MASS 141    CNE2 12.011000 C ! for alkene; H2C=CR (modified thy patch Sasha)
+MASS 142    CNA  12.011000 C ! pure aromatic carbon
+MASS 143    CNA2 12.011000 C ! pure aromatic carbon bound to F
+MASS 144    CN6  12.011000 C ! carbocyclic sugar (see toppar_all27_na_carbocyclic.str)
+MASS 145    CN7E 12.011000 C ! carbocyclic sugar (see toppar_all27_na_carbocyclic.str)
+MASS 150    NN1  14.007000 N ! Nucleic acid amide nitrogen
+MASS 151    NN1C 14.007000 N ! Nucleic acid imino nitrogen (cyt taut Sasha)
+MASS 152    NN2  14.007000 N ! Nucleic acid protonated ring nitrogen
+MASS 153    NN2B 14.007000 N ! From NN2, for N9 in GUA different from ADE
+MASS 154    NN2C 14.007000 N ! Nucleic acid protonated ring nitrogen (cyt taut Sasha)
+MASS 155    NN2U 14.007000 N ! Nucleic acid protonated ring nitrogen, ura N3
+MASS 156    NN2G 14.007000 N ! Nucleic acid protonated ring nitrogen, gua N1
+MASS 157    NN3  14.007000 N ! Nucleic acid unprotonated ring nitrogen 
+MASS 158    NN3A 14.007000 N ! Nucleic acid unprotonated ring nitrogen, ade N1 and N3
+MASS 159    NN3I 14.007000 N ! Nucleic acid unprotonated ring nitrogen, inosine N3
+MASS 160    NN3G 14.007000 N ! Nucleic acid unprotonated ring nitrogen, gua N3
+MASS 161    NN4  14.007000 N ! Nucleic acid purine N7
+MASS 162    NN5  14.007000 N ! Nucleic acid sp2 amine nitrogen
+MASS 163    NN6  14.007000 N ! Nucleic acid sp3 amine nitrogen (equiv to protein nh3)
+!MASS 170    OT   15.999400 O ! TIPS3P WATER OXYGEN
+MASS 171    ON1  15.999400 O ! Nucleic acid carbonyl oxygen
+MASS 172    ON1C 15.999400 O ! Nucleic acid carbonyl oxygen, cyt O2
+MASS 173    ON2  15.999400 O ! Nucleic acid phosphate ester oxygen
+MASS 174    ON3  15.999400 O ! Nucleic acid =O in phosphate 
+MASS 175    ON4  15.999400 O ! Nucleic acid phosphate hydroxyl oxygen
+MASS 176    ON5  15.999400 O ! Nucleic acid ribose hydroxyl oxygen
+MASS 177    ON6  15.999400 O ! Nucleic acid deoxyribose ring oxygen
+MASS 178    ON6B 15.999400 O ! Nucleic acid ribose ring oxygen
+MASS 179    ON2B 15.999400 O ! Nucleic acid phosphate ester oxygen (pres tp1/tp2, toppar_tyr_ser_thr_phosphate.str)
+MASS 180    FN1  18.998400 F ! Fluorine for sugar derivatives (NF) 
+MASS 181    FNA  18.998400 F ! Aromatic fluorine
+MASS 182    P    30.974000 P ! phosphorus
+MASS 183    P2   30.974000 P ! pyrophosphate phosphorus (see toppar_all27_na_nad_ppi.str)
+MASS 184    P3   30.974000 P ! protonated pyrophosphate phosphorus (see toppar_all27_na_nad_ppi.str)
+MASS 190    SOD  22.989770 NA ! Sodium Ion
+MASS 191    MG   24.305000 MG ! Magnesium Ion
+MASS 192    POT  39.102000 K  ! Potassium Ion! check masses
+MASS 193    CES 132.900000 CS ! Cesium Ion
+MASS 194    CAL  40.080000 CA ! Calcium Ion
+MASS 195    CLA  35.450000 CL ! Chloride Ion
+MASS 196    ZN   65.370000 ZN ! zinc (II) cation
+!MASS 199    DUM   0.001    H ! dummy atom
+!the following masses must be added to the parent RTF for retinol/al
+MASS   212 CC1A  12.01100 C ! alkene conjugation
+MASS   213 CC1B  12.01100 C ! alkene conjugation
+MASS   214 CC2   12.01100 C ! alkene conjugation
+MASS   220 NS1   14.00700 N ! N for deprotonated Schiff's base
+MASS   221 NS2   14.00700 N ! N for protonated Schiff's base
+
+RESI ADI         0.00 ! Alanine dipeptide, with CMAP term
+GROUP
+ATOM CL   CT3   -0.27
+ATOM HL1  HA     0.09
+ATOM HL2  HA     0.09
+ATOM HL3  HA     0.09
+GROUP
+ATOM CLP  C      0.51
+ATOM OL   O     -0.51
+GROUP
+ATOM NL   NH1   -0.47
+ATOM HL   H      0.31
+ATOM CA   CT1    0.07
+ATOM HA   HB     0.09
+GROUP
+ATOM CB   CT3   -0.27  !     HL1     OL           OR           HR1
+ATOM HB1  HA     0.09  !       \     ||   HL  HA  ||   HR      /
+ATOM HB2  HA     0.09  !        \    ||   |   |   ||   |      /
+ATOM HB3  HA     0.09  !   HL2---CL--CLP--NL--CA--CRP--NR---CR---HR2
+GROUP                  !        /             |               \
+ATOM CRP  C      0.51  !       /         HB1--CB--HB3          \
+ATOM OR   O     -0.51  !     HL3              |                HR3
+GROUP                  !                     HB2
+ATOM NR   NH1   -0.47
+ATOM HR   H      0.31
+ATOM CR   CT3   -0.11
+ATOM HR1  HA     0.09
+ATOM HR2  HA     0.09
+ATOM HR3  HA     0.09
+
+BOND CL  CLP   CLP NL    NL  CA
+BOND CA  CRP   CRP NR    NR  CR
+DOUBLE  CLP OL    CRP OR
+BOND NL  HL    NR  HR
+BOND CA  HA    CA  CB
+BOND CL  HL1   CL  HL2   CL  HL3
+BOND CB  HB1   CB  HB2   CB  HB3
+BOND CR  HR1   CR  HR2   CR  HR3
+IMPR CLP CL NL OL    NL CLP CA HL
+IMPR CRP CA NR OR    NR CRP CR HR
+
+CMAP CLP NL CA CRP NL CA CRP NR
+
+ic clp nl  ca  crp  0.0 0.0  180.0  0.0 0.0 ! Phi
+ic ca  clp *nl hl   0.0 0.0  180.0  0.0 0.0
+ic hl  nl  ca  crp  0.0 0.0    0.0  0.0 0.0
+ic nl  ca  crp nr   0.0 0.0  180.0  0.0 0.0 ! Psi
+ic ca  nr  *crp or  0.0 0.0  180.0  0.0 0.0
+ic nl  ca  crp or   0.0 0.0    0.0  0.0 0.0
+ic cl  clp nl  ca   0.0 0.0  180.0  0.0 0.0 ! Omega Left
+ic nl  cl  *clp ol  0.0 0.0  180.0  0.0 0.0
+ic ol  clp nl  ca   0.0 0.0    0.0  0.0 0.0
+ic ca  crp nr  cr   0.0 0.0  180.0  0.0 0.0 ! Omega Right
+ic crp cr  *nr hr   0.0 0.0  180.0  0.0 0.0
+ic ca  crp nr  hr   0.0 0.0  180.0  0.0 0.0
+ic nl  crp *ca ha   0.0 0.0  240.0  0.0 0.0
+ic nl  crp *ca cb   0.0 0.0  120.0  0.0 0.0
+ic hl1 cl  clp nl   0.0 0.0  180.0  0.0 0.0
+ic hl2 cl  clp nl   0.0 0.0   60.0  0.0 0.0
+ic hl3 cl  clp ol   0.0 0.0  120.0  0.0 0.0
+ic ha  ca  cb  hb1  0.0 0.0  180.0  0.0 0.0
+ic nl  ca  cb  hb2  0.0 0.0  180.0  0.0 0.0
+ic crp ca  cb  hb3  0.0 0.0  180.0  0.0 0.0
+ic crp nr  cr  hr1  0.0 0.0  180.0  0.0 0.0
+ic crp nr  cr  hr2  0.0 0.0   60.0  0.0 0.0
+ic hr  nr  cr  hr3  0.0 0.0  120.0  0.0 0.0
+ic ca  clp *nl hl   0.0 0.0  180.0  0.0 0.0
+ic ca  nr  *crp or  0.0 0.0  180.0  0.0 0.0
+ic hb1 hb2 *cb hb3  0.0 0.0  120.0  0.0 0.0
+ic hl1 hl2 *cl hl3  0.0 0.0  240.0  0.0 0.0
+ic hr1 hr2 *cr hr3  0.0 0.0  240.0  0.0 0.0
+ic ha  ca  nl  hl   0.0 0.0  240.0  0.0 0.0
+patch first none last none
+
+
+RESI ALD         0.00 ! Alanine dipeptide, with different UPAC names
+GROUP
+ATOM CAY   CT3   -0.27
+ATOM HY1 HA     0.09
+ATOM HY2 HA     0.09
+ATOM HY3 HA     0.09
+GROUP
+ATOM CY  C      0.51
+ATOM OY   O     -0.51
+GROUP
+ATOM N   NH1   -0.47
+ATOM HN   H      0.31
+ATOM CA   CT1    0.07
+ATOM HA   HB     0.09
+GROUP
+ATOM CB   CT3   -0.27  !     HY1      OY          O          HT1
+ATOM HB1  HA     0.09  !       \      ||  HN  HA ||  HNT    /
+ATOM HB2  HA     0.09  !        \     ||  |   |  ||  |     /
+ATOM HB3  HA     0.09  !   HY2---CAY--CY--N--CA--C--NT---CAT---HT2
+GROUP                  !        /             |            \
+ATOM C  C      0.51  !         /        HB1--CB--HB3        \
+ATOM O   O     -0.51  !     HY3               |              HT3
+GROUP                  !                      HB2
+ATOM NT   NH1   -0.47
+ATOM HNT   H      0.31
+ATOM CAT   CT3   -0.11
+ATOM HT1  HA     0.09
+ATOM HT2  HA     0.09
+ATOM HT3  HA     0.09
+
+BOND CAY CY   CY N    N  CA
+BOND CA  C   C NT    NT  CAT
+DOUBLE  CY OY    C O
+BOND N  HN    NT  HNT
+BOND CA  HA    CA  CB
+BOND CAY HY1  CAY HY2  CAY HY3
+BOND CB  HB1   CB  HB2   CB  HB3
+BOND CAT  HT1   CAT  HT2   CAT  HT3
+IMPR CY CAY N OY    N CY CA HN
+IMPR C CA NT O    NT C CAT HNT
+
+CHIGROUP N OY HN CA
+CHIGROUP C CB HA
+CHIGROUP HB1 HB2 HB3
+CHIGROUP NT O HNT CAT
+CHIGROUP HT1 HT2 HT3
+CHIPRIM HY2 CAY CY N
+CHIPRIM CY N CA C
+CHIPRIM N CA CB HB1
+CHIPRIM N CA C NT
+CHIPRIM C NT CAT HT1
+
+
+CMAP CY N CA C N CA C NT
+
+ic clp nl  ca  crp  0.0 0.0  180.0  0.0 0.0 ! Phi
+ic ca  clp *nl hl   0.0 0.0  180.0  0.0 0.0
+ic hl  nl  ca  crp  0.0 0.0    0.0  0.0 0.0
+ic nl  ca  crp nr   0.0 0.0  180.0  0.0 0.0 ! Psi
+ic ca  nr  *crp or  0.0 0.0  180.0  0.0 0.0
+ic nl  ca  crp or   0.0 0.0    0.0  0.0 0.0
+ic cl  clp nl  ca   0.0 0.0  180.0  0.0 0.0 ! Omega Left
+ic nl  cl  *clp ol  0.0 0.0  180.0  0.0 0.0
+ic ol  clp nl  ca   0.0 0.0    0.0  0.0 0.0
+ic ca  crp nr  cr   0.0 0.0  180.0  0.0 0.0 ! Omega Right
+ic crp cr  *nr hr   0.0 0.0  180.0  0.0 0.0
+ic ca  crp nr  hr   0.0 0.0  180.0  0.0 0.0
+ic nl  crp *ca ha   0.0 0.0  240.0  0.0 0.0
+ic nl  crp *ca cb   0.0 0.0  120.0  0.0 0.0
+ic hl1 cl  clp nl   0.0 0.0  180.0  0.0 0.0
+ic hl2 cl  clp nl   0.0 0.0   60.0  0.0 0.0
+ic hl3 cl  clp ol   0.0 0.0  120.0  0.0 0.0
+ic ha  ca  cb  hb1  0.0 0.0  180.0  0.0 0.0
+ic nl  ca  cb  hb2  0.0 0.0  180.0  0.0 0.0
+ic crp ca  cb  hb3  0.0 0.0  180.0  0.0 0.0
+ic crp nr  cr  hr1  0.0 0.0  180.0  0.0 0.0
+ic crp nr  cr  hr2  0.0 0.0   60.0  0.0 0.0
+ic hr  nr  cr  hr3  0.0 0.0  120.0  0.0 0.0
+ic ca  clp *nl hl   0.0 0.0  180.0  0.0 0.0
+ic ca  nr  *crp or  0.0 0.0  180.0  0.0 0.0
+ic hb1 hb2 *cb hb3  0.0 0.0  120.0  0.0 0.0
+ic hl1 hl2 *cl hl3  0.0 0.0  240.0  0.0 0.0
+ic hr1 hr2 *cr hr3  0.0 0.0  240.0  0.0 0.0
+ic ha  ca  nl  hl   0.0 0.0  240.0  0.0 0.0
+patch first none last none
+
+
+END
+

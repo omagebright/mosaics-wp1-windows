@@ -1,0 +1,793 @@
+~bend_parm[\atom1{OST}\atom2{CST}\atom3{OST}
+           \pot_type_bend{harm}\fk_bend{3019337.36}\eq_bend{180}]
+~bend_parm[\atom1{CS}\atom2{SS}\atom3{FE}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{100.6}]
+~bend_parm[\atom1{SS}\atom2{FE}\atom3{NPH}
+           \pot_type_bend{harm}\fk_bend{100644.579}\eq_bend{90}]
+~bend_parm[\atom1{CA}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{120}
+           \pot_type_bond{harm}\fk_bond{35225.6025}\eq_bond{2.4162}]
+~bend_parm[\atom1{CE1}\atom2{CE1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{123.5}]
+~bend_parm[\atom1{CE1}\atom2{CE1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{123.5}]
+~bend_parm[\atom1{CE1}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{112.2}]
+~bend_parm[\atom1{CE2}\atom2{CE1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{126}]
+~bend_parm[\atom1{CE2}\atom2{CE1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{47302.9519}\eq_bend{125.2}]
+~bend_parm[\atom1{CP1}\atom2{N}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{117}]
+~bend_parm[\atom1{CP2}\atom2{CP1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{112.3}]
+~bend_parm[\atom1{CP2}\atom2{CP1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{112.3}]
+~bend_parm[\atom1{CP2}\atom2{CP1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{112.3}]
+~bend_parm[\atom1{CP2}\atom2{CP2}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{108.5}]
+~bend_parm[\atom1{CP3}\atom2{CP2}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{108.5}]
+~bend_parm[\atom1{CP3}\atom2{N}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{117}]
+~bend_parm[\atom1{CP3}\atom2{N}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{100644.579}\eq_bend{114.2}]
+~bend_parm[\atom1{CP3}\atom2{NP}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{100644.579}\eq_bend{111}]
+~bend_parm[\atom1{CPA}\atom2{CPB}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{126.74}]
+~bend_parm[\atom1{CPA}\atom2{CPM}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{94807.193}\eq_bend{125.12}]
+~bend_parm[\atom1{CPA}\atom2{NPH}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{140197.898}\eq_bend{103.9}]
+~bend_parm[\atom1{CPB}\atom2{CE1}\atom3{CE2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{121.5}]
+~bend_parm[\atom1{CPB}\atom2{CPB}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{126.75}]
+~bend_parm[\atom1{CPB}\atom2{CPB}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{30998.5302}\eq_bend{106.51}]
+~bend_parm[\atom1{CPH2}\atom2{NR1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{130837.952}\eq_bend{107.5}]
+~bend_parm[\atom1{CPH2}\atom2{NR2}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{130837.952}\eq_bend{104}]
+~bend_parm[\atom1{CPH2}\atom2{NR3}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{145934.639}\eq_bend{108}]
+~bend_parm[\atom1{CPM}\atom2{CPA}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{61997.0604}\eq_bend{124.07}]
+~bend_parm[\atom1{CPT}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{118}]
+~bend_parm[\atom1{CPT}\atom2{CPT}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{122}]
+~bend_parm[\atom1{CPT}\atom2{CY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{120773.494}\eq_bend{107.4}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.261}]
+~bend_parm[\atom1{CPT}\atom2{NY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{110709.036}\eq_bend{108}]
+~bend_parm[\atom1{CT1}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT1}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT1}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{111}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT1}\atom2{CT2}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{52133.8917}\eq_bend{107.5}]
+~bend_parm[\atom1{CT1}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT1}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT1}\atom2{CT2}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113}]
+~bend_parm[\atom1{CT1}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113.5}
+           \pot_type_bond{harm}\fk_bond{11231.935}\eq_bond{2.561}]
+~bend_parm[\atom1{CT1}\atom2{NH1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{120}]
+~bend_parm[\atom1{CT2}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{122.3}]
+~bend_parm[\atom1{CT2}\atom2{CPB}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{126.74}]
+~bend_parm[\atom1{CT2}\atom2{CPB}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{126.75}]
+~bend_parm[\atom1{CT2}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{130}]
+~bend_parm[\atom1{CT2}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{111}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{113}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113.5}
+           \pot_type_bond{harm}\fk_bond{11231.935}\eq_bond{2.561}]
+~bend_parm[\atom1{CT2}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113.6}
+           \pot_type_bond{harm}\fk_bond{11231.935}\eq_bond{2.561}]
+~bend_parm[\atom1{CT2}\atom2{CT3}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113.5}
+           \pot_type_bond{harm}\fk_bond{11231.935}\eq_bond{2.561}]
+~bend_parm[\atom1{CT2}\atom2{CY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{129.4}]
+~bend_parm[\atom1{CT2}\atom2{CY}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{124}]
+~bend_parm[\atom1{CT2}\atom2{NC2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{62701.5725}\eq_bend{120}]
+~bend_parm[\atom1{CT2}\atom2{NH1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{120}]
+~bend_parm[\atom1{CT2}\atom2{OS}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{109.6}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.2651}]
+~bend_parm[\atom1{CT3}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{122.3}]
+~bend_parm[\atom1{CT3}\atom2{CPB}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{126.74}]
+~bend_parm[\atom1{CT3}\atom2{CPB}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{126.75}]
+~bend_parm[\atom1{CT3}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{130}]
+~bend_parm[\atom1{CT3}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT3}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{CT3}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{108.5}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{CT1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{114}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{114}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{CT2}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{52133.8917}\eq_bend{107.5}]
+~bend_parm[\atom1{CT3}\atom2{CT2}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113}]
+~bend_parm[\atom1{CT3}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{113.5}
+           \pot_type_bond{harm}\fk_bond{11231.935}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{58373.8556}\eq_bend{115}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{53693.8827}\eq_bend{114}
+           \pot_type_bond{harm}\fk_bond{8051.56629}\eq_bond{2.561}]
+~bend_parm[\atom1{CT3}\atom2{NC2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{62701.5725}\eq_bend{120}]
+~bend_parm[\atom1{CT3}\atom2{NH1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{120}]
+~bend_parm[\atom1{CT3}\atom2{OS}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{109.6}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.2651}]
+~bend_parm[\atom1{CT3}\atom2{S}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{34219.1567}\eq_bend{95}]
+~bend_parm[\atom1{CY}\atom2{CPT}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{161031.326}\eq_bend{130.6}]
+~bend_parm[\atom1{CY}\atom2{CPT}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{110709.036}\eq_bend{107.4}]
+~bend_parm[\atom1{CY}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{114}]
+~bend_parm[\atom1{CY}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{58726.1116}\eq_bend{114}]
+~bend_parm[\atom1{FE}\atom2{NPH}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{96769.7623}\eq_bend{128.05}]
+~bend_parm[\atom1{FE}\atom2{NR2}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{133}]
+~bend_parm[\atom1{FE}\atom2{NR2}\atom3{CPH2}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{123}]
+~bend_parm[\atom1{H}\atom2{NH1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{34219.1567}\eq_bend{123}]
+~bend_parm[\atom1{H}\atom2{NH1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{117}]
+~bend_parm[\atom1{H}\atom2{NH1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{117}]
+~bend_parm[\atom1{H}\atom2{NH1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{117}]
+~bend_parm[\atom1{H}\atom2{NH2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{120}]
+~bend_parm[\atom1{H}\atom2{NH2}\atom3{H}
+           \pot_type_bend{harm}\fk_bend{23148.2531}\eq_bend{120}]
+~bend_parm[\atom1{H}\atom2{NR1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{125.5}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.15}]
+~bend_parm[\atom1{H}\atom2{NR1}\atom3{CPH2}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{127}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.14}]
+~bend_parm[\atom1{H}\atom2{NR3}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{126}
+           \pot_type_bond{harm}\fk_bond{15096.6868}\eq_bond{2.13}]
+~bend_parm[\atom1{H}\atom2{NR3}\atom3{CPH2}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{126}
+           \pot_type_bond{harm}\fk_bond{15096.6868}\eq_bond{2.09}]
+~bend_parm[\atom1{H}\atom2{NY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{28180.482}\eq_bend{126}]
+~bend_parm[\atom1{H}\atom2{NY}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{28180.482}\eq_bend{126}]
+~bend_parm[\atom1{H}\atom2{OH1}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{108}]
+~bend_parm[\atom1{H}\atom2{OH1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{115}]
+~bend_parm[\atom1{H}\atom2{OH1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{57870.6327}\eq_bend{106}]
+~bend_parm[\atom1{H}\atom2{OH1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{57870.6327}\eq_bend{106}]
+~bend_parm[\atom1{H}\atom2{OH1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{57870.6327}\eq_bend{106}]
+~bend_parm[\atom1{HA}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{29186.9278}\eq_bend{120}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.1525}]
+~bend_parm[\atom1{HA}\atom2{CA}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{41264.2772}\eq_bend{122}]
+~bend_parm[\atom1{HA}\atom2{CA}\atom3{CY}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.173}]
+~bend_parm[\atom1{HA}\atom2{CP2}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CP2}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{26670.8133}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CP2}\atom3{CP3}
+           \pot_type_bend{harm}\fk_bend{26670.8133}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CP2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{5434.80724}\eq_bond{1.802}]
+~bend_parm[\atom1{HA}\atom2{CP3}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{26670.8133}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CP3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{5434.80724}\eq_bond{1.802}]
+~bend_parm[\atom1{HA}\atom2{CPM}\atom3{CPA}
+           \pot_type_bend{harm}\fk_bend{12781.8615}\eq_bend{117.44}]
+~bend_parm[\atom1{HA}\atom2{CPM}\atom3{FE}
+           \pot_type_bend{harm}\fk_bend{0}\eq_bend{180}]
+~bend_parm[\atom1{HA}\atom2{CS}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{34823.0242}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CS}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{108.4}
+           \pot_type_bond{harm}\fk_bond{14090.241}\eq_bond{1.775}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{34722.3796}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{34722.3796}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{34722.3796}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT1}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{5434.80724}\eq_bond{1.802}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{49617.7772}\eq_bend{107.5}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{45290.0604}\eq_bend{111.5}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{109.5}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{26670.8133}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{34823.0242}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{CY}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{109.5}]
+~bend_parm[\atom1{HA}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{5434.80724}\eq_bond{1.802}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{49617.7772}\eq_bend{107.5}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{30193.3736}\eq_bond{2.163}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{42270.723}\eq_bend{111.5}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{109.5}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CS}
+           \pot_type_bend{harm}\fk_bend{34823.0242}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{33645.4826}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{34823.0242}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{37741.717}\eq_bend{110.1}
+           \pot_type_bond{harm}\fk_bond{22675.2236}\eq_bond{2.179}]
+~bend_parm[\atom1{HA}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{35728.8254}\eq_bend{108.4}
+           \pot_type_bond{harm}\fk_bond{5434.80724}\eq_bond{1.802}]
+~bend_parm[\atom1{HA}\atom2{CY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{20128.9157}\eq_bend{126.4}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.186}]
+~bend_parm[\atom1{HA}\atom2{CY}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{126.4}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.255}]
+~bend_parm[\atom1{HE1}\atom2{CE1}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{119.5}]
+~bend_parm[\atom1{HE1}\atom2{CE1}\atom3{CE2}
+           \pot_type_bend{harm}\fk_bend{42270.723}\eq_bend{118}]
+~bend_parm[\atom1{HE1}\atom2{CE1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{116}]
+~bend_parm[\atom1{HE1}\atom2{CE1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{22141.8073}\eq_bend{117}]
+~bend_parm[\atom1{HE1}\atom2{CE1}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{120}]
+~bend_parm[\atom1{HE2}\atom2{CE2}\atom3{CE1}
+           \pot_type_bend{harm}\fk_bend{45290.0604}\eq_bend{120.5}]
+~bend_parm[\atom1{HE2}\atom2{CE2}\atom3{CE2}
+           \pot_type_bend{harm}\fk_bend{55857.7411}\eq_bend{120.5}]
+~bend_parm[\atom1{HE2}\atom2{CE2}\atom3{HE2}
+           \pot_type_bend{harm}\fk_bend{19122.4699}\eq_bend{119}]
+~bend_parm[\atom1{HB}\atom2{CP1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{112}]
+~bend_parm[\atom1{HB}\atom2{CP1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{112}]
+~bend_parm[\atom1{HB}\atom2{CP1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{112}]
+~bend_parm[\atom1{HB}\atom2{CP1}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{118}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{111}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{111}]
+~bend_parm[\atom1{HB}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{111}]
+~bend_parm[\atom1{HB}\atom2{CT2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HB}\atom2{CT2}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{36232.0483}\eq_bend{115}]
+~bend_parm[\atom1{HB}\atom2{CT3}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{109.5}]
+~bend_parm[\atom1{HC}\atom2{NC2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{49315.8435}\eq_bend{120}]
+~bend_parm[\atom1{HC}\atom2{NC2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{40660.4097}\eq_bend{120}]
+~bend_parm[\atom1{HC}\atom2{NC2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{40660.4097}\eq_bend{120}]
+~bend_parm[\atom1{HC}\atom2{NC2}\atom3{HC}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{120}]
+~bend_parm[\atom1{HC}\atom2{NH2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{111}]
+~bend_parm[\atom1{HC}\atom2{NH2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{111}]
+~bend_parm[\atom1{HC}\atom2{NH2}\atom3{HC}
+           \pot_type_bend{harm}\fk_bend{39251.3856}\eq_bend{106.5}]
+~bend_parm[\atom1{HC}\atom2{NH3}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.074}]
+~bend_parm[\atom1{HC}\atom2{NH3}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.074}]
+~bend_parm[\atom1{HC}\atom2{NH3}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.074}]
+~bend_parm[\atom1{HC}\atom2{NH3}\atom3{HC}
+           \pot_type_bend{harm}\fk_bend{44283.6146}\eq_bend{109.5}]
+~bend_parm[\atom1{HC}\atom2{NP}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{4025.78314}\eq_bond{2.056}]
+~bend_parm[\atom1{HC}\atom2{NP}\atom3{CP3}
+           \pot_type_bend{harm}\fk_bend{33212.7109}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{4025.78314}\eq_bond{2.056}]
+~bend_parm[\atom1{HC}\atom2{NP}\atom3{HC}
+           \pot_type_bend{harm}\fk_bend{51328.7351}\eq_bend{107.5}]
+~bend_parm[\atom1{HP}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{120}
+           \pot_type_bond{harm}\fk_bond{22141.8073}\eq_bond{2.1525}]
+~bend_parm[\atom1{HP}\atom2{CA}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{30193.3736}\eq_bend{122}
+           \pot_type_bond{harm}\fk_bond{22141.8073}\eq_bond{2.146}]
+~bend_parm[\atom1{HP}\atom2{CA}\atom3{CY}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.173}]
+~bend_parm[\atom1{HP}\atom2{CY}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{126.4}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.186}]
+~bend_parm[\atom1{HP}\atom2{CY}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{126.4}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.255}]
+~bend_parm[\atom1{HR1}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{22141.8073}\eq_bend{130}
+           \pot_type_bond{harm}\fk_bond{15096.6868}\eq_bond{2.215}]
+~bend_parm[\atom1{HR3}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{130}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.2}]
+~bend_parm[\atom1{HS}\atom2{S}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{39050.0965}\eq_bend{95}]
+~bend_parm[\atom1{HS}\atom2{S}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{43277.1688}\eq_bend{95}]
+~bend_parm[\atom1{HT}\atom2{OT}\atom3{HT}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{104.52}]
+~bend_parm[\atom1{N}\atom2{C}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{20128.9157}\eq_bend{112.5}]
+~bend_parm[\atom1{N}\atom2{C}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{20128.9157}\eq_bend{112.5}]
+~bend_parm[\atom1{N}\atom2{C}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{20128.9157}\eq_bend{112.5}]
+~bend_parm[\atom1{N}\atom2{C}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{20128.9157}\eq_bend{112.5}]
+~bend_parm[\atom1{N}\atom2{CP1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{108.2}]
+~bend_parm[\atom1{N}\atom2{CP1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{108.2}]
+~bend_parm[\atom1{N}\atom2{CP1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{108.2}]
+~bend_parm[\atom1{N}\atom2{CP1}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{110.8}]
+~bend_parm[\atom1{N}\atom2{CP1}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{112}]
+~bend_parm[\atom1{N}\atom2{CP3}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{110.5}]
+~bend_parm[\atom1{N}\atom2{CP3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{108}]
+~bend_parm[\atom1{NC2}\atom2{C}\atom3{NC2}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{120}
+           \pot_type_bond{harm}\fk_bond{90580.1207}\eq_bond{2.3642}]
+~bend_parm[\atom1{NC2}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{107.5}]
+~bend_parm[\atom1{NC2}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{107.5}]
+~bend_parm[\atom1{NC2}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{107.5}]
+~bend_parm[\atom1{NH1}\atom2{C}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{116.5}]
+~bend_parm[\atom1{NH1}\atom2{C}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{116.5}]
+~bend_parm[\atom1{NH1}\atom2{C}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{116.5}]
+~bend_parm[\atom1{NH1}\atom2{C}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{116.5}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{113.5}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{113.5}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{113.5}]
+~bend_parm[\atom1{NH1}\atom2{CT1}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{108}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{107}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{113.5}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{109.5}]
+~bend_parm[\atom1{NH1}\atom2{CT2}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{48309.3977}\eq_bend{108}]
+~bend_parm[\atom1{NH1}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{109.5}]
+~bend_parm[\atom1{NH2}\atom2{CC}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{112.5}]
+~bend_parm[\atom1{NH2}\atom2{CC}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{116.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.45}]
+~bend_parm[\atom1{NH2}\atom2{CC}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{116.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.45}]
+~bend_parm[\atom1{NH2}\atom2{CC}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{116.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.45}]
+~bend_parm[\atom1{NH2}\atom2{CC}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{44283.6146}\eq_bend{111}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{1.98}]
+~bend_parm[\atom1{NH2}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{38244.9399}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.14}]
+~bend_parm[\atom1{NH2}\atom2{CT2}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{38244.9399}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.14}]
+~bend_parm[\atom1{NH2}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{52335.1809}\eq_bend{108}]
+~bend_parm[\atom1{NH2}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{110}]
+~bend_parm[\atom1{NH2}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{38244.9399}\eq_bend{109.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.14}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{43981.6808}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{43981.6808}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT1}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{107.5}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{43981.6808}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{43981.6808}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{43981.6808}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{68136.3797}\eq_bend{110}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{45290.0604}\eq_bend{107.5}
+           \pot_type_bond{harm}\fk_bond{35225.6025}\eq_bond{2.101}]
+~bend_parm[\atom1{NH3}\atom2{CT2}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{107.5}]
+~bend_parm[\atom1{NH3}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{45290.0604}\eq_bend{107.5}
+           \pot_type_bond{harm}\fk_bond{35225.6025}\eq_bond{2.101}]
+~bend_parm[\atom1{NP}\atom2{CP1}\atom3{C}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{106}]
+~bend_parm[\atom1{NP}\atom2{CP1}\atom3{CC}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{106}]
+~bend_parm[\atom1{NP}\atom2{CP1}\atom3{CD}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{106}]
+~bend_parm[\atom1{NP}\atom2{CP1}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{108.5}]
+~bend_parm[\atom1{NP}\atom2{CP1}\atom3{HB}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{107.5}]
+~bend_parm[\atom1{NP}\atom2{CP3}\atom3{CP2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{108.5}]
+~bend_parm[\atom1{NP}\atom2{CP3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{51831.958}\eq_bend{109.15}]
+~bend_parm[\atom1{NPH}\atom2{CPA}\atom3{CPB}
+           \pot_type_bend{harm}\fk_bend{122786.386}\eq_bend{111.54}]
+~bend_parm[\atom1{NPH}\atom2{CPA}\atom3{CPM}
+           \pot_type_bend{harm}\fk_bend{88567.2292}\eq_bend{124.39}]
+~bend_parm[\atom1{NPH}\atom2{FE}\atom3{CM}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{90}]
+~bend_parm[\atom1{NPH}\atom2{FE}\atom3{CPM}
+           \pot_type_bend{harm}\fk_bend{0}\eq_bend{45}]
+~bend_parm[\atom1{NPH}\atom2{FE}\atom3{NPH}
+           \pot_type_bend{harm}\fk_bend{14482.7549}\eq_bend{90}]
+~bend_parm[\atom1{NR1}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{130837.952}\eq_bend{106}]
+~bend_parm[\atom1{NR1}\atom2{CPH1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{124}]
+~bend_parm[\atom1{NR1}\atom2{CPH1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{124}]
+~bend_parm[\atom1{NR1}\atom2{CPH1}\atom3{HR3}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{124}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.14}]
+~bend_parm[\atom1{NR1}\atom2{CPH2}\atom3{HR1}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{122.5}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.14}]
+~bend_parm[\atom1{NR2}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{130837.952}\eq_bend{110}]
+~bend_parm[\atom1{NR2}\atom2{CPH1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{120}]
+~bend_parm[\atom1{NR2}\atom2{CPH1}\atom3{HR3}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{120}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.14}]
+~bend_parm[\atom1{NR2}\atom2{CPH2}\atom3{HR1}
+           \pot_type_bend{harm}\fk_bend{25161.1446}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.12}]
+~bend_parm[\atom1{NR2}\atom2{CPH2}\atom3{NR1}
+           \pot_type_bend{harm}\fk_bend{130837.952}\eq_bend{112.5}]
+~bend_parm[\atom1{NR2}\atom2{FE}\atom3{CM}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{180}]
+~bend_parm[\atom1{NR2}\atom2{FE}\atom3{NPH}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{90}]
+~bend_parm[\atom1{NR3}\atom2{CPH1}\atom3{CPH1}
+           \pot_type_bend{harm}\fk_bend{145934.639}\eq_bend{108}]
+~bend_parm[\atom1{NR3}\atom2{CPH1}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{46095.217}\eq_bend{122}]
+~bend_parm[\atom1{NR3}\atom2{CPH1}\atom3{HR1}
+           \pot_type_bend{harm}\fk_bend{22141.8073}\eq_bend{122}
+           \pot_type_bond{harm}\fk_bond{15096.6868}\eq_bond{2.18}]
+~bend_parm[\atom1{NR3}\atom2{CPH2}\atom3{HR2}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{126}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.14}]
+~bend_parm[\atom1{NR3}\atom2{CPH2}\atom3{NR3}
+           \pot_type_bend{harm}\fk_bend{145934.639}\eq_bend{108}]
+~bend_parm[\atom1{NY}\atom2{CA}\atom3{CY}
+           \pot_type_bend{harm}\fk_bend{120773.494}\eq_bend{110}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.24}]
+~bend_parm[\atom1{NY}\atom2{CA}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.177}]
+~bend_parm[\atom1{NY}\atom2{CA}\atom3{HP}
+           \pot_type_bend{harm}\fk_bend{32206.2651}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{25161.1446}\eq_bond{2.177}]
+~bend_parm[\atom1{NY}\atom2{CPT}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{161031.326}\eq_bend{130.6}]
+~bend_parm[\atom1{NY}\atom2{CPT}\atom3{CPT}
+           \pot_type_bend{harm}\fk_bend{110709.036}\eq_bend{107.4}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{118}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{121}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{121}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{121}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{H}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{121.7}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{N}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{122.5}]
+~bend_parm[\atom1{O}\atom2{C}\atom3{NH1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{122.5}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{80515.6629}\eq_bend{118}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{15096.6868}\eq_bend{121}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.44}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{15096.6868}\eq_bend{121}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.44}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{15096.6868}\eq_bend{121}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.44}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{44283.6146}\eq_bend{122}]
+~bend_parm[\atom1{O}\atom2{CC}\atom3{NH2}
+           \pot_type_bend{harm}\fk_bend{75483.4339}\eq_bend{122.5}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.37}]
+~bend_parm[\atom1{OB}\atom2{CD}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.442}]
+~bend_parm[\atom1{OB}\atom2{CD}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.442}]
+~bend_parm[\atom1{OB}\atom2{CD}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.442}]
+~bend_parm[\atom1{OB}\atom2{CD}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{70451.205}\eq_bend{125}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.442}]
+~bend_parm[\atom1{OC}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{120}]
+~bend_parm[\atom1{OC}\atom2{CC}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{118}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.388}]
+~bend_parm[\atom1{OC}\atom2{CC}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{118}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.388}]
+~bend_parm[\atom1{OC}\atom2{CC}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{118}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.388}]
+~bend_parm[\atom1{OC}\atom2{CC}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{118}
+           \pot_type_bond{harm}\fk_bond{50322.2893}\eq_bond{2.388}]
+~bend_parm[\atom1{OC}\atom2{CC}\atom3{OC}
+           \pot_type_bend{harm}\fk_bend{100644.579}\eq_bend{124}
+           \pot_type_bond{harm}\fk_bond{70451.205}\eq_bond{2.225}]
+~bend_parm[\atom1{OC}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{122}]
+~bend_parm[\atom1{OC}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{118.3}]
+~bend_parm[\atom1{OC}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{65418.9761}\eq_bend{118.3}]
+~bend_parm[\atom1{OH1}\atom2{CA}\atom3{CA}
+           \pot_type_bend{harm}\fk_bend{45491.3495}\eq_bend{120}]
+~bend_parm[\atom1{OH1}\atom2{CD}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{110.5}]
+~bend_parm[\atom1{OH1}\atom2{CD}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{110.5}]
+~bend_parm[\atom1{OH1}\atom2{CD}\atom3{OB}
+           \pot_type_bend{harm}\fk_bend{50322.2893}\eq_bend{123}
+           \pot_type_bond{harm}\fk_bond{211353.615}\eq_bond{2.262}]
+~bend_parm[\atom1{OH1}\atom2{CT1}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{76187.946}\eq_bend{110.1}]
+~bend_parm[\atom1{OH1}\atom2{CT1}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{76187.946}\eq_bend{110.1}]
+~bend_parm[\atom1{OH1}\atom2{CT1}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{46195.8616}\eq_bend{108.89}]
+~bend_parm[\atom1{OH1}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{76187.946}\eq_bend{110.1}]
+~bend_parm[\atom1{OH1}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{76187.946}\eq_bend{110.1}]
+~bend_parm[\atom1{OH1}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{76187.946}\eq_bend{110.1}]
+~bend_parm[\atom1{OH1}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{46195.8616}\eq_bend{108.89}]
+~bend_parm[\atom1{OH1}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{46195.8616}\eq_bend{108.89}]
+~bend_parm[\atom1{OM}\atom2{CM}\atom3{FE}
+           \pot_type_bend{harm}\fk_bend{35225.6025}\eq_bend{180}]
+~bend_parm[\atom1{OM}\atom2{FE}\atom3{NPH}
+           \pot_type_bend{harm}\fk_bend{5032.22893}\eq_bend{90}]
+~bend_parm[\atom1{OM}\atom2{OM}\atom3{FE}
+           \pot_type_bend{harm}\fk_bend{0}\eq_bend{180}]
+~bend_parm[\atom1{OS}\atom2{CD}\atom3{CP1}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.326}]
+~bend_parm[\atom1{OS}\atom2{CD}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.326}]
+~bend_parm[\atom1{OS}\atom2{CD}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.326}]
+~bend_parm[\atom1{OS}\atom2{CD}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{109}
+           \pot_type_bond{harm}\fk_bond{20128.9157}\eq_bond{2.326}]
+~bend_parm[\atom1{OS}\atom2{CD}\atom3{OB}
+           \pot_type_bend{harm}\fk_bend{90580.1207}\eq_bend{125.9}
+           \pot_type_bond{harm}\fk_bond{161031.326}\eq_bond{2.2576}]
+~bend_parm[\atom1{OS}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{109.5}]
+~bend_parm[\atom1{OS}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{60386.7472}\eq_bend{109.5}]
+~bend_parm[\atom1{S}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58373.8556}\eq_bend{112.5}]
+~bend_parm[\atom1{S}\atom2{CT2}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{58373.8556}\eq_bend{114.5}]
+~bend_parm[\atom1{S}\atom2{CT2}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{58373.8556}\eq_bend{114.5}]
+~bend_parm[\atom1{S}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{46397.1507}\eq_bend{111.3}]
+~bend_parm[\atom1{S}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{46397.1507}\eq_bend{111.3}]
+~bend_parm[\atom1{SM}\atom2{CT2}\atom3{CT1}
+           \pot_type_bend{harm}\fk_bend{58373.8556}\eq_bend{112.5}]
+~bend_parm[\atom1{SM}\atom2{CT2}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{38244.9399}\eq_bend{111}]
+~bend_parm[\atom1{SM}\atom2{CT3}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{38244.9399}\eq_bend{111}]
+~bend_parm[\atom1{SM}\atom2{SM}\atom3{CT2}
+           \pot_type_bend{harm}\fk_bend{72967.3195}\eq_bend{103.3}]
+~bend_parm[\atom1{SM}\atom2{SM}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{72967.3195}\eq_bend{103.3}]
+~bend_parm[\atom1{SS}\atom2{CS}\atom3{CT3}
+           \pot_type_bend{harm}\fk_bend{55354.5182}\eq_bend{118}]
+~bend_parm[\atom1{SS}\atom2{CS}\atom3{HA}
+           \pot_type_bend{harm}\fk_bend{40257.8314}\eq_bend{112.3}]

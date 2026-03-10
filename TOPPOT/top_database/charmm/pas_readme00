@@ -1,0 +1,6 @@
+0) Note, that all the nucleotides are by default DEOXYribose!
+1) Currently RNA are not supported!
+2) Temporarily no terminal residue types are supported! 
+   I will fix this in this or in the next month 
+   (now 03/25/08)
+

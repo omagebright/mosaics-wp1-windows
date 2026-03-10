@@ -1,0 +1,687 @@
+! AMBER topology file for PROTEINS with Polar H ONLY -- RAPDF_PH topology
+!
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*  Modified by Gaurav Chopra in order to make the topology same as
+*  ENCAD KB library as defined in top_RAPDF_PH_prot_chidef.rtf file.
+*  No topology for Nucleic Acids are included.
+*  The comments made by Gaurav Chopra are marked by ">>GC<<"
+*  Date : 04/23/09
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!>>GC<<
+MASS    1  BR 79.90          !  bromine
+MASS    2  C  12.01          !  sp2 C carbonyl group 
+MASS    3  CA 12.01          !  sp2 C pure aromatic (benzene)
+MASS    4  CB 12.01          !  sp2 aromatic C, 5&6 membered ring junction
+MASS    5  CC 12.01          !  sp2 aromatic C, 5 memb. ring HIS
+MASS    6  CK 12.01          !  sp2 C 5 memb.ring in purines
+MASS    7  CM 12.01          !  sp2 C  pyrimidines in pos. 5 & 6
+MASS    8  CN 12.01          !  sp2 C aromatic 5&6 memb.ring junct.(TRP)
+MASS    9  CQ 12.01          !  sp2 C in 5 mem.ring of purines between 2 N
+MASS   10  CR 12.01          !  sp2 arom as CQ but in HIS
+MASS   11  CT 12.01          !  sp3 aliphatic C
+MASS   12  CV 12.01          !  sp2 arom. 5 memb.ring w/1 N and 1 H (HIS)
+MASS   13  CW 12.01          !  sp2 arom. 5 memb.ring w/1 N-H and 1 H (HIS)
+MASS   14  CS 12.01          !  sp2 arom. 5 memb.ring w/1 subst. (TRP)
+MASS   15  C0 40.08          !  calcium
+MASS   16  H  1.008          !  H bonded to nitrogen atoms
+MASS   17  HC 1.008          !  H aliph. bond. to C without electrwd.group
+MASS   18  H1 1.008          !  H aliph. bond. to C with 1 electrwd. group
+MASS   19  H2 1.008          !  H aliph. bond. to C with 2 electrwd.groups
+MASS   20  H3 1.008          !  H aliph. bond. to C with 3 eletrwd.groups
+MASS   21  HA 1.008          !  H arom. bond. to C without elctrwd. groups
+MASS   22  H4 1.008          !  H arom. bond. to C with 1 electrwd. group
+MASS   23  H5 1.008          !  H arom. bond. to C with 2 electrwd. groups
+MASS   24  HO 1.008          !  hydroxyl group
+MASS   25  HS 1.008          !  hydrogen bonded to sulphur
+MASS   26  HW 1.008          !  H in TIP3P water
+MASS   27  HP 1.008          !  H bonded to C next to positively charged gr
+MASS   28  F  19.00          !  fluorine
+MASS   29  I  126.9          !  iodine
+MASS   30  IM 35.45          !  assumed to be Cl-
+MASS   31  IP 22.99          !  assumed to be Na+
+MASS   32  IB 131.0          !  'big ion w/ waters' for vacuum (Na+, 6H2O)
+MASS   33  MG 24.305         !  magnesium
+MASS   34  N  14.01          !  sp2 nitrogen in amide groups
+MASS   35  NA 14.01          !  sp2 N in 5 memb.ring w/H atom (HIS)
+MASS   36  NB 14.01          !  sp2 N in 5 memb.ring w/LP (HIS,ADE,GUA)
+MASS   37  NC 14.01          !  sp2 N in 6 memb.ring w/LP (ADE,GUA)
+MASS   38  N2 14.01          !  sp2 N in amino groups
+MASS   39  N3 14.01          !  sp3 N for charged amino groups (Lys, etc)
+MASS   40  NS 14.01          !  sp2 N; note N* --> NS to avoid confusion with wildcard
+MASS   41  O  16.00          !  carbonyl group oxygen
+MASS   42  OW 16.00          !  oxygen in TIP3P water
+MASS   43  OH 16.00          !  oxygen in hydroxyl group
+MASS   44  OS 16.00          !  ether and ester oxygen
+MASS   45  O2 16.00          !  carboxyl and phosphate group oxygen
+MASS   46  P  30.97          !  phosphate
+MASS   47  S  32.06          !  sulphur in disulfide linkage
+MASS   48  SH 32.06          !  sulphur in cystine
+MASS   49  CU 63.55          !  copper
+MASS   50  FE 55.00          !  iron
+MASS   51  Li  6.94          !  lithium
+MASS   52  K  39.10          !  potassium
+MASS   53  Rb 85.47          !  rubidium
+
+DECL  -CA                    !  proteins
+DECL  -C
+DECL  -O
+DECL  +N
+DECL  +H
+DECL  +CA
+DECL  +P                     ! nucleic acids
+DECL  +O1P
+DECL  +O2P
+DECL  +O5'
+DECL  -O3'
+
+RESI ALA          0.00
+GROUP                   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !  HN-N
+ATOM CA    CT     0.00   !     |
+GROUP                    !     CA--CB
+ATOM CB    CT     0.00   !     |
+GROUP                    !   O=C
+ATOM C     C      0.5973 !     |
+ATOM O     O     -0.567  !
+BOND N  HN
+BOND CB CA  N  CA  
+BOND C  CA  C  +N 
+DOUBLE O  C 
+
+IMPROPER  -C  CA   N   HN
+IMPROPER  CA  +N   C   O
+
+RESI ARG          0.00
+GROUP   
+ATOM HN    H      0.27  !     |
+ATOM N     N     -0.3003!     |                     
+ATOM CA    CT     0.00  !  HN-N                     
+GROUP                   !     |                     NH1
+ATOM CB    CT     0.00  !     |                    //  
+GROUP                   !     CA--CB--CG--CD--NE--CZ
+ATOM CG    CT     0.00  !     |                     \
+GROUP                   !     |                      NH2
+ATOM CD    CT     0.00  !   O=C                       
+ATOM NE    N2     0.00  !     |                      
+ATOM CZ    CA     0.00
+ATOM NH1   N2     0.00
+ATOM NH2   N2     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA  CG  CB  CD CG  NE CD  CZ NE   
+BOND NH2 CZ  N  CA   
+BOND C   CA  C  +N
+DOUBLE O  C    CZ  NH1  
+
+IMPROPER  -C   CA   N    HN
+IMPROPER  CA   +N   C    O
+IMPROPER  NE   NH1  CZ   NH2
+
+CHIGROUP CG
+CHIGROUP CD
+CHIGROUP NE
+CHIGROUP CZ
+CHIGROUP NH1 NH2
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD
+CHIPRIM CB CG CD NE
+CHIPRIM CG CD NE CZ
+CHIPRIM CD NE CZ NH1 
+
+RESI ASN          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |       
+ATOM CA    CT     0.00   !  HN-N       
+GROUP                    !     |       OD1   
+ATOM CB    CT     0.00   !     |       || 
+GROUP                    !     CA--CB--CG--ND2
+ATOM CG    C      0.00   !     |     
+ATOM OD1   O      0.00   !   O=C           
+GROUP                    !     |           
+ATOM ND2   N      0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB CA  CG CB   ND2 CG   
+BOND N  CA   C   CA    C +N 
+DOUBLE C  O   CG  OD1
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CB  ND2  CG  OD1
+  
+CHIGROUP CG
+CHIGROUP OD1 ND2
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG OD1 
+
+RESI ASP          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |       
+ATOM CA    CT     0.00   !  HN-N       
+GROUP                    !     |         OD1
+ATOM CB    CT     0.00   !     |        //
+ATOM CG    C      0.00   !     CA--CB--CG
+ATOM OD1   O2     0.00   !     |        \
+ATOM OD2   O2     0.00   !     |         OD2(-)
+GROUP                    !   O=C           
+ATOM C     C      0.5973 !     |           
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB CA  CG CB  OD2 CG   
+BOND N  CA   C   CA  C +N   
+DOUBLE  O   C   CG  OD1
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CB  OD1  CG  OD2
+
+CHIGROUP CG
+CHIGROUP OD1 OD2 
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG OD1
+
+RESI CYS          0.00
+GROUP   
+ATOM HN    H      0.27        !     |
+ATOM N     N     -0.3003      !     |       
+ATOM CA    CT     0.00        !  HN-N       
+GROUP                         !     |
+ATOM CB    CT     0.00        !     | 
+ATOM SG    SH     0.00        !     CA--CB--SG
+GROUP                         !     |
+ATOM C     C      0.5973      !     |
+ATOM O     O     -0.5670      !   O=C           
+BOND N  HN                    !     |
+BOND CB CA   SG CB   N  CA                    
+BOND C  CA   C +N
+DOUBLE O  C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+   
+CHIGROUP SG
+CHIPRIM N CA CB SG 
+
+RESI GLN          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |          
+ATOM CA    CT     0.00   !  HN-N          
+GROUP                    !     |           OE1
+ATOM CB    CT     0.00   !     |           ||
+GROUP                    !     CA--CB--CG--CD--NE2
+ATOM CG    CT     0.00   !     | 
+GROUP                    !     |
+ATOM CD    C      0.00   !   O=C          
+ATOM OE1   O      0.00   !     |          
+GROUP   
+ATOM NE2   N      0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB CA  CG  CB   CD  CG   NE2 CD   
+BOND N   CA   C   CA   
+BOND C  +N   
+DOUBLE O  C    CD  OE1  
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CG  NE2  CD  OE1
+
+CHIGROUP CG
+CHIGROUP CD
+CHIGROUP OE1 NE2 
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD
+CHIPRIM CB CG CD OE1 
+
+RESI GLU          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |          
+ATOM CA    CT     0.00   !  HN-N          
+GROUP                    !     |            OE1
+ATOM CB    CT     0.00   !     |            //
+GROUP                    !     CA--CB--CG--CD
+ATOM CG    CT     0.00   !     |             \
+ATOM CD    C      0.00   !     |             OE2
+ATOM OE1   O2     0.00   !   O=C          
+ATOM OE2   O2     0.00   !     |          
+GROUP   
+ATOM C     C       0.5973
+ATOM O     O      -0.5670
+BOND N  HN
+BOND CB CA  CG CB  CD CG  OE2 CD   
+BOND N  CA  C  CA   
+BOND C  +N  
+DOUBLE O  C   CD  OE1 
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CG  OE1  CD  OE2
+
+CHIGROUP CG
+CHIGROUP CD
+CHIGROUP OE1 OE2 
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD
+CHIPRIM CB CG CD OE1 
+
+RESI GLY          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |  
+ATOM C     C      0.5973 !     |  
+ATOM O     O     -0.5670 !     CA
+BOND N  HN               !     |
+BOND N  CA  C CA         !     |  
+BOND C +N                !     |  
+DOUBLE O  C              !     C=O
+                         !     |
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+
+RESI HIS          0.00  !
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |          ND1--CE1
+ATOM CB    CT     0.00   !     |         /      ||
+ATOM ND1   NA     0.00   !     CA--CB--CG       ||
+ATOM CG    CC     0.00   !     |         \\     ||
+GROUP                    !     |          CD2--NE2
+ATOM CE1   CR     0.00   !   O=C
+ATOM NE2   NB     0.00   !     |
+ATOM CD2   CV     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG  CB   ND1 CG   CE1 ND1   
+BOND NE2 CD2  N   CA   
+BOND C   CA   C   +N  
+DOUBLE O  C   CG  CD2   CE1  NE2 
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER ND1 CD2  CG  CB
+
+CHIGROUP CG
+CHIGROUP ND1 CD2 CE1 NE2 
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG ND1 
+
+RESI HSD          0.00  !
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |          ND1--CE1
+ATOM CB    CT     0.00   !     |         /      ||
+ATOM ND1   NA     0.00   !     CA--CB--CG       ||
+ATOM CG    CC     0.00   !     |         \\     ||
+GROUP                    !     |          CD2--NE2
+ATOM CE1   CR     0.00   !   O=C
+ATOM NE2   NB     0.00   !     |
+ATOM CD2   CV     0.00
+GROUP   
+ATOM C     C       0.5973
+ATOM O     O      -0.5670
+BOND N  HN
+BOND CB  CA   CG  CB   ND1 CG   CE1 ND1   
+BOND NE2 CD2  N   CA   
+BOND C   CA   C   +N  
+DOUBLE O  C   CG  CD2   CE1  NE2 
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER ND1 CD2  CG  CB
+
+CHIGROUP CG
+CHIGROUP ND1 CD2 CE1 NE2 
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG ND1 
+
+RESI ILE          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |     CG2
+ATOM CB    CT     0.00   !     |    /
+GROUP                    !     CA--CB
+ATOM CG2   CT     0.00   !     |    \
+GROUP                    !     |     CG1--CD
+ATOM CG1   CT     0.00   !   O=C	 
+GROUP                    !     |
+ATOM CD    CT    0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG1 CB   CG2 CB   CD  CG1   
+BOND N   CA    C   CA   C   +N 
+DOUBLE  O   C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+
+CHIGROUP CG1 CG2  
+CHIGROUP CD 
+CHIPRIM N CA CB CG1
+CHIPRIM CA CB CG1 CD 
+
+RESI LEU          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |        CD1
+ATOM CB    CT     0.00   !     |        /
+GROUP                    !     CA--CB--CG
+ATOM CG    CT     0.00   !     |        \ 
+GROUP                    !     |         CD2
+ATOM CD1   CT     0.00   !   O=C
+GROUP                    !     |
+ATOM CD2   CT     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG  CB   CD1 CG   CD2 CG   
+BOND N   CA    C   CA   C +N
+DOUBLE   O   C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+
+CHIGROUP CG
+CHIGROUP CD1 CD2
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD1
+
+RESI LYS          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |                   
+ATOM CA    CT     0.00   !  HN-N                   
+GROUP                    !     |
+ATOM CB    CT     0.00   !     |
+GROUP                    !     CA--CB--CG--CD--CE--NZ
+ATOM CG    CT     0.00   !     |
+GROUP                    !     |
+ATOM CD    CT     0.00   !   O=C                  
+GROUP                    !     |                  
+ATOM CE    CT     0.00
+ATOM NZ    N3     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB CA   CG CB   CD CG   CE CD   NZ CE   
+BOND N  CA    C  CA   
+BOND C  +N
+DOUBLE   O  C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+   
+CHIGROUP CG
+CHIGROUP CD
+CHIGROUP CE
+CHIGROUP NZ
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD
+CHIPRIM CB CG CD CE
+CHIPRIM CG CD CE NZ
+
+RESI MET          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |                   
+ATOM CA    CT     0.00   !  HN-N                   
+GROUP                    !     |
+ATOM CB    CT     0.00   !     |
+GROUP                    !     CA--CB--CG--SD--CE
+ATOM CG    CT     0.00   !     |
+ATOM SD    S      0.00   !     |
+ATOM CE    CT     0.00   !   O=C                  
+GROUP                    !     |                  
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB CA   CG CB   SD CG   CE SD   
+BOND N  CA    C  CA   C  +N
+DOUBLE   O  C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+   
+CHIGROUP CG
+CHIGROUP SD
+CHIGROUP CE
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG SD 
+CHIPRIM CB CG SD CE
+
+RESI PHE          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |
+ATOM CA    CT     0.00   !  HN-N
+GROUP                    !     |         CD1--CE1
+ATOM CB    CT     0.00   !     |        //     \\
+GROUP                    !     CA--CB--CG       CZ
+ATOM CG    CA     0.00   !     |         \  __  /
+GROUP                    !     |         CD2--CE2
+ATOM CD1   CA     0.00   !   O=C       
+GROUP                    !     |       
+ATOM CE1   CA     0.00
+GROUP
+ATOM CZ    CA     0.00
+GROUP
+ATOM CD2   CA     0.00
+GROUP
+ATOM CE2   CA     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG CB   CD2 CG   CE1 CD1   
+BOND CZ  CE2    
+BOND N   CA    C   CA   C   +N   
+DOUBLE   O  C    CD1 CG  CZ CE1   CE2 CD2
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CD1  CD2  CG   CB
+
+CHIGROUP CG
+CHIGROUP CD1 CD2 CE1 CE2 CZ
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD1
+
+RESI PRO          0.00
+GROUP                 
+ATOM N     N      0.00   !     | 
+ATOM CD    CT     0.00   !     N---CD   
+ATOM CA    CT     0.00   !     |     \ 
+GROUP                    !     |      CG
+ATOM CB    CT     0.00   !     |     / 
+GROUP                    !     CA--CB  
+ATOM CG    CT     0.00   !     |  
+GROUP                    !     |
+ATOM C     C      0.00   !   O=C
+ATOM O     O      0.00   !     |
+BOND C  CA  C   +N   
+BOND N  CA  CA  CB  CB  CG  CG  CD  N   CD
+DOUBLE   O  C       
+
+IMPROPER -C  CD   N   CA
+IMPROPER CA  +N   C   O
+
+RESI SER          0.00
+GROUP   
+ATOM HN    H      0.27    !     |
+ATOM N     N     -0.3003  !     |       
+ATOM CA    CT     0.00    !  HN-N       
+GROUP                     !     |
+ATOM CB    CT     0.00    !     |
+ATOM OG    OH     0.00    !     CA--CB--OG
+GROUP                     !     |
+ATOM C     C      0.5973  !     |
+ATOM O     O     -0.5670  !   O=C           
+BOND N  HN                !     |
+BOND CB CA  OG CB  N  CA                  
+BOND C  CA  C +N  
+DOUBLE   O  C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+   
+CHIGROUP OG
+CHIPRIM N CA CB OG 
+
+RESI THR          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |  
+ATOM CA    CT     0.00   !  HN-N  
+GROUP                    !     |     OG1
+ATOM CB    CT     0.00   !     |    /
+ATOM OG1   OH     0.00   !     CA--CB  
+GROUP                    !     |    \     
+ATOM CG2   CT     0.00   !     |     CG2
+GROUP                    !   O=C   
+ATOM C     C      0.5973 !     | 
+ATOM O     O     -0.5670                 
+BOND N  HN
+BOND CB CA  OG1 CB  CG2 CB   
+BOND N  CA  C   CA  C   +N
+DOUBLE  O   C
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+    
+CHIGROUP OG1 CG2 
+CHIPRIM N CA CB OG1 
+
+RESI TRP          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |                 
+ATOM CA    CT     0.00   !  HN-N                 
+GROUP                    !     |                  CE3
+ATOM CB    CT     0.00   !     |                 /  \\
+GROUP                    !     CA--CB---CG-----CD2   CZ3
+ATOM CG    CS     0.00   !     |        ||     ||     |
+ATOM CD1   CW     0.00   !     |        CD1    CE2   CH2
+ATOM NE1   NA     0.00   !   O=C          \   / \  //
+ATOM CE2   CN     0.00   !     |           NE1   CZ2
+ATOM CD2   CB     0.00   !            
+GROUP                    !            
+ATOM CE3   CA     0.00
+GROUP
+ATOM CZ3   CA     0.00
+GROUP
+ATOM CZ2   CA     0.00
+GROUP
+ATOM CH2   CA     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG  CB   CD2 CG   NE1 CD1   
+BOND CZ2 CE2   
+BOND N   CA     C   CA   C   +N   
+BOND CZ3 CH2  CD2 CE3  NE1 CE2
+DOUBLE  O   C   CD1 CG   CE2 CD2  CZ3 CE3  CH2 CZ2     
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CD1  CD2  CG   CB
+
+CHIGROUP CG
+CHIGROUP CD1 CD2 CE2 NE1 CE3 CZ3 CH2 CZ2
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD1 
+
+RESI TYR          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |         
+ATOM CA    CT     0.00   !  HN-N     
+GROUP                    !     |        CD1--CE1
+ATOM CB    CT     0.00   !     |       //      \\
+GROUP                    !     CA--CB--CG      CZ--OH
+ATOM CG    CA     0.00   !     |        \  __  /
+GROUP                    !     |        CD2--CE2    
+ATOM CD1   CA     0.00   !   O=C          
+GROUP                    !     |   
+ATOM CE1   CA     0.00
+GROUP
+ATOM CZ    C      0.00
+ATOM OH    OH     0.00
+GROUP
+ATOM CD2   CA     0.00
+GROUP
+ATOM CE2   CA     0.00
+GROUP   
+ATOM C     C      0.5973
+ATOM O     O     -0.5670
+BOND N  HN
+BOND CB  CA   CG  CB   CD2 CG   CE1 CD1   
+BOND CZ  CE2  OH  CZ   
+BOND N   CA    C   CA   C   +N
+DOUBLE   O   C   CD1 CG  CE1  CZ  CE2 CD2      
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+IMPROPER CD1  CD2  CG   CB
+IMPROPER CE1  CE2  CZ   OH
+
+CHIGROUP CG
+CHIGROUP CD1 CD2 CE1 CE2 CZ OH
+CHIPRIM N CA CB CG
+CHIPRIM CA CB CG CD1 
+
+RESI VAL          0.00
+GROUP   
+ATOM HN    H      0.27   !     |
+ATOM N     N     -0.3003 !     |   
+ATOM CA    CT     0.00   !  HN-N   
+GROUP                    !     |     CG1
+ATOM CB    CT     0.00   !     |    /
+GROUP                    !     CA--CB  
+ATOM CG1   CT     0.00   !     |    \     
+GROUP                    !     |     CG2
+ATOM CG2   CT     0.00   !   O=C     
+GROUP                    !     |
+ATOM C    C       0.5973
+ATOM O    O      -0.5670
+BOND N  HN
+BOND CB  CA   CG1 CB   CG2 CB   
+BOND N   CA   C   CA   C   +N
+DOUBLE    O   C   
+
+IMPROPER -C  CA   N   HN
+IMPROPER CA  +N   C   O
+
+CHIGROUP CG1 CG2
+CHIPRIM N CA CB CG1
+ 
+!>>GC<<
+! DID NOT Added the Amber remaining residues without the hydrogens
+! These include terminal residues, water molecule, ions

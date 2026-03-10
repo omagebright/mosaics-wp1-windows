@@ -1,0 +1,118 @@
+#! /usr/bin/perl -w
+# converts tors parameters
+# usage:
+#  ./convert_charmm_tors.pl charmm_tors.prm > pas_tors.prm
+
+  $cn[0][0] = 1;  $cn[0][1] = 0; $cn[0][2] = 0;
+  $cn[1][0] = 0;  $cn[1][1] = 1; $cn[1][2] = 0;
+  $cn[2][0] =-1;  $cn[2][1] = 0; $cn[2][2] = 2;
+  $cn[3][0] = 0;  $cn[3][1] =-3; $cn[3][2] = 0;
+  $cn[4][0] = 1;  $cn[4][1] = 0; $cn[4][2] =-8;
+  $cn[5][0] = 0;  $cn[5][1] = 5; $cn[5][2] = 0;
+  $cn[6][0] =-1;  $cn[6][1] = 0; $cn[6][2] =18;
+
+  $cn[0][3] = 0;  $cn[0][4] = 0;  $cn[0][5] = 0;  $cn[0][6] = 0;
+  $cn[1][3] = 0;  $cn[1][4] = 0;  $cn[1][5] = 0;  $cn[1][6] = 0;
+  $cn[2][3] = 0;  $cn[2][4] = 0;  $cn[2][5] = 0;  $cn[2][6] = 0;
+  $cn[3][3] = 4;  $cn[3][4] = 0;  $cn[3][5] = 0;  $cn[3][6] = 0;
+  $cn[4][3] = 0;  $cn[4][4] = 8;  $cn[4][5] = 0;  $cn[4][6] = 0;
+  $cn[5][3] =-20; $cn[5][4] = 0;  $cn[5][5] = 16; $cn[5][6] = 0;
+  $cn[6][3] = 0;  $cn[6][4] =-48; $cn[6][5] = 0;  $cn[6][6] = 32;
+
+  $ndihedral = 0;
+  $nentry = 0;
+  $atom1_save = 'DUMMY';
+  $atom2_save = 'DUMMY';
+  $atom3_save = 'DUMMY';
+  $atom4_save = 'DUMMY';
+  $kcal2K = 315777.0/627.50921;
+  while (<>) {
+        s/!.*//; s/\*.*//;      # ignore comments
+        next if /^(\s)*$/;      # skip blank lines
+        @entry = split;        
+        if ($entry[0] ne 'DIHEDRALS') {
+            $nentry++;          
+            $atom1 = $entry[0];
+            $atom2 = $entry[1]; 
+            $atom3 = $entry[2];
+            $atom4 = $entry[3];
+            $Kchi  = $entry[4]; $Kchi*=$kcal2K; 
+            $n     = $entry[5];
+            $delta = $entry[6];
+            if ($delta == 0.0) {$delta = 1.0;}
+            elsif ($delta == 180.0) {$delta = -1.0;}            
+            else {
+                if ($Kchi!=0) {
+                    print "@@@@@@@ invalid delta found @@@@@@@\n"; 
+                    print "In torsion: ";
+                    print "$atom1-$atom2-$atom3-$atom4,\n";   
+                    print "@@@@@@@ invalid delta found @@@@@@@\n"; 
+		    die;
+                }
+            }
+            $Kchi_delta = $Kchi*$delta;
+
+            $new_dihedral = 0;
+            if ( ($atom1 ne $atom1_save) ||
+                 ($atom2 ne $atom2_save) ||
+                 ($atom3 ne $atom3_save) ||
+                 ($atom4 ne $atom4_save) ) {
+		  $new_dihedral = 1; 
+                  $ndihedral++; $multi[$ndihedral] = 0;
+                  for ($ip=0;$ip<=6;$ip++) {$p[$ip] = 0.0;}
+	    }
+	    $multi[$ndihedral]++;
+            for ($ip=0;$ip<=6;$ip++) {
+                 $p[$ip] += $Kchi_delta*$cn[$n][$ip];
+            }
+            $p[0] += $Kchi; 
+            for ($ip=0;$ip<=6;$ip++) {
+                 $ps[$ip] =  sprintf("%.7g",$p[$ip]);
+		  if ($ps[$ip]==0) {$ps[$ip] = '0';}
+            }
+         
+#            print "@entry\n";
+   
+            $atom1[$nentry] = $atom1;
+            $atom2[$nentry] = $atom2;
+            $atom3[$nentry] = $atom3;
+            $atom4[$nentry] = $atom4;
+            for ($ip=0;$ip<=6;$ip++) {
+                 $p_[$nentry][$ip] = $ps[$ip];
+            }
+
+            $atom1_save = $atom1;
+            $atom2_save = $atom2;
+            $atom3_save = $atom3;
+            $atom4_save = $atom4;
+        }#end if#
+  }#end while#
+
+  
+
+  $nentry = 0;
+  for ($idihedral=1;$idihedral<=$ndihedral;$idihedral++) {
+      for ($imulti=1;$imulti<=$multi[$idihedral];$imulti++) {
+          $nentry++;
+          if ($imulti==$multi[$idihedral]) {
+              $atom1 = $atom1[$nentry];
+              $atom2 = $atom2[$nentry];
+              $atom3 = $atom3[$nentry];
+              $atom4 = $atom4[$nentry];
+              for ($ip=0;$ip<=6;$ip++) {
+                   $ps[$ip] = $p_[$nentry][$ip];
+              }
+              print "~torsion_parm[\\atom1{$atom1}";
+              print               "\\atom2{$atom2}";
+              print               "\\atom3{$atom3}";
+	      print               "\\atom4{$atom4}";
+              print               "\\pot_type{power}\n";
+              print "              \\p0{$ps[0]}\\p1{$ps[1]}";
+  	      print               "\\p2{$ps[2]}\\p3{$ps[3]}";
+              print               "\\p4{$ps[4]}\\p5{$ps[5]}";
+              print               "\\p6{$ps[6]}]\n";
+          }
+      }
+  }
+
+

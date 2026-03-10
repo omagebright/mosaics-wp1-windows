@@ -1,0 +1,188 @@
+*  AMBER parm99SB force field conversion
+*  See: Protiens: Str. Func. and Bioinfo. 65, 712 (2006)
+*
+
+!
+!  This is a hand-conversion of the parm99SB force field
+!  based on the parm99-all.dat file.  All the atom type names 
+!  are the same except where otherwise noted.
+!
+!  note: types N* remaned to NS
+!              C* renamed to CS
+!
+!  note: the HO and HW nonbonded parameters, although zero in 
+!  Cornell et al. should not have a 0.0 vdw radius in CHARMM 
+!  to avoid difficulties with the 0.0/0.0 in the FAST OFF 
+!  van der Waal code...
+!
+!  note: the default nonbonded options chosen here are to match AMBER.
+!  It is not recommended that users actually run with GROUP based 
+!  truncation and a switch unless really trying to match AMBER.  
+!  Better would be ATOM based FSHIFT VSHIFT, however note that this
+!  does modify the energies (and effectively the parameters).
+!
+!  Also note that long-range interactions are handeled differently between
+!  AMBER and CHARMM.  To avoid differences when comparing energies and
+!  forces the the cuttoffs were set to be large in the individule
+!  comparison input files, i.e. 80 Angs.
+!
+!  created by Jeffery Klauda (jbklauda@umd.edu)
+!
+
+DIHEDRALS
+X   C   C   X    3.62500000     2   180.0   !  Junmei et al, 1999
+X   C   CA  X    3.62500000     2   180.0   !  intrpol.bsd.on C6H6
+X   C   CB  X    3.00000000     2   180.0   !  intrpol.bsd.on C6H6
+X   C   CM  X    2.17500000     2   180.0   !  intrpol.bsd.on C6H6
+X   C   CT  X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   C   N   X    2.50000000     2   180.0   !  AA,NMA
+X   C   NS  X    1.45000000     2   180.0   !  JCC,7,(1986),230
+X   C   NA  X    1.35000000     2   180.0   !  JCC,7,(1986),230
+X   C   NC  X    4.00000000     2   180.0   !  JCC,7,(1986),230
+X   C   O   X    2.80000000     2   180.0   !  Junmei et al, 1999
+X   C   OH  X    2.30000000     2   180.0   !  Junmei et al, 1999
+X   C   OS  X    2.70000000     2   180.0   !  Junmei et al, 1999
+X   CA  CA  X    3.62500000     2   180.0   !  intrpol.bsd.on C6H6
+X   CA  CB  X    3.50000000     2   180.0   !  intrpol.bsd.on C6H6
+X   CA  CM  X    2.55000000     2   180.0   !  intrpol.bsd.on C6H6
+X   CA  CN  X    3.62500000     2   180.0   !  reinterpolated 93'
+X   CA  CT  X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   CA  N2  X    2.40000000     2   180.0   !  reinterpolated 93'
+X   CA  NA  X    1.50000000     2   180.0   !  JCC,7,(1986),230
+X   CA  NC  X    4.80000000     2   180.0   !  JCC,7,(1986),230
+X   CA  OH  X    0.90000000     2   180.0   !  Junmei et al, 99
+X   CB  CB  X    5.45000000     2   180.0   !  intrpol.bsd.on C6H6
+X   CB  CN  X    3.00000000     2   180.0   !  reinterpolated 93'
+X   CB  NS  X    1.65000000     2   180.0   !  JCC,7,(1986),230
+X   CB  NB  X    2.55000000     2   180.0   !  JCC,7,(1986),230
+X   CB  NC  X    4.15000000     2   180.0   !  JCC,7,(1986),230
+X   CC  CT  X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   CC  CV  X    5.15000000     2   180.0   !  intrpol.bsd.on C6H6
+X   CC  CW  X    5.37500000     2   180.0   !  intrpol.bsd.on C6H6
+X   CC  NA  X    1.40000000     2   180.0   !  JCC,7,(1986),230
+X   CC  NB  X    2.40000000     2   180.0   !  JCC,7,(1986),230
+X   CD  CD  X    1.00000000     2   180.0   !  Junmei et al, 1999
+X   CD  CT  X    0.00000000     2   0.000   !  Junmei et al, 1999
+X   CD  CM  X    6.65000000     2   180.0   !  Junmei et al, 1999
+X   CK  NS  X    1.70000000     2   180.0   !  JCC,7,(1986),230
+X   CK  NB  X    10.0000000     2   180.0   !  JCC,7,(1986),230
+X   CM  CM  X    6.65000000     2   180.0   !  intrpol.bsd.on C6H6
+X   CM  CT  X    0.00000000     3   0.000   !  JCC,7,(1986),230
+X   CM  NS  X    1.85000000     2   180.0   !  JCC,7,(1986),230
+X   CM  OS  X    1.05000000     2   180.0   !  Junmei et al, 1999
+X   CN  NA  X    1.52500000     2   180.0   !  reinterpolated 93'
+X   CQ  NC  X    6.80000000     2   180.0   !  JCC,7,(1986),230
+X   CT  CT  X    0.15555556     3   0.000   !  JCC,7,(1986),230
+X   CT  CY  X    0.00000000     1   0.000   !  Junmei et al, 1999
+X   CT  CZ  X    0.00000000     1   0.000   !  Junmei et al, 1999
+X   CT  N   X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   CT  NS  X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   CT  N2  X    0.00000000     3   0.000   !  JCC,7,(1986),230
+X   CT  NT  X    0.30000000     3   0.000   !  Junmei et al, 1999
+X   CT  N3  X    0.15555556     3   0.000   !  JCC,7,(1986),230
+X   CT  OH  X    0.16666667     3   0.000   !  JCC,7,(1986),230
+X   CT  OS  X    0.38333333     3   0.000   !  JCC,7,(1986),230
+X   CT  S   X    0.33333333     3   0.000   !  JCC,7,(1986),230
+X   CT  SH  X    0.25000000     3   0.000   !  JCC,7,(1986),230
+X   CS  CB  X    1.67500000     2   180.0   !  intrpol.bsd.onC6H6aa
+X   CS  CT  X    0.00000000     2   0.000   !  JCC,7,(1986),230
+X   CS  CW  X    6.52500000     2   180.0   !  intrpol.bsd.on C6H6
+X   CR  NA  X    2.32500000     2   180.0   !  JCC,7,(1986),230
+X   CR  NB  X    5.00000000     2   180.0   !  JCC,7,(1986),230
+X   CV  NB  X    2.40000000     2   180.0   !  JCC,7,(1986),230
+X   CW  NA  X    1.50000000     2   180.0   !  JCC,7,(1986),230
+X   OH  P   X    0.25000000     3   0.000   !  JCC,7,(1986),230
+X   OS  P   X    0.25000000     3   0.000   !  JCC,7,(1986),230
+N   CT  C   N    0.00000000     4     0.0   !  Simerling (2006)
+N   CT  C   N    0.55000000     3   180.0   !  Simerling (2006)
+N   CT  C   N    1.58000000     2   180.0   !  Simerling (2006)
+N   CT  C   N    0.45000000     1   180.0   !  Simerling (2006)
+C   N   CT  C    0.00000000     4     0.0   !  Simerling (2006)
+C   N   CT  C    0.42000000     3     0.0   !  Simerling (2006)
+C   N   CT  C    0.27000000     2     0.0   !  Simerling (2006)
+C   N   CT  C    0.00000000     1   0.000   !  Simerling (2006)
+CT  CT  N   C    0.00000000     4   0.000   !  Simerling (2006)
+CT  CT  N   C    0.40000000     3   0.000   !  Simerling (2006)
+CT  CT  N   C    2.00000000     2   0.000   !  Simerling (2006)
+CT  CT  N   C    2.00000000     1   0.000   !  Simerling (2006)
+CT  CT  C   N    0.00000000     4   0.000   !  Simerling (2006)
+CT  CT  C   N    0.40000000     3   0.000   !  Simerling (2006)
+CT  CT  C   N    0.20000000     2   0.000   !  Simerling (2006)
+CT  CT  C   N    0.20000000     1   0.000   !  Simerling (2006)
+H   N   C   O    2.50000000     2   180.0   !  JCC,7,(1986),230
+H   N   C   O    2.00000000     1   0.000   !  J.C.cistrans-NMA DE
+CT  S   S   CT   3.50000000     2   0.000   !  JCC,7,(1986),230
+CT  S   S   CT   0.60000000     3   0.000   !  JCC,7,(1986),230
+OH  P   OS  CT   0.25000000     3   0.000   !  JCC,7,(1986),230
+OH  P   OS  CT   1.20000000     2   0.000   !  gg&gt ene.631g*/mp2
+OS  P   OS  CT   0.25000000     3   0.000   !  JCC,7,(1986),230
+OS  P   OS  CT   1.20000000     2   0.000   !  gg&gt ene.631g*/mp2
+H1  CT  C   O    0.80000000     1   0.000   !  Junmei et al, 1999
+H1  CT  C   O    0.08000000     3   180.0   !  Junmei et al, 1999
+HC  CT  C   O    0.80000000     1   0.000   !  Junmei et al, 1999
+HC  CT  C   O    0.08000000     3   180.0   !  Junmei et al, 1999
+HC  CT  CT  HC   0.15000000     3   0.000   !  Junmei et al, 1999
+HC  CT  CT  CT   0.16000000     3   0.000   !  Junmei et al, 1999
+HC  CT  CM  CM   0.38000000     3   180.0   !  Junmei et al, 1999
+HC  CT  CM  CM   1.15000000     1   0.000   !  Junmei et al, 1999
+HO  OH  CT  CT   0.16000000     3   0.000   !  Junmei et al, 1999
+HO  OH  CT  CT   0.25000000     1   0.000   !  Junmei et al, 1999
+HO  OH  C   O    2.30000000     2   180.0   !  Junmei et al, 1999
+HO  OH  C   O    1.90000000     1   0.000   !  Junmei et al, 1999
+CM  CM  C   O    2.17500000     2   180.0   !  Junmei et al, 1999
+CM  CM  C   O    0.30000000     3   0.000   !  Junmei et al, 1999
+CT  CM  CM  CT   6.65000000     2   180.0   !  Junmei et al, 1999
+CT  CM  CM  CT   1.90000000     1   180.0   !  Junmei et al, 1999
+CT  CT  CT  CT   0.18000000     3   0.000   !  Junmei et al, 1999
+CT  CT  CT  CT   0.25000000     2   180.0   !  Junmei et al, 1999
+CT  CT  CT  CT   0.20000000     1   180.0   !  Junmei et al, 1999
+CT  CT  NT  CT   0.30000000     3   0.000   !  Junmei et al, 1999
+CT  CT  NT  CT   0.48000000     2   180.0   !  Junmei et al, 1999
+CT  CT  OS  CT   0.38300000     3   0.000   ! 
+CT  CT  OS  CT   0.10000000     2   180.0   ! 
+CT  CT  OS  C    0.38300000     3   0.000   !  Junmei et al, 1999
+CT  CT  OS  C    0.80000000     1   180.0   !  Junmei et al, 1999
+CT  OS  CT  OS   0.10000000     3   0.000   !  Junmei et al, 1999
+CT  OS  CT  OS   0.85000000     2   180.0   !  Junmei et al, 1999
+CT  OS  CT  OS   1.35000000     1   180.0   !  Junmei et al, 1999
+CT  OS  CT  NS   0.38300000     3   0.000   !  parm98.dat, TC,PC,PAK
+CT  OS  CT  NS   0.65000000     2   0.000   !  Piotr et al.
+CT  CZ  CZ  HZ   0.00000000     1   0.000   !  Junmei et al, 1999
+O   C   OS  CT   2.70000000     2   180.0   !  Junmei et al, 1999
+O   C   OS  CT   1.40000000     1   180.0   !  Junmei et al, 1999
+OS  CT  NS  CK   0.00000000     2   0.000   !  parm98, TC,PC,PAK
+OS  CT  NS  CK   2.50000000     1   0.000   !  parm98, TC,PC,PAK
+OS  CT  NS  CM   0.00000000     2   0.000   !  parm98, TC,PC,PAK
+OS  CT  NS  CM   2.50000000     1   0.000   !  parm98, TC,PC,PAK
+OS  CT  CT  OS   0.14400000     3   0.000   !  parm98, TC,PC,PAK
+OS  CT  CT  OS   1.17500000     2   0.000   !  Piotr et al.
+OS  CT  CT  OH   0.14400000     3   0.000   !  parm98, TC,PC,PAK
+OS  CT  CT  OH   1.17500000     2   0.000   !  parm98, TC,PC,PAK
+OH  CT  CT  OH   0.14400000     3   0.000   !  parm98, TC,PC,PAK
+OH  CT  CT  OH   1.17500000     2   0.000   !  parm98, TC,PC,PAK
+F   CT  CT  F    1.20000000     1   180.0   !  Junmei et al, 1999
+Cl  CT  CT  Cl   0.45000000     1   180.0   !  Junmei et al, 1999
+Br  CT  CT  Br   0.00000000     1   180.0   !  Junmei et al, 1999
+H1  CT  CT  OS   0.25000000     1   0.000   !  Junmei et al, 1999
+H1  CT  CT  OH   0.25000000     1   0.000   !  Junmei et al, 1999
+H1  CT  CT  F    0.19000000     1   0.000   !  Junmei et al, 1999
+H1  CT  CT  Cl   0.25000000     1   0.000   !  Junmei et al, 1999
+H1  CT  CT  Br   0.55000000     1   0.000   !  Junmei et al, 1999
+HC  CT  CT  OS   0.25000000     1   0.000   !  Junmei et al, 1999
+HC  CT  CT  OH   0.25000000     1   0.000   !  Junmei et al, 1999
+HC  CT  CT  F    0.19000000     1   0.000   !  Junmei et al, 1999
+HC  CT  CT  Cl   0.25000000     1   0.000   !  Junmei et al, 1999
+HC  CT  CT  Br   0.55000000     1   0.000   !  Junmei et al, 1999
+H1  CT  NT  LP   0.00000000     3   0.000   ! 
+CT  CT  NT  LP   0.00000000     3   0.000   ! 
+CT  C   N   LP   0.00000000     2   180.0   ! 
+O   C   N   LP   0.00000000     2   180.0   ! 
+H1  CT  OH  LP   0.00000000     3   0.0     ! 
+CT  CT  OH  LP   0.00000000     3   0.0     ! 
+H1  CT  OS  LP   0.00000000     3   0.0     ! 
+H2  CT  OS  LP   0.00000000     3   0.0     ! 
+CT  CT  OS  LP   0.00000000     3   0.0     ! 
+CM  CM  OS  LP   0.00000000     2   180.0   ! 
+HA  CM  OS  LP   0.00000000     2   180.0   ! 
+H4  CM  OS  LP   0.00000000     2   180.0   ! 
+

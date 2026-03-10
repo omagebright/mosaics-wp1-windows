@@ -1,0 +1,78 @@
+~torsion_parm[\atom1{X}\atom2{X}\atom3{C}\atom4{O}\pot_type{harm}
+              \fk{10567.68}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{O2}\atom3{C}\atom4{O2}\pot_type{harm}
+              \fk{10567.68}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{N}\atom4{H}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{N2}\atom4{H}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{NA}\atom4{H}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{N2}\atom3{CA}\atom4{N2}\pot_type{harm}
+              \fk{10567.68}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{CT}\atom3{N}\atom4{CT}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{HA}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CW}\atom4{H4}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CR}\atom4{H5}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CV}\atom4{H4}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CQ}\atom4{H5}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CK}\atom4{H5}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CM}\atom4{H4}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CM}\atom4{HA}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{H4}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{X}\atom2{X}\atom3{CA}\atom4{H5}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CK}\atom2{CB}\atom3{NS}\atom4{CT}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{NS}\atom4{CT}\pot_type{harm}
+              \fk{1006.446}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{C}\atom3{CM}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CT}\atom2{O}\atom3{C}\atom4{OH}\pot_type{harm}
+              \fk{10567.68}\eq{180}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{CV}\atom3{CC}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{NB}\atom2{CW}\atom3{CC}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{CW}\atom3{CC}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CW}\atom2{CB}\atom3{CS}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CM}\atom3{CM}\atom4{CT}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{NC}\atom2{CM}\atom3{CA}\atom4{N2}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CB}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{NA}\atom2{NC}\atom3{CA}\atom4{N2}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{C}\atom4{OH}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{OH}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{H5}\atom2{O}\atom3{C}\atom4{OH}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{H5}\atom2{O}\atom3{C}\atom4{OS}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{CT}\atom3{CM}\atom4{HA}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CA}\atom2{CA}\atom3{CA}\atom4{Br}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{CM}\atom2{H4}\atom3{C}\atom4{O}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CT}\atom3{N}\atom4{H}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]
+~torsion_parm[\atom1{C}\atom2{CT}\atom3{N}\atom4{O}\pot_type{harm}
+              \fk{1107.09}\eq{180}\label{improper}]

@@ -9,28 +9,34 @@ MOSAICS = **M**ethodologies for **O**ptimization and **SA**mpling **I**n **C**om
 ## Repository Contents
 
 ```
-├── case_study.pdf          # Tutorial overview and theoretical background (PDF)
-├── WP1/                    # Work Package 1: Sampling Algorithms (1D models)
-│   ├── bin/mcmc.exe        # Pre-compiled Windows binary
-│   ├── source/             # C++ source (Windows-patched)
-│   └── examples/input      # Example input file
-├── WP2/                    # Work Package 2: Molecular Simulations (DNA/RNA)
-│   └── examples/           # 6-base RNA loop + 3-base-pair DNA systems
-├── WP3/                    # Work Package 3: Stochastic Optimization
-│   └── examples/           # Optimization protocols for WP2 systems
-├── WP4/                    # Work Package 4: Riboswitch Modeling (2CKY)
-│   └── examples/           # Real RNA riboswitch structure optimization
-└── ANALYSE/                # Analysis tools (Perl scripts for RMSD, energy)
+├── case_study.pdf              # Tutorial overview and theoretical background
+├── bin/
+│   └── mosaics.exe             # Full MOSAICS binary (Windows native, for WP2-4)
+├── WP1/                        # Work Package 1: Sampling Algorithms (1D models)
+│   ├── bin/mcmc.exe            # WP1 binary (Windows native)
+│   ├── source/                 # C++ source (Windows-patched)
+│   └── examples/input          # Example input file
+├── WP2/                        # Work Package 2: Molecular Simulations (DNA/RNA)
+│   └── examples/               # 6-base RNA loop + 3-base-pair DNA systems
+├── WP3/                        # Work Package 3: Stochastic Optimization
+│   └── examples/               # Optimization protocols for WP2 systems
+├── WP4/                        # Work Package 4: Riboswitch Modeling (2CKY)
+│   └── examples/               # Real RNA riboswitch structure optimization
+├── TOPPOT/                     # Topology and potential databases (required for WP2-4)
+│   ├── top_database/           # AMBER force field topology files
+│   └── pot_database/           # AMBER force field potential files
+├── ANALYSE/                    # Analysis tools (Perl scripts for RMSD, energy)
+└── MOSAICS_source_patch/       # Windows compatibility patch for standard.h
 ```
 
 ## Work Packages Overview
 
 | WP | Topic | Problem Addressed | Binary Needed |
 |----|-------|-------------------|---------------|
-| **WP1** | MCMC, Parallel Tempering, EEMC | Energy surface problem | `mcmc.exe` (included) |
-| **WP2** | Natural moves on DNA/RNA | Dimensionality problem | `mosaics.x` (see below) |
-| **WP3** | Simulated annealing optimization | Combined approach | `mosaics.x` (see below) |
-| **WP4** | Riboswitch conformational search | Real-world application | `mosaics.x` (see below) |
+| **WP1** | MCMC, Parallel Tempering, EEMC | Energy surface problem | `WP1/bin/mcmc.exe` ✅ |
+| **WP2** | Natural moves on DNA/RNA | Dimensionality problem | `bin/mosaics.exe` ✅ |
+| **WP3** | Simulated annealing optimization | Combined approach | `bin/mosaics.exe` ✅ |
+| **WP4** | Riboswitch conformational search | Real-world application | `bin/mosaics.exe` ✅ |
 
 ## Quick Start — WP1 (Windows, No Installation Required)
 
@@ -125,24 +131,33 @@ plt.savefig('convergence.png', dpi=150)
 plt.show()
 ```
 
-## WP2-4: Running the Full MOSAICS Software
+## WP2-4: Running the Full MOSAICS Software (Windows)
 
-Work Packages 2-4 require the full MOSAICS binary (`mosaics.x`), which operates on real molecular structures (DNA, RNA, proteins). The MOSAICS source code is available from the [official website](https://www.cs.ox.ac.uk/mosaics/).
+All binaries and databases are included. No additional downloads needed.
 
-**On Linux/WSL:**
-```bash
-# Download and compile MOSAICS
-cd source/compile/serial
-make clean && make
+```powershell
+# Example: Run WP2 RNA simulation
+cd WP2\examples\6b_rna
 
-# Link binary and databases to WP directories
-cd WP2/examples
-ln -s ../../MOSAICS/version.3.9.1_bgq/examples/mosaics.x mosaics.x
-ln -s ../../TOPPOT/top_database/ top_database
-ln -s ../../TOPPOT/pot_database/ pot_database
+# Copy (or symlink) the required files
+copy ..\..\..\bin\mosaics.exe .
+copy ..\..\..\TOPPOT\top_database top_database -Recurse
+copy ..\..\..\TOPPOT\pot_database pot_database -Recurse
+
+# Fix database paths in mcmc.input (change ../top_database to top_database, etc.)
+# Then run:
+.\mosaics.exe mcmc.input > output.txt
 ```
 
-**Topology and potential databases** (required for WP2-4) can be downloaded separately from the MOSAICS website.
+**Important:** The input files reference `../top_database/` and `../pot_database/`. Edit the paths in `mcmc.input` to point to wherever you placed the databases, or copy the databases into the parent directory of your working folder.
+
+Output files generated:
+- `*.pos.pdb` — Trajectory (viewable in PyMOL or VMD)
+- `*.pos_out.pdb` — Final optimized conformation
+- `*.pot_energy` — Potential energy vs MC steps
+- `*.inter_energy` — Intermolecular energy vs MC steps
+- `*.tors_pos` — Torsion angle trajectory
+- `sim_param.out` — All simulation parameters used
 
 ## Building WP1 from Source (Windows)
 
